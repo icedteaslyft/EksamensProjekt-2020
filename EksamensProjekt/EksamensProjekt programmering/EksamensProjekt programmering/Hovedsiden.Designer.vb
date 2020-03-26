@@ -24,6 +24,9 @@ Partial Class Hoved_Form
     Private Sub InitializeComponent()
         Me.Tyngde_But = New System.Windows.Forms.Button()
         Me.Gnidning_But = New System.Windows.Forms.Button()
+        Me.Densitet_But = New System.Windows.Forms.Button()
+        Me.Specifik_Varmekapacitet_But = New System.Windows.Forms.Button()
+        Me.Tryk_But = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Tyngde_But
@@ -44,11 +47,41 @@ Partial Class Hoved_Form
         Me.Gnidning_But.Text = "Udregn Gnidningskraften"
         Me.Gnidning_But.UseVisualStyleBackColor = True
         '
+        'Densitet_But
+        '
+        Me.Densitet_But.Location = New System.Drawing.Point(0, 80)
+        Me.Densitet_But.Name = "Densitet_But"
+        Me.Densitet_But.Size = New System.Drawing.Size(380, 34)
+        Me.Densitet_But.TabIndex = 2
+        Me.Densitet_But.Text = "Udregn Densitet"
+        Me.Densitet_But.UseVisualStyleBackColor = True
+        '
+        'Specifik_Varmekapacitet_But
+        '
+        Me.Specifik_Varmekapacitet_But.Location = New System.Drawing.Point(0, 120)
+        Me.Specifik_Varmekapacitet_But.Name = "Specifik_Varmekapacitet_But"
+        Me.Specifik_Varmekapacitet_But.Size = New System.Drawing.Size(380, 34)
+        Me.Specifik_Varmekapacitet_But.TabIndex = 3
+        Me.Specifik_Varmekapacitet_But.Text = "Udregn Specifik varmekapacitet"
+        Me.Specifik_Varmekapacitet_But.UseVisualStyleBackColor = True
+        '
+        'Tryk_But
+        '
+        Me.Tryk_But.Location = New System.Drawing.Point(0, 160)
+        Me.Tryk_But.Name = "Tryk_But"
+        Me.Tryk_But.Size = New System.Drawing.Size(380, 34)
+        Me.Tryk_But.TabIndex = 4
+        Me.Tryk_But.Text = "Udregn Tryk"
+        Me.Tryk_But.UseVisualStyleBackColor = True
+        '
         'Hoved_Form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1489, 886)
+        Me.Controls.Add(Me.Tryk_But)
+        Me.Controls.Add(Me.Specifik_Varmekapacitet_But)
+        Me.Controls.Add(Me.Densitet_But)
         Me.Controls.Add(Me.Gnidning_But)
         Me.Controls.Add(Me.Tyngde_But)
         Me.Name = "Hoved_Form"
@@ -59,4 +92,7 @@ Partial Class Hoved_Form
 
     Friend WithEvents Tyngde_But As Button
     Friend WithEvents Gnidning_But As Button
+    Friend WithEvents Densitet_But As Button
+    Friend WithEvents Specifik_Varmekapacitet_But As Button
+    Friend WithEvents Tryk_But As Button
 End Class
