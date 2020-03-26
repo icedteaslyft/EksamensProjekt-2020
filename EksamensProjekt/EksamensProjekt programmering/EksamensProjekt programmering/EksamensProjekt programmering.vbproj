@@ -73,6 +73,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Densitet_Form.Designer.vb">
+      <DependentUpon>Densitet_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Densitet_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Elektriskladning_form.Designer.vb">
       <DependentUpon>Elektriskladning_form.vb</DependentUpon>
     </Compile>
@@ -107,6 +113,18 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Specifik_Varmekapicitet_Form.Designer.vb">
+      <DependentUpon>Specifik_Varmekapicitet_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Specifik_Varmekapicitet_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tryk_Form.Designer.vb">
+      <DependentUpon>Tryk_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tryk_Form.vb">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="Tyngdekraft_form.Designer.vb">
       <DependentUpon>Tyngdekraft_form.vb</DependentUpon>
