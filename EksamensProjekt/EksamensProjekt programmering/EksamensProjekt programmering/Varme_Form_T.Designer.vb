@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Varme_T
+Partial Class Varme_Form_T
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -46,12 +46,18 @@ Partial Class Varme_T
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
+        Me.Tryk_But = New System.Windows.Forms.Button()
+        Me.Varme_But = New System.Windows.Forms.Button()
+        Me.Densitet_But = New System.Windows.Forms.Button()
+        Me.Gnidning_But = New System.Windows.Forms.Button()
+        Me.Tyngde_But = New System.Windows.Forms.Button()
+        Me.Hovedside_But = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Specifik_Varmekapacitet_Total_lbl
         '
         Me.Specifik_Varmekapacitet_Total_lbl.AutoSize = True
-        Me.Specifik_Varmekapacitet_Total_lbl.Location = New System.Drawing.Point(306, 434)
+        Me.Specifik_Varmekapacitet_Total_lbl.Location = New System.Drawing.Point(811, 424)
         Me.Specifik_Varmekapacitet_Total_lbl.Name = "Specifik_Varmekapacitet_Total_lbl"
         Me.Specifik_Varmekapacitet_Total_lbl.Size = New System.Drawing.Size(44, 20)
         Me.Specifik_Varmekapacitet_Total_lbl.TabIndex = 9
@@ -59,7 +65,7 @@ Partial Class Varme_T
         '
         'Masse_TextBox
         '
-        Me.Masse_TextBox.Location = New System.Drawing.Point(176, 431)
+        Me.Masse_TextBox.Location = New System.Drawing.Point(681, 421)
         Me.Masse_TextBox.Name = "Masse_TextBox"
         Me.Masse_TextBox.Size = New System.Drawing.Size(100, 26)
         Me.Masse_TextBox.TabIndex = 8
@@ -67,7 +73,7 @@ Partial Class Varme_T
         'Varmekapacitet_lbl
         '
         Me.Varmekapacitet_lbl.AutoSize = True
-        Me.Varmekapacitet_lbl.Location = New System.Drawing.Point(9, 392)
+        Me.Varmekapacitet_lbl.Location = New System.Drawing.Point(514, 382)
         Me.Varmekapacitet_lbl.Name = "Varmekapacitet_lbl"
         Me.Varmekapacitet_lbl.Size = New System.Drawing.Size(121, 20)
         Me.Varmekapacitet_lbl.TabIndex = 7
@@ -76,7 +82,7 @@ Partial Class Varme_T
         'Masse_lbl
         '
         Me.Masse_lbl.AutoSize = True
-        Me.Masse_lbl.Location = New System.Drawing.Point(198, 392)
+        Me.Masse_lbl.Location = New System.Drawing.Point(703, 382)
         Me.Masse_lbl.Name = "Masse_lbl"
         Me.Masse_lbl.Size = New System.Drawing.Size(56, 20)
         Me.Masse_lbl.TabIndex = 6
@@ -84,7 +90,7 @@ Partial Class Varme_T
         '
         'SpecifikVarme_Varmekapacitet_TextBox
         '
-        Me.SpecifikVarme_Varmekapacitet_TextBox.Location = New System.Drawing.Point(13, 431)
+        Me.SpecifikVarme_Varmekapacitet_TextBox.Location = New System.Drawing.Point(518, 421)
         Me.SpecifikVarme_Varmekapacitet_TextBox.Name = "SpecifikVarme_Varmekapacitet_TextBox"
         Me.SpecifikVarme_Varmekapacitet_TextBox.Size = New System.Drawing.Size(117, 26)
         Me.SpecifikVarme_Varmekapacitet_TextBox.TabIndex = 5
@@ -92,7 +98,7 @@ Partial Class Varme_T
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(282, 434)
+        Me.Label1.Location = New System.Drawing.Point(787, 424)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(18, 20)
         Me.Label1.TabIndex = 10
@@ -102,7 +108,7 @@ Partial Class Varme_T
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(41, 199)
+        Me.Label2.Location = New System.Drawing.Point(546, 189)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(268, 36)
         Me.Label2.TabIndex = 11
@@ -112,7 +118,7 @@ Partial Class Varme_T
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(13, 345)
+        Me.Label3.Location = New System.Drawing.Point(518, 335)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(375, 36)
         Me.Label3.TabIndex = 12
@@ -120,14 +126,14 @@ Partial Class Varme_T
         '
         'Tilført_Varme_TextBox
         '
-        Me.Tilført_Varme_TextBox.Location = New System.Drawing.Point(14, 291)
+        Me.Tilført_Varme_TextBox.Location = New System.Drawing.Point(519, 281)
         Me.Tilført_Varme_TextBox.Name = "Tilført_Varme_TextBox"
         Me.Tilført_Varme_TextBox.Size = New System.Drawing.Size(156, 26)
         Me.Tilført_Varme_TextBox.TabIndex = 13
         '
         'Varme_Temperaturstining_TextBox
         '
-        Me.Varme_Temperaturstining_TextBox.Location = New System.Drawing.Point(230, 291)
+        Me.Varme_Temperaturstining_TextBox.Location = New System.Drawing.Point(735, 281)
         Me.Varme_Temperaturstining_TextBox.Name = "Varme_Temperaturstining_TextBox"
         Me.Varme_Temperaturstining_TextBox.Size = New System.Drawing.Size(133, 26)
         Me.Varme_Temperaturstining_TextBox.TabIndex = 14
@@ -135,7 +141,7 @@ Partial Class Varme_T
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(10, 247)
+        Me.Label4.Location = New System.Drawing.Point(515, 237)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(160, 20)
         Me.Label4.TabIndex = 15
@@ -144,7 +150,7 @@ Partial Class Varme_T
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(226, 247)
+        Me.Label5.Location = New System.Drawing.Point(731, 237)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(137, 20)
         Me.Label5.TabIndex = 16
@@ -154,7 +160,7 @@ Partial Class Varme_T
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(13, 29)
+        Me.Label7.Location = New System.Drawing.Point(518, 19)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(296, 36)
         Me.Label7.TabIndex = 18
@@ -163,7 +169,7 @@ Partial Class Varme_T
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(10, 95)
+        Me.Label8.Location = New System.Drawing.Point(515, 85)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(121, 20)
         Me.Label8.TabIndex = 19
@@ -171,14 +177,14 @@ Partial Class Varme_T
         '
         'TilførtVarme_Temperaturstining_TextBox
         '
-        Me.TilførtVarme_Temperaturstining_TextBox.Location = New System.Drawing.Point(176, 126)
+        Me.TilførtVarme_Temperaturstining_TextBox.Location = New System.Drawing.Point(681, 116)
         Me.TilførtVarme_Temperaturstining_TextBox.Name = "TilførtVarme_Temperaturstining_TextBox"
         Me.TilførtVarme_Temperaturstining_TextBox.Size = New System.Drawing.Size(133, 26)
         Me.TilførtVarme_Temperaturstining_TextBox.TabIndex = 20
         '
         'TilførtVarme_Varmekapicitet_TextBox
         '
-        Me.TilførtVarme_Varmekapicitet_TextBox.Location = New System.Drawing.Point(14, 129)
+        Me.TilførtVarme_Varmekapicitet_TextBox.Location = New System.Drawing.Point(519, 119)
         Me.TilførtVarme_Varmekapicitet_TextBox.Name = "TilførtVarme_Varmekapicitet_TextBox"
         Me.TilførtVarme_Varmekapicitet_TextBox.Size = New System.Drawing.Size(117, 26)
         Me.TilførtVarme_Varmekapicitet_TextBox.TabIndex = 21
@@ -186,7 +192,7 @@ Partial Class Varme_T
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(315, 129)
+        Me.Label10.Location = New System.Drawing.Point(820, 119)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(18, 20)
         Me.Label10.TabIndex = 23
@@ -195,7 +201,7 @@ Partial Class Varme_T
         'Varmekapacitet_Total_lbl
         '
         Me.Varmekapacitet_Total_lbl.AutoSize = True
-        Me.Varmekapacitet_Total_lbl.Location = New System.Drawing.Point(393, 291)
+        Me.Varmekapacitet_Total_lbl.Location = New System.Drawing.Point(898, 281)
         Me.Varmekapacitet_Total_lbl.Name = "Varmekapacitet_Total_lbl"
         Me.Varmekapacitet_Total_lbl.Size = New System.Drawing.Size(44, 20)
         Me.Varmekapacitet_Total_lbl.TabIndex = 24
@@ -204,7 +210,7 @@ Partial Class Varme_T
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(369, 294)
+        Me.Label12.Location = New System.Drawing.Point(874, 284)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(18, 20)
         Me.Label12.TabIndex = 25
@@ -213,7 +219,7 @@ Partial Class Varme_T
         'Tilført_Varme_Total_lbl
         '
         Me.Tilført_Varme_Total_lbl.AutoSize = True
-        Me.Tilført_Varme_Total_lbl.Location = New System.Drawing.Point(339, 129)
+        Me.Tilført_Varme_Total_lbl.Location = New System.Drawing.Point(844, 119)
         Me.Tilført_Varme_Total_lbl.Name = "Tilført_Varme_Total_lbl"
         Me.Tilført_Varme_Total_lbl.Size = New System.Drawing.Size(44, 20)
         Me.Tilført_Varme_Total_lbl.TabIndex = 26
@@ -222,7 +228,7 @@ Partial Class Varme_T
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(172, 95)
+        Me.Label6.Location = New System.Drawing.Point(677, 85)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(137, 20)
         Me.Label6.TabIndex = 27
@@ -231,7 +237,7 @@ Partial Class Varme_T
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(148, 132)
+        Me.Label9.Location = New System.Drawing.Point(653, 122)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(15, 20)
         Me.Label9.TabIndex = 28
@@ -240,7 +246,7 @@ Partial Class Varme_T
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(188, 294)
+        Me.Label11.Location = New System.Drawing.Point(693, 284)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(13, 20)
         Me.Label11.TabIndex = 29
@@ -249,17 +255,77 @@ Partial Class Varme_T
         'Label13
         '
         Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(148, 434)
+        Me.Label13.Location = New System.Drawing.Point(653, 424)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(13, 20)
         Me.Label13.TabIndex = 30
         Me.Label13.Text = "/"
         '
-        'Varme_T
+        'Tryk_But
+        '
+        Me.Tryk_But.Location = New System.Drawing.Point(12, 212)
+        Me.Tryk_But.Name = "Tryk_But"
+        Me.Tryk_But.Size = New System.Drawing.Size(380, 34)
+        Me.Tryk_But.TabIndex = 35
+        Me.Tryk_But.Text = "Udregn Tryk"
+        Me.Tryk_But.UseVisualStyleBackColor = True
+        '
+        'Varme_But
+        '
+        Me.Varme_But.Location = New System.Drawing.Point(12, 172)
+        Me.Varme_But.Name = "Varme_But"
+        Me.Varme_But.Size = New System.Drawing.Size(380, 34)
+        Me.Varme_But.TabIndex = 34
+        Me.Varme_But.Text = "Udregn Varme"
+        Me.Varme_But.UseVisualStyleBackColor = True
+        '
+        'Densitet_But
+        '
+        Me.Densitet_But.Location = New System.Drawing.Point(12, 132)
+        Me.Densitet_But.Name = "Densitet_But"
+        Me.Densitet_But.Size = New System.Drawing.Size(380, 34)
+        Me.Densitet_But.TabIndex = 33
+        Me.Densitet_But.Text = "Udregn Densitet"
+        Me.Densitet_But.UseVisualStyleBackColor = True
+        '
+        'Gnidning_But
+        '
+        Me.Gnidning_But.Location = New System.Drawing.Point(12, 92)
+        Me.Gnidning_But.Name = "Gnidning_But"
+        Me.Gnidning_But.Size = New System.Drawing.Size(380, 34)
+        Me.Gnidning_But.TabIndex = 32
+        Me.Gnidning_But.Text = "Udregn Gnidningskraften"
+        Me.Gnidning_But.UseVisualStyleBackColor = True
+        '
+        'Tyngde_But
+        '
+        Me.Tyngde_But.Location = New System.Drawing.Point(12, 52)
+        Me.Tyngde_But.Name = "Tyngde_But"
+        Me.Tyngde_But.Size = New System.Drawing.Size(380, 34)
+        Me.Tyngde_But.TabIndex = 31
+        Me.Tyngde_But.Text = "Udregn Tyngdekraften"
+        Me.Tyngde_But.UseVisualStyleBackColor = True
+        '
+        'Hovedside_But
+        '
+        Me.Hovedside_But.Location = New System.Drawing.Point(12, 12)
+        Me.Hovedside_But.Name = "Hovedside_But"
+        Me.Hovedside_But.Size = New System.Drawing.Size(380, 34)
+        Me.Hovedside_But.TabIndex = 36
+        Me.Hovedside_But.Text = "Hovedsiden"
+        Me.Hovedside_But.UseVisualStyleBackColor = True
+        '
+        'Varme_Form_T
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 482)
+        Me.ClientSize = New System.Drawing.Size(1153, 482)
+        Me.Controls.Add(Me.Hovedside_But)
+        Me.Controls.Add(Me.Tryk_But)
+        Me.Controls.Add(Me.Varme_But)
+        Me.Controls.Add(Me.Densitet_But)
+        Me.Controls.Add(Me.Gnidning_But)
+        Me.Controls.Add(Me.Tyngde_But)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label9)
@@ -284,8 +350,8 @@ Partial Class Varme_T
         Me.Controls.Add(Me.Varmekapacitet_lbl)
         Me.Controls.Add(Me.Masse_lbl)
         Me.Controls.Add(Me.SpecifikVarme_Varmekapacitet_TextBox)
-        Me.Name = "Varme_T"
-        Me.Text = "Specifik_Varmekapicitet_Form"
+        Me.Name = "Varme_Form_T"
+        Me.Text = "Varme"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -315,4 +381,10 @@ Partial Class Varme_T
     Friend WithEvents Label9 As Label
     Friend WithEvents Label11 As Label
     Friend WithEvents Label13 As Label
+    Friend WithEvents Tryk_But As Button
+    Friend WithEvents Varme_But As Button
+    Friend WithEvents Densitet_But As Button
+    Friend WithEvents Gnidning_But As Button
+    Friend WithEvents Tyngde_But As Button
+    Friend WithEvents Hovedside_But As Button
 End Class

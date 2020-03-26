@@ -41,13 +41,19 @@ Partial Class Tryk_Form_T
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Tryk_Tyngde_Accelerationen_TextBox = New System.Windows.Forms.TextBox()
+        Me.Hovedside_But = New System.Windows.Forms.Button()
+        Me.Tryk_But = New System.Windows.Forms.Button()
+        Me.Varme_But = New System.Windows.Forms.Button()
+        Me.Densitet_But = New System.Windows.Forms.Button()
+        Me.Gnidning_But = New System.Windows.Forms.Button()
+        Me.Tyngde_But = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(69, 41)
+        Me.Label1.Location = New System.Drawing.Point(550, 46)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(73, 36)
         Me.Label1.TabIndex = 0
@@ -57,7 +63,7 @@ Partial Class Tryk_Form_T
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(34, 195)
+        Me.Label2.Location = New System.Drawing.Point(515, 200)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(174, 36)
         Me.Label2.TabIndex = 1
@@ -66,7 +72,7 @@ Partial Class Tryk_Form_T
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(118, 295)
+        Me.Label3.Location = New System.Drawing.Point(599, 300)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(15, 20)
         Me.Label3.TabIndex = 2
@@ -75,7 +81,7 @@ Partial Class Tryk_Form_T
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(118, 129)
+        Me.Label4.Location = New System.Drawing.Point(599, 134)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(13, 20)
         Me.Label4.TabIndex = 3
@@ -84,7 +90,7 @@ Partial Class Tryk_Form_T
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(443, 295)
+        Me.Label5.Location = New System.Drawing.Point(924, 300)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(18, 20)
         Me.Label5.TabIndex = 4
@@ -93,7 +99,7 @@ Partial Class Tryk_Form_T
         'Tryk_Total_lbl
         '
         Me.Tryk_Total_lbl.AutoSize = True
-        Me.Tryk_Total_lbl.Location = New System.Drawing.Point(267, 129)
+        Me.Tryk_Total_lbl.Location = New System.Drawing.Point(748, 134)
         Me.Tryk_Total_lbl.Name = "Tryk_Total_lbl"
         Me.Tryk_Total_lbl.Size = New System.Drawing.Size(44, 20)
         Me.Tryk_Total_lbl.TabIndex = 5
@@ -101,28 +107,28 @@ Partial Class Tryk_Form_T
         '
         'Tryk_Areal_TextBox
         '
-        Me.Tryk_Areal_TextBox.Location = New System.Drawing.Point(137, 126)
+        Me.Tryk_Areal_TextBox.Location = New System.Drawing.Point(618, 131)
         Me.Tryk_Areal_TextBox.Name = "Tryk_Areal_TextBox"
         Me.Tryk_Areal_TextBox.Size = New System.Drawing.Size(100, 26)
         Me.Tryk_Areal_TextBox.TabIndex = 7
         '
         'Tryk_Kraft_TextBox
         '
-        Me.Tryk_Kraft_TextBox.Location = New System.Drawing.Point(12, 126)
+        Me.Tryk_Kraft_TextBox.Location = New System.Drawing.Point(493, 131)
         Me.Tryk_Kraft_TextBox.Name = "Tryk_Kraft_TextBox"
         Me.Tryk_Kraft_TextBox.Size = New System.Drawing.Size(100, 26)
         Me.Tryk_Kraft_TextBox.TabIndex = 8
         '
         'Tryk_Højde_TextBox
         '
-        Me.Tryk_Højde_TextBox.Location = New System.Drawing.Point(139, 292)
+        Me.Tryk_Højde_TextBox.Location = New System.Drawing.Point(620, 297)
         Me.Tryk_Højde_TextBox.Name = "Tryk_Højde_TextBox"
         Me.Tryk_Højde_TextBox.Size = New System.Drawing.Size(100, 26)
         Me.Tryk_Højde_TextBox.TabIndex = 9
         '
         'Tryk_Densitet_TextBox
         '
-        Me.Tryk_Densitet_TextBox.Location = New System.Drawing.Point(12, 292)
+        Me.Tryk_Densitet_TextBox.Location = New System.Drawing.Point(493, 297)
         Me.Tryk_Densitet_TextBox.Name = "Tryk_Densitet_TextBox"
         Me.Tryk_Densitet_TextBox.Size = New System.Drawing.Size(100, 26)
         Me.Tryk_Densitet_TextBox.TabIndex = 10
@@ -130,7 +136,7 @@ Partial Class Tryk_Form_T
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(245, 295)
+        Me.Label8.Location = New System.Drawing.Point(726, 300)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(15, 20)
         Me.Label8.TabIndex = 12
@@ -139,7 +145,7 @@ Partial Class Tryk_Form_T
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(243, 129)
+        Me.Label9.Location = New System.Drawing.Point(724, 134)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(18, 20)
         Me.Label9.TabIndex = 13
@@ -148,7 +154,7 @@ Partial Class Tryk_Form_T
         'Væske_Tryk_Total_lbl
         '
         Me.Væske_Tryk_Total_lbl.AutoSize = True
-        Me.Væske_Tryk_Total_lbl.Location = New System.Drawing.Point(467, 295)
+        Me.Væske_Tryk_Total_lbl.Location = New System.Drawing.Point(948, 300)
         Me.Væske_Tryk_Total_lbl.Name = "Væske_Tryk_Total_lbl"
         Me.Væske_Tryk_Total_lbl.Size = New System.Drawing.Size(44, 20)
         Me.Væske_Tryk_Total_lbl.TabIndex = 14
@@ -157,7 +163,7 @@ Partial Class Tryk_Form_T
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(153, 90)
+        Me.Label10.Location = New System.Drawing.Point(634, 95)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(46, 20)
         Me.Label10.TabIndex = 15
@@ -166,7 +172,7 @@ Partial Class Tryk_Form_T
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(23, 259)
+        Me.Label11.Location = New System.Drawing.Point(504, 264)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(69, 20)
         Me.Label11.TabIndex = 16
@@ -175,7 +181,7 @@ Partial Class Tryk_Form_T
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(153, 259)
+        Me.Label12.Location = New System.Drawing.Point(634, 264)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(51, 20)
         Me.Label12.TabIndex = 17
@@ -184,7 +190,7 @@ Partial Class Tryk_Form_T
         'Label13
         '
         Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(36, 90)
+        Me.Label13.Location = New System.Drawing.Point(517, 95)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(43, 20)
         Me.Label13.TabIndex = 18
@@ -193,7 +199,7 @@ Partial Class Tryk_Form_T
         'Label15
         '
         Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(266, 259)
+        Me.Label15.Location = New System.Drawing.Point(747, 264)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(171, 20)
         Me.Label15.TabIndex = 20
@@ -201,16 +207,76 @@ Partial Class Tryk_Form_T
         '
         'Tryk_Tyngde_Accelerationen_TextBox
         '
-        Me.Tryk_Tyngde_Accelerationen_TextBox.Location = New System.Drawing.Point(266, 292)
+        Me.Tryk_Tyngde_Accelerationen_TextBox.Location = New System.Drawing.Point(747, 297)
         Me.Tryk_Tyngde_Accelerationen_TextBox.Name = "Tryk_Tyngde_Accelerationen_TextBox"
         Me.Tryk_Tyngde_Accelerationen_TextBox.Size = New System.Drawing.Size(171, 26)
         Me.Tryk_Tyngde_Accelerationen_TextBox.TabIndex = 21
+        '
+        'Hovedside_But
+        '
+        Me.Hovedside_But.Location = New System.Drawing.Point(12, 12)
+        Me.Hovedside_But.Name = "Hovedside_But"
+        Me.Hovedside_But.Size = New System.Drawing.Size(380, 34)
+        Me.Hovedside_But.TabIndex = 42
+        Me.Hovedside_But.Text = "Hovedsiden"
+        Me.Hovedside_But.UseVisualStyleBackColor = True
+        '
+        'Tryk_But
+        '
+        Me.Tryk_But.Location = New System.Drawing.Point(12, 212)
+        Me.Tryk_But.Name = "Tryk_But"
+        Me.Tryk_But.Size = New System.Drawing.Size(380, 34)
+        Me.Tryk_But.TabIndex = 41
+        Me.Tryk_But.Text = "Udregn Tryk"
+        Me.Tryk_But.UseVisualStyleBackColor = True
+        '
+        'Varme_But
+        '
+        Me.Varme_But.Location = New System.Drawing.Point(12, 172)
+        Me.Varme_But.Name = "Varme_But"
+        Me.Varme_But.Size = New System.Drawing.Size(380, 34)
+        Me.Varme_But.TabIndex = 40
+        Me.Varme_But.Text = "Udregn Varme"
+        Me.Varme_But.UseVisualStyleBackColor = True
+        '
+        'Densitet_But
+        '
+        Me.Densitet_But.Location = New System.Drawing.Point(12, 132)
+        Me.Densitet_But.Name = "Densitet_But"
+        Me.Densitet_But.Size = New System.Drawing.Size(380, 34)
+        Me.Densitet_But.TabIndex = 39
+        Me.Densitet_But.Text = "Udregn Densitet"
+        Me.Densitet_But.UseVisualStyleBackColor = True
+        '
+        'Gnidning_But
+        '
+        Me.Gnidning_But.Location = New System.Drawing.Point(12, 92)
+        Me.Gnidning_But.Name = "Gnidning_But"
+        Me.Gnidning_But.Size = New System.Drawing.Size(380, 34)
+        Me.Gnidning_But.TabIndex = 38
+        Me.Gnidning_But.Text = "Udregn Gnidningskraften"
+        Me.Gnidning_But.UseVisualStyleBackColor = True
+        '
+        'Tyngde_But
+        '
+        Me.Tyngde_But.Location = New System.Drawing.Point(12, 52)
+        Me.Tyngde_But.Name = "Tyngde_But"
+        Me.Tyngde_But.Size = New System.Drawing.Size(380, 34)
+        Me.Tyngde_But.TabIndex = 37
+        Me.Tyngde_But.Text = "Udregn Tyngdekraften"
+        Me.Tyngde_But.UseVisualStyleBackColor = True
         '
         'Tryk_Form_T
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(834, 341)
+        Me.ClientSize = New System.Drawing.Size(1153, 482)
+        Me.Controls.Add(Me.Hovedside_But)
+        Me.Controls.Add(Me.Tryk_But)
+        Me.Controls.Add(Me.Varme_But)
+        Me.Controls.Add(Me.Densitet_But)
+        Me.Controls.Add(Me.Gnidning_But)
+        Me.Controls.Add(Me.Tyngde_But)
         Me.Controls.Add(Me.Tryk_Tyngde_Accelerationen_TextBox)
         Me.Controls.Add(Me.Label15)
         Me.Controls.Add(Me.Label13)
@@ -256,4 +322,10 @@ Partial Class Tryk_Form_T
     Friend WithEvents Label13 As Label
     Friend WithEvents Label15 As Label
     Friend WithEvents Tryk_Tyngde_Accelerationen_TextBox As TextBox
+    Friend WithEvents Hovedside_But As Button
+    Friend WithEvents Tryk_But As Button
+    Friend WithEvents Varme_But As Button
+    Friend WithEvents Densitet_But As Button
+    Friend WithEvents Gnidning_But As Button
+    Friend WithEvents Tyngde_But As Button
 End Class

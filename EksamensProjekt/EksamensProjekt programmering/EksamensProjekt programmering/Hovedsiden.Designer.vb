@@ -28,11 +28,12 @@ Partial Class Hoved_Form
         Me.Varme_But = New System.Windows.Forms.Button()
         Me.Tryk_But = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Hovedside_But = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Tyngde_But
         '
-        Me.Tyngde_But.Location = New System.Drawing.Point(0, 0)
+        Me.Tyngde_But.Location = New System.Drawing.Point(12, 52)
         Me.Tyngde_But.Name = "Tyngde_But"
         Me.Tyngde_But.Size = New System.Drawing.Size(380, 34)
         Me.Tyngde_But.TabIndex = 0
@@ -41,7 +42,7 @@ Partial Class Hoved_Form
         '
         'Gnidning_But
         '
-        Me.Gnidning_But.Location = New System.Drawing.Point(0, 40)
+        Me.Gnidning_But.Location = New System.Drawing.Point(12, 92)
         Me.Gnidning_But.Name = "Gnidning_But"
         Me.Gnidning_But.Size = New System.Drawing.Size(380, 34)
         Me.Gnidning_But.TabIndex = 1
@@ -50,7 +51,7 @@ Partial Class Hoved_Form
         '
         'Densitet_But
         '
-        Me.Densitet_But.Location = New System.Drawing.Point(0, 80)
+        Me.Densitet_But.Location = New System.Drawing.Point(12, 132)
         Me.Densitet_But.Name = "Densitet_But"
         Me.Densitet_But.Size = New System.Drawing.Size(380, 34)
         Me.Densitet_But.TabIndex = 2
@@ -59,7 +60,7 @@ Partial Class Hoved_Form
         '
         'Varme_But
         '
-        Me.Varme_But.Location = New System.Drawing.Point(0, 120)
+        Me.Varme_But.Location = New System.Drawing.Point(12, 172)
         Me.Varme_But.Name = "Varme_But"
         Me.Varme_But.Size = New System.Drawing.Size(380, 34)
         Me.Varme_But.TabIndex = 3
@@ -68,7 +69,7 @@ Partial Class Hoved_Form
         '
         'Tryk_But
         '
-        Me.Tryk_But.Location = New System.Drawing.Point(0, 160)
+        Me.Tryk_But.Location = New System.Drawing.Point(12, 212)
         Me.Tryk_But.Name = "Tryk_But"
         Me.Tryk_But.Size = New System.Drawing.Size(380, 34)
         Me.Tryk_But.TabIndex = 4
@@ -78,17 +79,27 @@ Partial Class Hoved_Form
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(386, 127)
+        Me.Label1.Location = New System.Drawing.Point(398, 179)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(422, 20)
+        Me.Label1.Size = New System.Drawing.Size(483, 20)
         Me.Label1.TabIndex = 5
-        Me.Label1.Text = "-->Varmekapacitet, Specifik Varmekapacitet, Tilført Varme."
+        Me.Label1.Text = "-->Varmekapacitet(C), Specifik Varmekapacitet(c), Tilført Varme(Q)."
+        '
+        'Hovedside_But
+        '
+        Me.Hovedside_But.Location = New System.Drawing.Point(12, 12)
+        Me.Hovedside_But.Name = "Hovedside_But"
+        Me.Hovedside_But.Size = New System.Drawing.Size(380, 34)
+        Me.Hovedside_But.TabIndex = 6
+        Me.Hovedside_But.Text = "Hovedsiden"
+        Me.Hovedside_But.UseVisualStyleBackColor = True
         '
         'Hoved_Form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1489, 886)
+        Me.ClientSize = New System.Drawing.Size(1153, 482)
+        Me.Controls.Add(Me.Hovedside_But)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Tryk_But)
         Me.Controls.Add(Me.Varme_But)
@@ -108,4 +119,5 @@ Partial Class Hoved_Form
     Friend WithEvents Varme_But As Button
     Friend WithEvents Tryk_But As Button
     Friend WithEvents Label1 As Label
+    Friend WithEvents Hovedside_But As Button
 End Class

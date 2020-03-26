@@ -132,10 +132,10 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Varme_T.Designer.vb">
-      <DependentUpon>Varme_T.vb</DependentUpon>
+    <Compile Include="Varme_Form_T.Designer.vb">
+      <DependentUpon>Varme_Form_T.vb</DependentUpon>
     </Compile>
-    <Compile Include="Varme_T.vb">
+    <Compile Include="Varme_Form_T.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Tryk_Form_T.Designer.vb">
@@ -167,8 +167,8 @@
     <EmbeddedResource Include="Tryk_Form_T.resx">
       <DependentUpon>Tryk_Form_T.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Varme_T.resx">
-      <DependentUpon>Varme_T.vb</DependentUpon>
+    <EmbeddedResource Include="Varme_Form_T.resx">
+      <DependentUpon>Varme_Form_T.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

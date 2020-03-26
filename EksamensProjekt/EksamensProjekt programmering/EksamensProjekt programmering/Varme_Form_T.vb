@@ -1,9 +1,11 @@
-﻿Public Class Hoved_Form
+﻿Public Class Varme_Form_T
+
+
 
 #Region "Knapper"
     Private Sub Hovedside_But_Click(sender As Object, e As EventArgs) Handles Hovedside_But.Click
         Me.Hide()
-        Me.Show()
+        Hoved_Form.Show()
 
     End Sub
 
@@ -15,7 +17,7 @@
 
     Private Sub Varme_But_Click(sender As Object, e As EventArgs) Handles Varme_But.Click
         Me.Hide()
-        Varme_Form_T.Show()
+        Me.Show()
 
     End Sub
 
