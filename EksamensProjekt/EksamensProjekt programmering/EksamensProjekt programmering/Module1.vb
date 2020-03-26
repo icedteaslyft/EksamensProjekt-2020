@@ -1,10 +1,18 @@
 ﻿Module Module1
     ''Her skal alle vores værdier stå
 
-    'Rasmus' værdier
+#Region "Rasmus værdier"
 
-    'Daniels værdier
+#End Region
 
-    'Troels værdier
+#Region "Daniels værdier"
+
+#End Region
+
+#Region "Troels_værdier"
+
+
+#End Region
+
 
 End Module
