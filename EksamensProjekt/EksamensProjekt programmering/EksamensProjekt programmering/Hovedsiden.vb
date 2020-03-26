@@ -4,8 +4,8 @@
         Densitet_Form_T.Show()
     End Sub
 
-    Private Sub Specifik_Varmekapacitet_But_Click(sender As Object, e As EventArgs) Handles Specifik_Varmekapacitet_But.Click
-        Specifik_Varmekapicitet_Form_T.Show()
+    Private Sub Specifik_Varmekapacitet_But_Click(sender As Object, e As EventArgs) Handles Varme_But.Click
+        Varme_T.Show()
     End Sub
 
     Private Sub Tryk_But_Click(sender As Object, e As EventArgs) Handles Tryk_But.Click

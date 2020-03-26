@@ -22,9 +22,308 @@ Partial Class Densitet_Form_T
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container
+        Me.Densitet_Masse_TextBox = New System.Windows.Forms.TextBox()
+        Me.Masse_lbl = New System.Windows.Forms.Label()
+        Me.Rumfang_lbl = New System.Windows.Forms.Label()
+        Me.Densitet_Rumfang_TextBox = New System.Windows.Forms.TextBox()
+        Me.Densitet_Total_lbl = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Densitet_Molmasse_TextBox = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Densitet_Gaskonstanten_TextBox = New System.Windows.Forms.TextBox()
+        Me.Densitet_Temperatur_K_TextBox = New System.Windows.Forms.TextBox()
+        Me.Densitet_Tryk_TextBox = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Densitet_Gas_Total_lbl = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.SuspendLayout()
+        '
+        'Densitet_Masse_TextBox
+        '
+        Me.Densitet_Masse_TextBox.Location = New System.Drawing.Point(229, 99)
+        Me.Densitet_Masse_TextBox.Name = "Densitet_Masse_TextBox"
+        Me.Densitet_Masse_TextBox.Size = New System.Drawing.Size(100, 26)
+        Me.Densitet_Masse_TextBox.TabIndex = 0
+        '
+        'Masse_lbl
+        '
+        Me.Masse_lbl.AutoSize = True
+        Me.Masse_lbl.Location = New System.Drawing.Point(245, 55)
+        Me.Masse_lbl.Name = "Masse_lbl"
+        Me.Masse_lbl.Size = New System.Drawing.Size(56, 20)
+        Me.Masse_lbl.TabIndex = 1
+        Me.Masse_lbl.Text = "Masse"
+        '
+        'Rumfang_lbl
+        '
+        Me.Rumfang_lbl.AutoSize = True
+        Me.Rumfang_lbl.Location = New System.Drawing.Point(404, 55)
+        Me.Rumfang_lbl.Name = "Rumfang_lbl"
+        Me.Rumfang_lbl.Size = New System.Drawing.Size(75, 20)
+        Me.Rumfang_lbl.TabIndex = 2
+        Me.Rumfang_lbl.Text = "Rumfang"
+        '
+        'Densitet_Rumfang_TextBox
+        '
+        Me.Densitet_Rumfang_TextBox.Location = New System.Drawing.Point(392, 99)
+        Me.Densitet_Rumfang_TextBox.Name = "Densitet_Rumfang_TextBox"
+        Me.Densitet_Rumfang_TextBox.Size = New System.Drawing.Size(100, 26)
+        Me.Densitet_Rumfang_TextBox.TabIndex = 3
+        '
+        'Densitet_Total_lbl
+        '
+        Me.Densitet_Total_lbl.AutoSize = True
+        Me.Densitet_Total_lbl.Location = New System.Drawing.Point(522, 102)
+        Me.Densitet_Total_lbl.Name = "Densitet_Total_lbl"
+        Me.Densitet_Total_lbl.Size = New System.Drawing.Size(44, 20)
+        Me.Densitet_Total_lbl.TabIndex = 4
+        Me.Densitet_Total_lbl.Text = "Total"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(498, 102)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(18, 20)
+        Me.Label3.TabIndex = 11
+        Me.Label3.Text = "="
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(264, 9)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(252, 36)
+        Me.Label1.TabIndex = 12
+        Me.Label1.Text = "Densitet - Væsker"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(277, 172)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(244, 36)
+        Me.Label2.TabIndex = 13
+        Me.Label2.Text = "Densitet - Gasser"
+        '
+        'Densitet_Molmasse_TextBox
+        '
+        Me.Densitet_Molmasse_TextBox.Location = New System.Drawing.Point(87, 286)
+        Me.Densitet_Molmasse_TextBox.Name = "Densitet_Molmasse_TextBox"
+        Me.Densitet_Molmasse_TextBox.Size = New System.Drawing.Size(100, 26)
+        Me.Densitet_Molmasse_TextBox.TabIndex = 14
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(396, 289)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(14, 20)
+        Me.Label5.TabIndex = 16
+        Me.Label5.Text = "("
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(654, 289)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(14, 20)
+        Me.Label6.TabIndex = 17
+        Me.Label6.Text = ")"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(193, 289)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(13, 20)
+        Me.Label10.TabIndex = 21
+        Me.Label10.Text = "/"
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Location = New System.Drawing.Point(355, 289)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(14, 20)
+        Me.Label15.TabIndex = 27
+        Me.Label15.Text = ")"
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.Location = New System.Drawing.Point(67, 289)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(14, 20)
+        Me.Label16.TabIndex = 26
+        Me.Label16.Text = "("
+        '
+        'Densitet_Gaskonstanten_TextBox
+        '
+        Me.Densitet_Gaskonstanten_TextBox.Location = New System.Drawing.Point(212, 286)
+        Me.Densitet_Gaskonstanten_TextBox.Name = "Densitet_Gaskonstanten_TextBox"
+        Me.Densitet_Gaskonstanten_TextBox.Size = New System.Drawing.Size(137, 26)
+        Me.Densitet_Gaskonstanten_TextBox.TabIndex = 28
+        '
+        'Densitet_Temperatur_K_TextBox
+        '
+        Me.Densitet_Temperatur_K_TextBox.Location = New System.Drawing.Point(541, 286)
+        Me.Densitet_Temperatur_K_TextBox.Name = "Densitet_Temperatur_K_TextBox"
+        Me.Densitet_Temperatur_K_TextBox.Size = New System.Drawing.Size(107, 26)
+        Me.Densitet_Temperatur_K_TextBox.TabIndex = 30
+        '
+        'Densitet_Tryk_TextBox
+        '
+        Me.Densitet_Tryk_TextBox.Location = New System.Drawing.Point(416, 286)
+        Me.Densitet_Tryk_TextBox.Name = "Densitet_Tryk_TextBox"
+        Me.Densitet_Tryk_TextBox.Size = New System.Drawing.Size(100, 26)
+        Me.Densitet_Tryk_TextBox.TabIndex = 29
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(375, 289)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(15, 20)
+        Me.Label4.TabIndex = 31
+        Me.Label4.Text = "*"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(522, 289)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(13, 20)
+        Me.Label7.TabIndex = 32
+        Me.Label7.Text = "/"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(674, 289)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(18, 20)
+        Me.Label8.TabIndex = 33
+        Me.Label8.Text = "="
+        '
+        'Densitet_Gas_Total_lbl
+        '
+        Me.Densitet_Gas_Total_lbl.AutoSize = True
+        Me.Densitet_Gas_Total_lbl.Location = New System.Drawing.Point(698, 289)
+        Me.Densitet_Gas_Total_lbl.Name = "Densitet_Gas_Total_lbl"
+        Me.Densitet_Gas_Total_lbl.Size = New System.Drawing.Size(44, 20)
+        Me.Densitet_Gas_Total_lbl.TabIndex = 34
+        Me.Densitet_Gas_Total_lbl.Text = "Total"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(88, 244)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(104, 20)
+        Me.Label9.TabIndex = 35
+        Me.Label9.Text = "Molmasse(M)"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Location = New System.Drawing.Point(213, 244)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(141, 20)
+        Me.Label11.TabIndex = 36
+        Me.Label11.Text = "Gaskonstanten(R)"
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Location = New System.Drawing.Point(444, 244)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(57, 20)
+        Me.Label12.TabIndex = 37
+        Me.Label12.Text = "Tryk(p)"
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Location = New System.Drawing.Point(542, 244)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(111, 20)
+        Me.Label13.TabIndex = 38
+        Me.Label13.Text = "Temperatur(K)"
+        '
+        'Densitet_Form_T
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(827, 347)
+        Me.Controls.Add(Me.Label13)
+        Me.Controls.Add(Me.Label12)
+        Me.Controls.Add(Me.Label11)
+        Me.Controls.Add(Me.Label9)
+        Me.Controls.Add(Me.Densitet_Gas_Total_lbl)
+        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Densitet_Temperatur_K_TextBox)
+        Me.Controls.Add(Me.Densitet_Tryk_TextBox)
+        Me.Controls.Add(Me.Densitet_Gaskonstanten_TextBox)
+        Me.Controls.Add(Me.Label15)
+        Me.Controls.Add(Me.Label16)
+        Me.Controls.Add(Me.Label10)
+        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.Densitet_Molmasse_TextBox)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Densitet_Total_lbl)
+        Me.Controls.Add(Me.Densitet_Rumfang_TextBox)
+        Me.Controls.Add(Me.Rumfang_lbl)
+        Me.Controls.Add(Me.Masse_lbl)
+        Me.Controls.Add(Me.Densitet_Masse_TextBox)
+        Me.Name = "Densitet_Form_T"
         Me.Text = "Densitet_Form"
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+
     End Sub
+
+    Friend WithEvents Densitet_Masse_TextBox As TextBox
+    Friend WithEvents Masse_lbl As Label
+    Friend WithEvents Rumfang_lbl As Label
+    Friend WithEvents Densitet_Rumfang_TextBox As TextBox
+    Friend WithEvents Densitet_Total_lbl As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Densitet_Molmasse_TextBox As TextBox
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Label10 As Label
+    Friend WithEvents Label15 As Label
+    Friend WithEvents Label16 As Label
+    Friend WithEvents Densitet_Gaskonstanten_TextBox As TextBox
+    Friend WithEvents Densitet_Temperatur_K_TextBox As TextBox
+    Friend WithEvents Densitet_Tryk_TextBox As TextBox
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Label8 As Label
+    Friend WithEvents Densitet_Gas_Total_lbl As Label
+    Friend WithEvents Label9 As Label
+    Friend WithEvents Label11 As Label
+    Friend WithEvents Label12 As Label
+    Friend WithEvents Label13 As Label
 End Class

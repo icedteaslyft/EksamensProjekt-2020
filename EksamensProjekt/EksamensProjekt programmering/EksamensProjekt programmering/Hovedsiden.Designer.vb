@@ -25,8 +25,9 @@ Partial Class Hoved_Form
         Me.Tyngde_But = New System.Windows.Forms.Button()
         Me.Gnidning_But = New System.Windows.Forms.Button()
         Me.Densitet_But = New System.Windows.Forms.Button()
-        Me.Specifik_Varmekapacitet_But = New System.Windows.Forms.Button()
+        Me.Varme_But = New System.Windows.Forms.Button()
         Me.Tryk_But = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Tyngde_But
@@ -56,14 +57,14 @@ Partial Class Hoved_Form
         Me.Densitet_But.Text = "Udregn Densitet"
         Me.Densitet_But.UseVisualStyleBackColor = True
         '
-        'Specifik_Varmekapacitet_But
+        'Varme_But
         '
-        Me.Specifik_Varmekapacitet_But.Location = New System.Drawing.Point(0, 120)
-        Me.Specifik_Varmekapacitet_But.Name = "Specifik_Varmekapacitet_But"
-        Me.Specifik_Varmekapacitet_But.Size = New System.Drawing.Size(380, 34)
-        Me.Specifik_Varmekapacitet_But.TabIndex = 3
-        Me.Specifik_Varmekapacitet_But.Text = "Udregn Specifik varmekapacitet"
-        Me.Specifik_Varmekapacitet_But.UseVisualStyleBackColor = True
+        Me.Varme_But.Location = New System.Drawing.Point(0, 120)
+        Me.Varme_But.Name = "Varme_But"
+        Me.Varme_But.Size = New System.Drawing.Size(380, 34)
+        Me.Varme_But.TabIndex = 3
+        Me.Varme_But.Text = "Udregn Varme"
+        Me.Varme_But.UseVisualStyleBackColor = True
         '
         'Tryk_But
         '
@@ -74,25 +75,37 @@ Partial Class Hoved_Form
         Me.Tryk_But.Text = "Udregn Tryk"
         Me.Tryk_But.UseVisualStyleBackColor = True
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(386, 127)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(422, 20)
+        Me.Label1.TabIndex = 5
+        Me.Label1.Text = "-->Varmekapacitet, Specifik Varmekapacitet, Tilført Varme."
+        '
         'Hoved_Form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1489, 886)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Tryk_But)
-        Me.Controls.Add(Me.Specifik_Varmekapacitet_But)
+        Me.Controls.Add(Me.Varme_But)
         Me.Controls.Add(Me.Densitet_But)
         Me.Controls.Add(Me.Gnidning_But)
         Me.Controls.Add(Me.Tyngde_But)
         Me.Name = "Hoved_Form"
         Me.Text = "Hovedsiden"
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents Tyngde_But As Button
     Friend WithEvents Gnidning_But As Button
     Friend WithEvents Densitet_But As Button
-    Friend WithEvents Specifik_Varmekapacitet_But As Button
+    Friend WithEvents Varme_But As Button
     Friend WithEvents Tryk_But As Button
+    Friend WithEvents Label1 As Label
 End Class
