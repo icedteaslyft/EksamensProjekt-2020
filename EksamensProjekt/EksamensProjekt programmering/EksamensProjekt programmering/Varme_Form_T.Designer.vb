@@ -351,6 +351,7 @@ Partial Class Varme_Form_T
         Me.Controls.Add(Me.Masse_lbl)
         Me.Controls.Add(Me.SpecifikVarme_Varmekapacitet_TextBox)
         Me.Name = "Varme_Form_T"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Varme"
         Me.ResumeLayout(False)
         Me.PerformLayout()

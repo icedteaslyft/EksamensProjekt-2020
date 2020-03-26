@@ -297,6 +297,7 @@ Partial Class Tryk_Form_T
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Tryk_Form_T"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Tryk_Form"
         Me.ResumeLayout(False)
         Me.PerformLayout()

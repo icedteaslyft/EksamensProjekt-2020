@@ -107,6 +107,7 @@ Partial Class Hoved_Form
         Me.Controls.Add(Me.Gnidning_But)
         Me.Controls.Add(Me.Tyngde_But)
         Me.Name = "Hoved_Form"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Hovedsiden"
         Me.ResumeLayout(False)
         Me.PerformLayout()

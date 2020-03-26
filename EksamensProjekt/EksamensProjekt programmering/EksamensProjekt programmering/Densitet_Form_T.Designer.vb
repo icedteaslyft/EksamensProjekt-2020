@@ -361,6 +361,7 @@ Partial Class Densitet_Form_T
         Me.Controls.Add(Me.Masse_lbl)
         Me.Controls.Add(Me.Densitet_Masse_TextBox)
         Me.Name = "Densitet_Form_T"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Densitet_Form"
         Me.ResumeLayout(False)
         Me.PerformLayout()
