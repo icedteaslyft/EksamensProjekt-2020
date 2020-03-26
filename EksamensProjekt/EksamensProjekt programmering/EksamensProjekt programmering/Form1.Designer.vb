@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Form1
+Partial Class Hoved_Form
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -44,15 +44,15 @@ Partial Class Form1
         Me.Gnidning_But.Text = "Udregn Gnidningskraften"
         Me.Gnidning_But.UseVisualStyleBackColor = True
         '
-        'Form1
+        'Hoved_Form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1489, 886)
         Me.Controls.Add(Me.Gnidning_But)
         Me.Controls.Add(Me.Tyngde_But)
-        Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Name = "Hoved_Form"
+        Me.Text = "Hovedsiden"
         Me.ResumeLayout(False)
 
     End Sub
