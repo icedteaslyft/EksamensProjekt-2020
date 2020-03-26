@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Specifik_Varmekapicitet_Form
+Partial Class Tryk_Form_T
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -25,6 +25,6 @@ Partial Class Specifik_Varmekapicitet_Form
         components = New System.ComponentModel.Container
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Text = "Specifik_Varmekapicitet_Form"
+        Me.Text = "Tryk_Form"
     End Sub
 End Class

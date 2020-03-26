@@ -73,10 +73,10 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Densitet_Form.Designer.vb">
-      <DependentUpon>Densitet_Form.vb</DependentUpon>
+    <Compile Include="Densitet_Form_T.Designer.vb">
+      <DependentUpon>Densitet_Form_T.vb</DependentUpon>
     </Compile>
-    <Compile Include="Densitet_Form.vb">
+    <Compile Include="Densitet_Form_T.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Elektriskladning_form.Designer.vb">
@@ -85,11 +85,11 @@
     <Compile Include="Elektriskladning_form.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.vb">
+    <Compile Include="Hovedsiden.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="Hovedsiden.Designer.vb">
+      <DependentUpon>Hovedsiden.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Gnidningskraft_form.Designer.vb">
@@ -114,16 +114,16 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Specifik_Varmekapicitet_Form.Designer.vb">
-      <DependentUpon>Specifik_Varmekapicitet_Form.vb</DependentUpon>
+    <Compile Include="Specifik_Varmekapicitet_Form_T.Designer.vb">
+      <DependentUpon>Specifik_Varmekapicitet_Form_T.vb</DependentUpon>
     </Compile>
-    <Compile Include="Specifik_Varmekapicitet_Form.vb">
+    <Compile Include="Specifik_Varmekapicitet_Form_T.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Tryk_Form.Designer.vb">
-      <DependentUpon>Tryk_Form.vb</DependentUpon>
+    <Compile Include="Tryk_Form_T.Designer.vb">
+      <DependentUpon>Tryk_Form_T.vb</DependentUpon>
     </Compile>
-    <Compile Include="Tryk_Form.vb">
+    <Compile Include="Tryk_Form_T.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Tyngdekraft_form.Designer.vb">
@@ -134,8 +134,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="Hovedsiden.resx">
+      <DependentUpon>Hovedsiden.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
