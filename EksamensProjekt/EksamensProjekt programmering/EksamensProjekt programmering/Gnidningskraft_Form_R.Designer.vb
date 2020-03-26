@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Gnidningskraft_form
+Partial Class Gnidningskraft_Form_R
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.

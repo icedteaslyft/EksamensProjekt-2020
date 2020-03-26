@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Tyngdekraft_form
+Partial Class Tyngdekraft_Form_R
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
