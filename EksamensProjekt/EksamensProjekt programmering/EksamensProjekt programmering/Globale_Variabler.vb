@@ -22,7 +22,7 @@
 
 
     ''Værdier for Varmekapacitet og Tilføjet varme(C = Q / DT)
-    Public Q_Tilførvarme As Double 'Den tilførte varme
+    Public Q_Tilførtvarme As Double 'Den tilførte varme
     Public DT_Temperaturstigning As Double 'Temperaturstigning
 
     ''Værdier for Specifik Varmekapacitet (c = C / m)
@@ -37,7 +37,7 @@
     ''Værdier for VæskeTryk (p = rho * h * g(9,82))
     Public h_Højde As Double
     Public p_VæskeTryk As Double
-
+    Public g_TyngdeAcceleration As Double
 
 #End Region
 
