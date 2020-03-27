@@ -54,6 +54,9 @@ Partial Class Densitet_Form_T
         Me.Tyngde_But = New System.Windows.Forms.Button()
         Me.Hovedside_But = New System.Windows.Forms.Button()
         Me.Label14 = New System.Windows.Forms.Label()
+        Me.Beregn_Densitet_Væsker_But = New System.Windows.Forms.Button()
+        Me.Beregn_Densitet_Gasser_But = New System.Windows.Forms.Button()
+        Me.Label17 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Densitet_Masse_TextBox
@@ -334,11 +337,42 @@ Partial Class Densitet_Form_T
         Me.Label14.TabIndex = 45
         Me.Label14.Text = "/"
         '
+        'Beregn_Densitet_Væsker_But
+        '
+        Me.Beregn_Densitet_Væsker_But.Location = New System.Drawing.Point(715, 143)
+        Me.Beregn_Densitet_Væsker_But.Name = "Beregn_Densitet_Væsker_But"
+        Me.Beregn_Densitet_Væsker_But.Size = New System.Drawing.Size(75, 29)
+        Me.Beregn_Densitet_Væsker_But.TabIndex = 46
+        Me.Beregn_Densitet_Væsker_But.Text = "Beregn"
+        Me.Beregn_Densitet_Væsker_But.UseVisualStyleBackColor = True
+        '
+        'Beregn_Densitet_Gasser_But
+        '
+        Me.Beregn_Densitet_Gasser_But.Location = New System.Drawing.Point(715, 363)
+        Me.Beregn_Densitet_Gasser_But.Name = "Beregn_Densitet_Gasser_But"
+        Me.Beregn_Densitet_Gasser_But.Size = New System.Drawing.Size(75, 29)
+        Me.Beregn_Densitet_Gasser_But.TabIndex = 47
+        Me.Beregn_Densitet_Gasser_But.Text = "Beregn"
+        Me.Beregn_Densitet_Gasser_But.UseVisualStyleBackColor = True
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label17.Location = New System.Drawing.Point(563, 432)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(426, 29)
+        Me.Label17.TabIndex = 48
+        Me.Label17.Text = "HUSK at bruge punktum for komma tal!"
+        '
         'Densitet_Form_T
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1153, 482)
+        Me.Controls.Add(Me.Label17)
+        Me.Controls.Add(Me.Beregn_Densitet_Gasser_But)
+        Me.Controls.Add(Me.Beregn_Densitet_Væsker_But)
         Me.Controls.Add(Me.Label14)
         Me.Controls.Add(Me.Hovedside_But)
         Me.Controls.Add(Me.Tryk_But)
@@ -411,4 +445,7 @@ Partial Class Densitet_Form_T
     Friend WithEvents Tyngde_But As Button
     Friend WithEvents Hovedside_But As Button
     Friend WithEvents Label14 As Label
+    Friend WithEvents Beregn_Densitet_Væsker_But As Button
+    Friend WithEvents Beregn_Densitet_Gasser_But As Button
+    Friend WithEvents Label17 As Label
 End Class
