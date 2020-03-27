@@ -37,6 +37,12 @@
         Tyngdekraft_Form_R.Show()
     End Sub
 #End Region
+    ''Densitet - Væsker
+    Private Sub Densitet_Masse_TextBox_TextChanged(sender As Object, e As EventArgs) Handles Densitet_Masse_TextBox.TextChanged
 
+    End Sub
 
+    Private Sub Densitet_Rumfang_TextBox_TextChanged(sender As Object, e As EventArgs) Handles Densitet_Rumfang_TextBox.TextChanged
+
+    End Sub
 End Class
