@@ -161,8 +161,14 @@
     <EmbeddedResource Include="Gnidningskraft_Form_R.resx">
       <DependentUpon>Gnidningskraft_Form_R.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Gravitation_Form_D.resx">
+      <DependentUpon>Gravitation_Form_D.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Hovedsiden.resx">
       <DependentUpon>Hovedsiden.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Idealgasser _Form_D.resx">
+      <DependentUpon>Idealgasser _Form_D.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interferens_Form_D.resx">
       <DependentUpon>Interferens_Form_D.vb</DependentUpon>
