@@ -29,9 +29,10 @@ Partial Class Hoved_Form
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(398, 179)
+        Me.Label1.Location = New System.Drawing.Point(597, 275)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(321, 13)
+        Me.Label1.Size = New System.Drawing.Size(483, 20)
         Me.Label1.TabIndex = 5
         Me.Label1.Text = "-->Varmekapacitet(C), Specifik Varmekapacitet(c), Tilført Varme(Q)."
         '
@@ -39,19 +40,21 @@ Partial Class Hoved_Form
         '
         Me.Label17.AutoSize = True
         Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.Location = New System.Drawing.Point(481, 52)
+        Me.Label17.Location = New System.Drawing.Point(722, 80)
+        Me.Label17.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(287, 20)
+        Me.Label17.Size = New System.Drawing.Size(426, 29)
         Me.Label17.TabIndex = 49
         Me.Label17.Text = "HUSK at bruge punktum for komma tal!"
         '
         'Hoved_Form
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(787, 303)
+        Me.ClientSize = New System.Drawing.Size(1183, 466)
         Me.Controls.Add(Me.Label17)
         Me.Controls.Add(Me.Label1)
+        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "Hoved_Form"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Hovedsiden"
