@@ -41,12 +41,6 @@ Partial Class Tryk_Form_T
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Tryk_Tyngde_Accelerationen_TextBox = New System.Windows.Forms.TextBox()
-        Me.Hovedside_But = New System.Windows.Forms.Button()
-        Me.Tryk_But = New System.Windows.Forms.Button()
-        Me.Varme_But = New System.Windows.Forms.Button()
-        Me.Densitet_But = New System.Windows.Forms.Button()
-        Me.Gnidning_But = New System.Windows.Forms.Button()
-        Me.Tyngde_But = New System.Windows.Forms.Button()
         Me.Tryk_Beregn_But = New System.Windows.Forms.Button()
         Me.Tryk_Væske_Beregn_But = New System.Windows.Forms.Button()
         Me.SuspendLayout()
@@ -214,60 +208,6 @@ Partial Class Tryk_Form_T
         Me.Tryk_Tyngde_Accelerationen_TextBox.Size = New System.Drawing.Size(171, 26)
         Me.Tryk_Tyngde_Accelerationen_TextBox.TabIndex = 21
         '
-        'Hovedside_But
-        '
-        Me.Hovedside_But.Location = New System.Drawing.Point(12, 12)
-        Me.Hovedside_But.Name = "Hovedside_But"
-        Me.Hovedside_But.Size = New System.Drawing.Size(380, 34)
-        Me.Hovedside_But.TabIndex = 42
-        Me.Hovedside_But.Text = "Hovedsiden"
-        Me.Hovedside_But.UseVisualStyleBackColor = True
-        '
-        'Tryk_But
-        '
-        Me.Tryk_But.Location = New System.Drawing.Point(12, 212)
-        Me.Tryk_But.Name = "Tryk_But"
-        Me.Tryk_But.Size = New System.Drawing.Size(380, 34)
-        Me.Tryk_But.TabIndex = 41
-        Me.Tryk_But.Text = "Udregn Tryk"
-        Me.Tryk_But.UseVisualStyleBackColor = True
-        '
-        'Varme_But
-        '
-        Me.Varme_But.Location = New System.Drawing.Point(12, 172)
-        Me.Varme_But.Name = "Varme_But"
-        Me.Varme_But.Size = New System.Drawing.Size(380, 34)
-        Me.Varme_But.TabIndex = 40
-        Me.Varme_But.Text = "Udregn Varme"
-        Me.Varme_But.UseVisualStyleBackColor = True
-        '
-        'Densitet_But
-        '
-        Me.Densitet_But.Location = New System.Drawing.Point(12, 132)
-        Me.Densitet_But.Name = "Densitet_But"
-        Me.Densitet_But.Size = New System.Drawing.Size(380, 34)
-        Me.Densitet_But.TabIndex = 39
-        Me.Densitet_But.Text = "Udregn Densitet"
-        Me.Densitet_But.UseVisualStyleBackColor = True
-        '
-        'Gnidning_But
-        '
-        Me.Gnidning_But.Location = New System.Drawing.Point(12, 92)
-        Me.Gnidning_But.Name = "Gnidning_But"
-        Me.Gnidning_But.Size = New System.Drawing.Size(380, 34)
-        Me.Gnidning_But.TabIndex = 38
-        Me.Gnidning_But.Text = "Udregn Gnidningskraften"
-        Me.Gnidning_But.UseVisualStyleBackColor = True
-        '
-        'Tyngde_But
-        '
-        Me.Tyngde_But.Location = New System.Drawing.Point(12, 52)
-        Me.Tyngde_But.Name = "Tyngde_But"
-        Me.Tyngde_But.Size = New System.Drawing.Size(380, 34)
-        Me.Tyngde_But.TabIndex = 37
-        Me.Tyngde_But.Text = "Udregn Tyngdekraften"
-        Me.Tyngde_But.UseVisualStyleBackColor = True
-        '
         'Tryk_Beregn_But
         '
         Me.Tryk_Beregn_But.Location = New System.Drawing.Point(571, 183)
@@ -293,12 +233,6 @@ Partial Class Tryk_Form_T
         Me.ClientSize = New System.Drawing.Size(1153, 482)
         Me.Controls.Add(Me.Tryk_Væske_Beregn_But)
         Me.Controls.Add(Me.Tryk_Beregn_But)
-        Me.Controls.Add(Me.Hovedside_But)
-        Me.Controls.Add(Me.Tryk_But)
-        Me.Controls.Add(Me.Varme_But)
-        Me.Controls.Add(Me.Densitet_But)
-        Me.Controls.Add(Me.Gnidning_But)
-        Me.Controls.Add(Me.Tyngde_But)
         Me.Controls.Add(Me.Tryk_Tyngde_Accelerationen_TextBox)
         Me.Controls.Add(Me.Label15)
         Me.Controls.Add(Me.Label13)
@@ -345,12 +279,6 @@ Partial Class Tryk_Form_T
     Friend WithEvents Label13 As Label
     Friend WithEvents Label15 As Label
     Friend WithEvents Tryk_Tyngde_Accelerationen_TextBox As TextBox
-    Friend WithEvents Hovedside_But As Button
-    Friend WithEvents Tryk_But As Button
-    Friend WithEvents Varme_But As Button
-    Friend WithEvents Densitet_But As Button
-    Friend WithEvents Gnidning_But As Button
-    Friend WithEvents Tyngde_But As Button
     Friend WithEvents Tryk_Beregn_But As Button
     Friend WithEvents Tryk_Væske_Beregn_But As Button
 End Class

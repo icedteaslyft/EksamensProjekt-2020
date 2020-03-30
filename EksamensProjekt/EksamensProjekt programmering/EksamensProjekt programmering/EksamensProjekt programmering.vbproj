@@ -167,6 +167,9 @@
     <EmbeddedResource Include="Tryk_Form_T.resx">
       <DependentUpon>Tryk_Form_T.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Tyngdekraft_Form_R.resx">
+      <DependentUpon>Tyngdekraft_Form_R.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Varme_Form_T.resx">
       <DependentUpon>Varme_Form_T.vb</DependentUpon>
     </EmbeddedResource>

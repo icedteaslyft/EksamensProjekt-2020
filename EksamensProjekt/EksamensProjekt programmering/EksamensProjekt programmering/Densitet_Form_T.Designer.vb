@@ -47,12 +47,6 @@ Partial Class Densitet_Form_T
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
-        Me.Tryk_But = New System.Windows.Forms.Button()
-        Me.Varme_But = New System.Windows.Forms.Button()
-        Me.Densitet_But = New System.Windows.Forms.Button()
-        Me.Gnidning_But = New System.Windows.Forms.Button()
-        Me.Tyngde_But = New System.Windows.Forms.Button()
-        Me.Hovedside_But = New System.Windows.Forms.Button()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Beregn_Densitet_Væsker_But = New System.Windows.Forms.Button()
         Me.Beregn_Densitet_Gasser_But = New System.Windows.Forms.Button()
@@ -273,60 +267,6 @@ Partial Class Densitet_Form_T
         Me.Label13.TabIndex = 38
         Me.Label13.Text = "Temperatur(K)"
         '
-        'Tryk_But
-        '
-        Me.Tryk_But.Location = New System.Drawing.Point(12, 212)
-        Me.Tryk_But.Name = "Tryk_But"
-        Me.Tryk_But.Size = New System.Drawing.Size(380, 34)
-        Me.Tryk_But.TabIndex = 43
-        Me.Tryk_But.Text = "Udregn Tryk"
-        Me.Tryk_But.UseVisualStyleBackColor = True
-        '
-        'Varme_But
-        '
-        Me.Varme_But.Location = New System.Drawing.Point(12, 172)
-        Me.Varme_But.Name = "Varme_But"
-        Me.Varme_But.Size = New System.Drawing.Size(380, 34)
-        Me.Varme_But.TabIndex = 42
-        Me.Varme_But.Text = "Udregn Varme"
-        Me.Varme_But.UseVisualStyleBackColor = True
-        '
-        'Densitet_But
-        '
-        Me.Densitet_But.Location = New System.Drawing.Point(12, 132)
-        Me.Densitet_But.Name = "Densitet_But"
-        Me.Densitet_But.Size = New System.Drawing.Size(380, 34)
-        Me.Densitet_But.TabIndex = 41
-        Me.Densitet_But.Text = "Udregn Densitet"
-        Me.Densitet_But.UseVisualStyleBackColor = True
-        '
-        'Gnidning_But
-        '
-        Me.Gnidning_But.Location = New System.Drawing.Point(12, 92)
-        Me.Gnidning_But.Name = "Gnidning_But"
-        Me.Gnidning_But.Size = New System.Drawing.Size(380, 34)
-        Me.Gnidning_But.TabIndex = 40
-        Me.Gnidning_But.Text = "Udregn Gnidningskraften"
-        Me.Gnidning_But.UseVisualStyleBackColor = True
-        '
-        'Tyngde_But
-        '
-        Me.Tyngde_But.Location = New System.Drawing.Point(12, 52)
-        Me.Tyngde_But.Name = "Tyngde_But"
-        Me.Tyngde_But.Size = New System.Drawing.Size(380, 34)
-        Me.Tyngde_But.TabIndex = 39
-        Me.Tyngde_But.Text = "Udregn Tyngdekraften"
-        Me.Tyngde_But.UseVisualStyleBackColor = True
-        '
-        'Hovedside_But
-        '
-        Me.Hovedside_But.Location = New System.Drawing.Point(12, 12)
-        Me.Hovedside_But.Name = "Hovedside_But"
-        Me.Hovedside_But.Size = New System.Drawing.Size(380, 34)
-        Me.Hovedside_But.TabIndex = 44
-        Me.Hovedside_But.Text = "Hovedsiden"
-        Me.Hovedside_But.UseVisualStyleBackColor = True
-        '
         'Label14
         '
         Me.Label14.AutoSize = True
@@ -362,12 +302,6 @@ Partial Class Densitet_Form_T
         Me.Controls.Add(Me.Beregn_Densitet_Gasser_But)
         Me.Controls.Add(Me.Beregn_Densitet_Væsker_But)
         Me.Controls.Add(Me.Label14)
-        Me.Controls.Add(Me.Hovedside_But)
-        Me.Controls.Add(Me.Tryk_But)
-        Me.Controls.Add(Me.Varme_But)
-        Me.Controls.Add(Me.Densitet_But)
-        Me.Controls.Add(Me.Gnidning_But)
-        Me.Controls.Add(Me.Tyngde_But)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.Label11)
@@ -426,12 +360,6 @@ Partial Class Densitet_Form_T
     Friend WithEvents Label11 As Label
     Friend WithEvents Label12 As Label
     Friend WithEvents Label13 As Label
-    Friend WithEvents Tryk_But As Button
-    Friend WithEvents Varme_But As Button
-    Friend WithEvents Densitet_But As Button
-    Friend WithEvents Gnidning_But As Button
-    Friend WithEvents Tyngde_But As Button
-    Friend WithEvents Hovedside_But As Button
     Friend WithEvents Label14 As Label
     Friend WithEvents Beregn_Densitet_Væsker_But As Button
     Friend WithEvents Beregn_Densitet_Gasser_But As Button
