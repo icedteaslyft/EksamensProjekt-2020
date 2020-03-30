@@ -158,6 +158,9 @@
     <EmbeddedResource Include="Hovedsiden.resx">
       <DependentUpon>Hovedsiden.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Interferens_Form_D.resx">
+      <DependentUpon>Interferens_Form_D.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
