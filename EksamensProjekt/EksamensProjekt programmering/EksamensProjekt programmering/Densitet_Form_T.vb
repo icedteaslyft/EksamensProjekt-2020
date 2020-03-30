@@ -54,6 +54,9 @@
     Private Sub Beregn_Densitet_Væsker_But_Click(sender As Object, e As EventArgs) Handles Beregn_Densitet_Væsker_But.Click
         BeregnDensitetVæsker()
         Densitet_Total_lbl.Text = p_Rho.ToString()
+        'm_Masse = Nothing
+        'V_Rumfang = Nothing
+        'p_Rho = Nothing
     End Sub
 
 

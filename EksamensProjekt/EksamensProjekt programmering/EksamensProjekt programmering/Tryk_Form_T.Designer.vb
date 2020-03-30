@@ -272,7 +272,7 @@ Partial Class Tryk_Form_T
         '
         Me.Tryk_Beregn_But.Location = New System.Drawing.Point(571, 183)
         Me.Tryk_Beregn_But.Name = "Tryk_Beregn_But"
-        Me.Tryk_Beregn_But.Size = New System.Drawing.Size(75, 37)
+        Me.Tryk_Beregn_But.Size = New System.Drawing.Size(75, 46)
         Me.Tryk_Beregn_But.TabIndex = 43
         Me.Tryk_Beregn_But.Text = "Beregn"
         Me.Tryk_Beregn_But.UseVisualStyleBackColor = True
@@ -281,7 +281,7 @@ Partial Class Tryk_Form_T
         '
         Me.Tryk_Væske_Beregn_But.Location = New System.Drawing.Point(666, 404)
         Me.Tryk_Væske_Beregn_But.Name = "Tryk_Væske_Beregn_But"
-        Me.Tryk_Væske_Beregn_But.Size = New System.Drawing.Size(75, 37)
+        Me.Tryk_Væske_Beregn_But.Size = New System.Drawing.Size(75, 46)
         Me.Tryk_Væske_Beregn_But.TabIndex = 44
         Me.Tryk_Væske_Beregn_But.Text = "Beregn"
         Me.Tryk_Væske_Beregn_But.UseVisualStyleBackColor = True

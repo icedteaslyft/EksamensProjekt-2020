@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Densitet_Form_T
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Densitet_Form_T
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Densitet_Masse_TextBox = New System.Windows.Forms.TextBox()
         Me.Masse_lbl = New System.Windows.Forms.Label()
@@ -56,7 +56,6 @@ Partial Class Densitet_Form_T
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Beregn_Densitet_Væsker_But = New System.Windows.Forms.Button()
         Me.Beregn_Densitet_Gasser_But = New System.Windows.Forms.Button()
-        Me.Label17 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Densitet_Masse_TextBox
@@ -123,7 +122,7 @@ Partial Class Densitet_Form_T
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(633, 181)
+        Me.Label2.Location = New System.Drawing.Point(633, 235)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(244, 36)
         Me.Label2.TabIndex = 13
@@ -131,7 +130,7 @@ Partial Class Densitet_Form_T
         '
         'Densitet_Molmasse_TextBox
         '
-        Me.Densitet_Molmasse_TextBox.Location = New System.Drawing.Point(443, 295)
+        Me.Densitet_Molmasse_TextBox.Location = New System.Drawing.Point(443, 335)
         Me.Densitet_Molmasse_TextBox.Name = "Densitet_Molmasse_TextBox"
         Me.Densitet_Molmasse_TextBox.Size = New System.Drawing.Size(100, 26)
         Me.Densitet_Molmasse_TextBox.TabIndex = 14
@@ -139,7 +138,7 @@ Partial Class Densitet_Form_T
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(752, 298)
+        Me.Label5.Location = New System.Drawing.Point(752, 338)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(14, 20)
         Me.Label5.TabIndex = 16
@@ -148,7 +147,7 @@ Partial Class Densitet_Form_T
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(1010, 298)
+        Me.Label6.Location = New System.Drawing.Point(1010, 338)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(14, 20)
         Me.Label6.TabIndex = 17
@@ -157,7 +156,7 @@ Partial Class Densitet_Form_T
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(549, 298)
+        Me.Label10.Location = New System.Drawing.Point(549, 338)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(13, 20)
         Me.Label10.TabIndex = 21
@@ -166,7 +165,7 @@ Partial Class Densitet_Form_T
         'Label15
         '
         Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(711, 298)
+        Me.Label15.Location = New System.Drawing.Point(711, 338)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(14, 20)
         Me.Label15.TabIndex = 27
@@ -175,7 +174,7 @@ Partial Class Densitet_Form_T
         'Label16
         '
         Me.Label16.AutoSize = True
-        Me.Label16.Location = New System.Drawing.Point(423, 298)
+        Me.Label16.Location = New System.Drawing.Point(423, 338)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(14, 20)
         Me.Label16.TabIndex = 26
@@ -183,21 +182,21 @@ Partial Class Densitet_Form_T
         '
         'Densitet_Gaskonstanten_TextBox
         '
-        Me.Densitet_Gaskonstanten_TextBox.Location = New System.Drawing.Point(568, 295)
+        Me.Densitet_Gaskonstanten_TextBox.Location = New System.Drawing.Point(568, 335)
         Me.Densitet_Gaskonstanten_TextBox.Name = "Densitet_Gaskonstanten_TextBox"
         Me.Densitet_Gaskonstanten_TextBox.Size = New System.Drawing.Size(137, 26)
         Me.Densitet_Gaskonstanten_TextBox.TabIndex = 28
         '
         'Densitet_Temperatur_K_TextBox
         '
-        Me.Densitet_Temperatur_K_TextBox.Location = New System.Drawing.Point(897, 295)
+        Me.Densitet_Temperatur_K_TextBox.Location = New System.Drawing.Point(897, 335)
         Me.Densitet_Temperatur_K_TextBox.Name = "Densitet_Temperatur_K_TextBox"
         Me.Densitet_Temperatur_K_TextBox.Size = New System.Drawing.Size(107, 26)
         Me.Densitet_Temperatur_K_TextBox.TabIndex = 30
         '
         'Densitet_Tryk_TextBox
         '
-        Me.Densitet_Tryk_TextBox.Location = New System.Drawing.Point(772, 295)
+        Me.Densitet_Tryk_TextBox.Location = New System.Drawing.Point(772, 335)
         Me.Densitet_Tryk_TextBox.Name = "Densitet_Tryk_TextBox"
         Me.Densitet_Tryk_TextBox.Size = New System.Drawing.Size(100, 26)
         Me.Densitet_Tryk_TextBox.TabIndex = 29
@@ -205,7 +204,7 @@ Partial Class Densitet_Form_T
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(731, 298)
+        Me.Label4.Location = New System.Drawing.Point(731, 338)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(15, 20)
         Me.Label4.TabIndex = 31
@@ -214,7 +213,7 @@ Partial Class Densitet_Form_T
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(878, 298)
+        Me.Label7.Location = New System.Drawing.Point(878, 338)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(13, 20)
         Me.Label7.TabIndex = 32
@@ -223,7 +222,7 @@ Partial Class Densitet_Form_T
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(1030, 298)
+        Me.Label8.Location = New System.Drawing.Point(1030, 338)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(18, 20)
         Me.Label8.TabIndex = 33
@@ -232,7 +231,7 @@ Partial Class Densitet_Form_T
         'Densitet_Gas_Total_lbl
         '
         Me.Densitet_Gas_Total_lbl.AutoSize = True
-        Me.Densitet_Gas_Total_lbl.Location = New System.Drawing.Point(1054, 298)
+        Me.Densitet_Gas_Total_lbl.Location = New System.Drawing.Point(1054, 338)
         Me.Densitet_Gas_Total_lbl.Name = "Densitet_Gas_Total_lbl"
         Me.Densitet_Gas_Total_lbl.Size = New System.Drawing.Size(44, 20)
         Me.Densitet_Gas_Total_lbl.TabIndex = 34
@@ -241,7 +240,7 @@ Partial Class Densitet_Form_T
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(444, 253)
+        Me.Label9.Location = New System.Drawing.Point(444, 293)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(104, 20)
         Me.Label9.TabIndex = 35
@@ -250,7 +249,7 @@ Partial Class Densitet_Form_T
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(569, 253)
+        Me.Label11.Location = New System.Drawing.Point(569, 293)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(141, 20)
         Me.Label11.TabIndex = 36
@@ -259,7 +258,7 @@ Partial Class Densitet_Form_T
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(800, 253)
+        Me.Label12.Location = New System.Drawing.Point(800, 293)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(57, 20)
         Me.Label12.TabIndex = 37
@@ -268,7 +267,7 @@ Partial Class Densitet_Form_T
         'Label13
         '
         Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(898, 253)
+        Me.Label13.Location = New System.Drawing.Point(898, 293)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(111, 20)
         Me.Label13.TabIndex = 38
@@ -339,38 +338,27 @@ Partial Class Densitet_Form_T
         '
         'Beregn_Densitet_Væsker_But
         '
-        Me.Beregn_Densitet_Væsker_But.Location = New System.Drawing.Point(715, 143)
+        Me.Beregn_Densitet_Væsker_But.Location = New System.Drawing.Point(715, 154)
         Me.Beregn_Densitet_Væsker_But.Name = "Beregn_Densitet_Væsker_But"
-        Me.Beregn_Densitet_Væsker_But.Size = New System.Drawing.Size(75, 29)
+        Me.Beregn_Densitet_Væsker_But.Size = New System.Drawing.Size(75, 41)
         Me.Beregn_Densitet_Væsker_But.TabIndex = 46
         Me.Beregn_Densitet_Væsker_But.Text = "Beregn"
         Me.Beregn_Densitet_Væsker_But.UseVisualStyleBackColor = True
         '
         'Beregn_Densitet_Gasser_But
         '
-        Me.Beregn_Densitet_Gasser_But.Location = New System.Drawing.Point(715, 363)
+        Me.Beregn_Densitet_Gasser_But.Location = New System.Drawing.Point(715, 403)
         Me.Beregn_Densitet_Gasser_But.Name = "Beregn_Densitet_Gasser_But"
-        Me.Beregn_Densitet_Gasser_But.Size = New System.Drawing.Size(75, 29)
+        Me.Beregn_Densitet_Gasser_But.Size = New System.Drawing.Size(75, 41)
         Me.Beregn_Densitet_Gasser_But.TabIndex = 47
         Me.Beregn_Densitet_Gasser_But.Text = "Beregn"
         Me.Beregn_Densitet_Gasser_But.UseVisualStyleBackColor = True
-        '
-        'Label17
-        '
-        Me.Label17.AutoSize = True
-        Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.Location = New System.Drawing.Point(563, 432)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(426, 29)
-        Me.Label17.TabIndex = 48
-        Me.Label17.Text = "HUSK at bruge punktum for komma tal!"
         '
         'Densitet_Form_T
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1153, 482)
-        Me.Controls.Add(Me.Label17)
         Me.Controls.Add(Me.Beregn_Densitet_Gasser_But)
         Me.Controls.Add(Me.Beregn_Densitet_Væsker_But)
         Me.Controls.Add(Me.Label14)
@@ -447,5 +435,4 @@ Partial Class Densitet_Form_T
     Friend WithEvents Label14 As Label
     Friend WithEvents Beregn_Densitet_Væsker_But As Button
     Friend WithEvents Beregn_Densitet_Gasser_But As Button
-    Friend WithEvents Label17 As Label
 End Class

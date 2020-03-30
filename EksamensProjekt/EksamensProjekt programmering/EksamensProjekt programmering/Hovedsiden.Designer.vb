@@ -29,6 +29,7 @@ Partial Class Hoved_Form
         Me.Tryk_But = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Hovedside_But = New System.Windows.Forms.Button()
+        Me.Label17 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Tyngde_But
@@ -94,11 +95,22 @@ Partial Class Hoved_Form
         Me.Hovedside_But.Text = "Hovedsiden"
         Me.Hovedside_But.UseVisualStyleBackColor = True
         '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label17.Location = New System.Drawing.Point(481, 52)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(426, 29)
+        Me.Label17.TabIndex = 49
+        Me.Label17.Text = "HUSK at bruge punktum for komma tal!"
+        '
         'Hoved_Form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1153, 482)
+        Me.Controls.Add(Me.Label17)
         Me.Controls.Add(Me.Hovedside_But)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Tryk_But)
@@ -121,4 +133,5 @@ Partial Class Hoved_Form
     Friend WithEvents Tryk_But As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents Hovedside_But As Button
+    Friend WithEvents Label17 As Label
 End Class
