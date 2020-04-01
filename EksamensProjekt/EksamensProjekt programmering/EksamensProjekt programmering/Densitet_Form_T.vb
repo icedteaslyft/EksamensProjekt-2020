@@ -1,11 +1,20 @@
-﻿Public Class Densitet_Form_T
+﻿Imports System.ComponentModel
 
+Public Class Densitet_Form_T
+
+    Dim KanRegne As Boolean
+
+
+
+    Private Sub Densitet_Form_T_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        KanRegne = True
+    End Sub
 
 
 #Region "Knapper"
 
     Private Sub Hovedside_But_Click_1(sender As Object, e As EventArgs) Handles Hovedside_But.Click
-        Me.Hide()
+        Me.Close()
         Hoved_Form.Show()
     End Sub
 
@@ -99,17 +108,52 @@
     End Sub
 
     Public Sub BeregnDensitetGasser()
-        p_Rho = (m_MolMasse / R_Gaskonstant) * (p_Tryk / T_Kelvin)
+
+        If KanRegne = True Then
+            p_Rho = (m_MolMasse / R_Gaskonstant) * (p_Tryk / T_Kelvin)
+        End If
+
+
     End Sub
 
     Private Sub Beregn_Densitet_Gasser_But_Click(sender As Object, e As EventArgs) Handles Beregn_Densitet_Gasser_But.Click
+        CheckVariabler()
         BeregnDensitetGasser()
-        Densitet_Gas_Total_lbl.Text = p_Rho * 1000.ToString() & "Kg/m3"
+        Densitet_Gas_Total_lbl.Text = p_Rho.ToString() & "Kg/m3"
+
+
     End Sub
+
+
 
 
 
 #End Region
 
+    Private Sub Densitet_Form_T_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+        p_Rho = Nothing
+        m_MolMasse = Nothing
+        R_Gaskonstant = Nothing
+        p_Tryk = Nothing
+        T_Kelvin = Nothing
+    End Sub
+
+    Private Sub CheckVariabler()
+
+        If m_MolMasse = Nothing Or R_Gaskonstant = Nothing Or p_Tryk = Nothing Or T_Kelvin = Nothing Then
+            MsgBox("Ikke alle værdier er angivet!")
+            KanRegne = False
+
+        End If
+
+
+
+    End Sub
+
+
+    Public Sub RestartForm()
+        Me.Close()
+        Me.Show()
+    End Sub
 
 End Class
