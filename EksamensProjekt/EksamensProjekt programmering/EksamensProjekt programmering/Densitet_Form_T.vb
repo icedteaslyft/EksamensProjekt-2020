@@ -79,7 +79,7 @@ Public Class Densitet_Form_T
 
     Private Sub Beregn_Densitet_Væsker_But_Click(sender As Object, e As EventArgs) Handles Beregn_Densitet_Væsker_But.Click
         BeregnDensitetVæsker()
-        Densitet_Total_lbl.Text = p_Rho.ToString()
+        Densitet_Total_lbl.Text = p_Rho.ToString("F4")
         'm_Masse = Nothing
         'V_Rumfang = Nothing
         'p_Rho = Nothing
@@ -119,12 +119,19 @@ Public Class Densitet_Form_T
     Private Sub Beregn_Densitet_Gasser_But_Click(sender As Object, e As EventArgs) Handles Beregn_Densitet_Gasser_But.Click
         CheckVariabler()
         BeregnDensitetGasser()
-        Densitet_Gas_Total_lbl.Text = p_Rho.ToString() & "Kg/m3"
+        Densitet_Gas_Total_lbl.Text = p_Rho.ToString("F4") & " Kg/m3"
 
+        KanRegne = True
 
     End Sub
 
+    Private Sub CheckVariabler()
 
+        If m_MolMasse = Nothing Or R_Gaskonstant = Nothing Or p_Tryk = Nothing Or T_Kelvin = Nothing Then
+            MsgBox("Ikke alle værdier er angivet!")
+            KanRegne = False
+        End If
+    End Sub
 
 
 
@@ -138,17 +145,7 @@ Public Class Densitet_Form_T
         T_Kelvin = Nothing
     End Sub
 
-    Private Sub CheckVariabler()
 
-        If m_MolMasse = Nothing Or R_Gaskonstant = Nothing Or p_Tryk = Nothing Or T_Kelvin = Nothing Then
-            MsgBox("Ikke alle værdier er angivet!")
-            KanRegne = False
-
-        End If
-
-
-
-    End Sub
 
 
     Public Sub RestartForm()
