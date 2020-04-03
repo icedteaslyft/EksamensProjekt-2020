@@ -83,5 +83,7 @@
         g_TyngdeAcceleration = Val(Tyngdekraft_Tyngdeacceleration_TextBox.Text.ToString())
     End Sub
 
+    Private Sub Tyngdekraft_Total_lbl_Click(sender As Object, e As EventArgs) Handles Tyngdekraft_Total_lbl.Click
 
+    End Sub
 End Class

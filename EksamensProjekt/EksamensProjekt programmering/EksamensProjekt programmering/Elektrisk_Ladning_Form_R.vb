@@ -52,8 +52,34 @@
         Interferens_Form_D.Show()
     End Sub
 
-
 #End Region
+
+
+    Private Sub Beregn_Elektrisk_Ladning_But_Click(sender As Object, e As EventArgs) Handles Beregn_Elektrisk_Ladning_But.Click
+        'Kalder sub routinen "BeregnElektriskLadning" 
+        BeregnElektriskLadning()
+        'Sætter total labellet til at være lig med den globale variabel F_Kraft som 
+        'bliver konverteret til en string og sat til kun at have 4 decimaler. Og derefter sætter N bagved som står for newton.
+        Elektrisk_Ladning_Total_lbl.Text = F_Kraft.ToString("F4") & " C"
+    End Sub
+
+    Public Sub BeregnElektriskLadning()
+        'Sætter den globale variabel F_Kraft til at være lig med m_Masse ganget med g_TyngdeAcceleration som begge er globale variabler.
+        Q_ElektriskLadning = t_DeltaTid * I_Ampere
+    End Sub
+
+    Private Sub Elektrisk_Ladning_Tid_TextBox_TextChanged(sender As Object, e As EventArgs) Handles Elektrisk_Ladning_Tid_TextBox.TextChanged
+        'Sætter den globale variabel g_TyngdeAcceleration til at være lig med de tal som er tekstboksen til tyngdeaccelerationen, som er brugerens input. 
+        'Og den bliver opdateret hver gang værdien bliver ændret.
+        g_TyngdeAcceleration = Val(Elektrisk_Ladning_Tid_TextBox.Text.ToString())
+    End Sub
+
+    Private Sub Elektrisk_Ladning_Strømstyrke_TextBox_TextChanged(sender As Object, e As EventArgs) Handles Elektrisk_Ladning_Strømstyrke_TextBox.TextChanged
+        'Sætter den globale variabel m_Masse til at være lig med de tal som er tekstboksen til massen som er brugerens input. 
+        'Og den bliver opdateret hver gang værdien bliver ændret.
+        m_Masse = Val(Elektrisk_Ladning_Strømstyrke_TextBox.Text.ToString())
+    End Sub
+
 
 
 
