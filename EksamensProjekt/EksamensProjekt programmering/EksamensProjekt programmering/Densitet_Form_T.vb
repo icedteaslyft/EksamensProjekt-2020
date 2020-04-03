@@ -151,6 +151,16 @@ Public Class Densitet_Form_T
         T_Kelvin = Nothing
         m_Masse = Nothing
         V_Rumfang = Nothing
+        Q_Tilførtvarme = Nothing
+        DT_Temperaturstigning = Nothing
+        c_Specifik_Varmekapacitet = Nothing
+        c_Varmekapacitet = Nothing
+        F_Kraft = Nothing
+        A_Areal = Nothing
+        h_Højde = Nothing
+        p_VæskeTryk = Nothing
+        g_TyngdeAcceleration = Nothing
+
     End Sub
 
 #End Region
