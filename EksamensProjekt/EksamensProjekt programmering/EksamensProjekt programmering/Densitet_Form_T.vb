@@ -82,7 +82,7 @@ Public Class Densitet_Form_T
     End Sub
 
     Private Sub Beregn_Densitet_Væsker_But_Click(sender As Object, e As EventArgs) Handles Beregn_Densitet_Væsker_But.Click
-        CheckVariabler()
+        CheckVariablerVæsker()
         BeregnDensitetVæsker()
         Densitet_Total_lbl.Text = p_Rho.ToString("F4")
 
@@ -91,6 +91,7 @@ Public Class Densitet_Form_T
         End If
 
     End Sub
+
 
 
 #End Region
@@ -120,7 +121,7 @@ Public Class Densitet_Form_T
     End Sub
 
     Private Sub Beregn_Densitet_Gasser_But_Click(sender As Object, e As EventArgs) Handles Beregn_Densitet_Gasser_But.Click
-        CheckVariabler()
+        CheckVariablerGasser()
         BeregnDensitetGasser()
         Densitet_Gas_Total_lbl.Text = p_Rho.ToString("F4") & " Kg/m3"
 
@@ -131,19 +132,29 @@ Public Class Densitet_Form_T
 
     End Sub
 
-    Private Sub CheckVariabler()
+
+
+#End Region
+
+    Private Sub CheckVariablerVæsker()
+        If m_Masse = Nothing Or V_Rumfang = Nothing Then
+            MsgBox("Ikke alle værdier er angivet!")
+            KanRegne = False
+            p_Rho = Nothing
+        End If
+
+    End Sub
+
+    Private Sub CheckVariablerGasser()
 
         If m_MolMasse = Nothing Or p_Tryk = Nothing Or T_Kelvin = Nothing Then
             MsgBox("Ikke alle værdier er angivet!")
             KanRegne = False
             p_Rho = Nothing
-        ElseIf m_Masse = Nothing Or V_Rumfang = Nothing Then
-            MsgBox("Ikke alle værdier er angivet!")
-            KanRegne = False
-            p_Rho = Nothing
+
         End If
     End Sub
-
+    'Sætter alle variabler til "Nothing" når man lukker formen
     Private Sub Densitet_Form_T_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
         p_Rho = Nothing
         m_MolMasse = Nothing
@@ -162,9 +173,5 @@ Public Class Densitet_Form_T
         g_TyngdeAcceleration = Nothing
 
     End Sub
-
-#End Region
-
-
 
 End Class
