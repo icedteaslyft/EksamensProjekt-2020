@@ -74,15 +74,22 @@ Public Class Densitet_Form_T
     End Sub
 
     Public Sub BeregnDensitetVæsker()
-        p_Rho = m_Masse / V_Rumfang
+
+        If KanRegne = True Then
+            p_Rho = m_Masse / V_Rumfang
+        End If
+
     End Sub
 
     Private Sub Beregn_Densitet_Væsker_But_Click(sender As Object, e As EventArgs) Handles Beregn_Densitet_Væsker_But.Click
+        CheckVariabler()
         BeregnDensitetVæsker()
         Densitet_Total_lbl.Text = p_Rho.ToString("F4")
-        'm_Masse = Nothing
-        'V_Rumfang = Nothing
-        'p_Rho = Nothing
+
+        If KanRegne = False Then
+            KanRegne = True
+        End If
+
     End Sub
 
 
@@ -92,10 +99,6 @@ Public Class Densitet_Form_T
 #Region "Densitet Gasser"
     Private Sub Densitet_Molmasse_TextBox_TextChanged(sender As Object, e As EventArgs) Handles Densitet_Molmasse_TextBox.TextChanged
         m_MolMasse = Val(Densitet_Molmasse_TextBox.Text)
-    End Sub
-
-    Private Sub Densitet_Gaskonstanten_TextBox_TextChanged(sender As Object, e As EventArgs) Handles Densitet_Gaskonstanten_TextBox.TextChanged
-        R_Gaskonstant = Val(Densitet_Gaskonstanten_TextBox.Text)
     End Sub
 
     Private Sub Densitet_Tryk_TextBox_TextChanged(sender As Object, e As EventArgs) Handles Densitet_Tryk_TextBox.TextChanged
@@ -121,36 +124,37 @@ Public Class Densitet_Form_T
         BeregnDensitetGasser()
         Densitet_Gas_Total_lbl.Text = p_Rho.ToString("F4") & " Kg/m3"
 
-        KanRegne = True
+        If KanRegne = False Then
+            KanRegne = True
+        End If
+
 
     End Sub
 
     Private Sub CheckVariabler()
 
-        If m_MolMasse = Nothing Or R_Gaskonstant = Nothing Or p_Tryk = Nothing Or T_Kelvin = Nothing Then
+        If m_MolMasse = Nothing Or p_Tryk = Nothing Or T_Kelvin = Nothing Then
             MsgBox("Ikke alle værdier er angivet!")
             KanRegne = False
+            p_Rho = Nothing
+        ElseIf m_Masse = Nothing Or V_Rumfang = Nothing Then
+            MsgBox("Ikke alle værdier er angivet!")
+            KanRegne = False
+            p_Rho = Nothing
         End If
     End Sub
-
-
-
-#End Region
 
     Private Sub Densitet_Form_T_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
         p_Rho = Nothing
         m_MolMasse = Nothing
-        R_Gaskonstant = Nothing
         p_Tryk = Nothing
         T_Kelvin = Nothing
+        m_Masse = Nothing
+        V_Rumfang = Nothing
     End Sub
 
+#End Region
 
 
-
-    Public Sub RestartForm()
-        Me.Close()
-        Me.Show()
-    End Sub
 
 End Class

@@ -36,7 +36,6 @@ Partial Class Densitet_Form_T
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
-        Me.Densitet_Gaskonstanten_TextBox = New System.Windows.Forms.TextBox()
         Me.Densitet_Temperatur_K_TextBox = New System.Windows.Forms.TextBox()
         Me.Densitet_Tryk_TextBox = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -60,6 +59,7 @@ Partial Class Densitet_Form_T
         Me.Gnidningskraft_But = New System.Windows.Forms.Button()
         Me.Tyngde_But = New System.Windows.Forms.Button()
         Me.Hovedside_But = New System.Windows.Forms.Button()
+        Me.Label17 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Densitet_Masse_TextBox
@@ -183,13 +183,6 @@ Partial Class Densitet_Form_T
         Me.Label16.Size = New System.Drawing.Size(14, 20)
         Me.Label16.TabIndex = 26
         Me.Label16.Text = "("
-        '
-        'Densitet_Gaskonstanten_TextBox
-        '
-        Me.Densitet_Gaskonstanten_TextBox.Location = New System.Drawing.Point(568, 335)
-        Me.Densitet_Gaskonstanten_TextBox.Name = "Densitet_Gaskonstanten_TextBox"
-        Me.Densitet_Gaskonstanten_TextBox.Size = New System.Drawing.Size(137, 26)
-        Me.Densitet_Gaskonstanten_TextBox.TabIndex = 28
         '
         'Densitet_Temperatur_K_TextBox
         '
@@ -394,11 +387,21 @@ Partial Class Densitet_Form_T
         Me.Hovedside_But.Text = "Hovedside"
         Me.Hovedside_But.UseVisualStyleBackColor = True
         '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Location = New System.Drawing.Point(590, 338)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(58, 20)
+        Me.Label17.TabIndex = 70
+        Me.Label17.Text = "8.3145"
+        '
         'Densitet_Form_T
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1153, 482)
+        Me.Controls.Add(Me.Label17)
         Me.Controls.Add(Me.Interferens_But)
         Me.Controls.Add(Me.Idealgasser_But)
         Me.Controls.Add(Me.Gravitation_But)
@@ -422,7 +425,6 @@ Partial Class Densitet_Form_T
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Densitet_Temperatur_K_TextBox)
         Me.Controls.Add(Me.Densitet_Tryk_TextBox)
-        Me.Controls.Add(Me.Densitet_Gaskonstanten_TextBox)
         Me.Controls.Add(Me.Label15)
         Me.Controls.Add(Me.Label16)
         Me.Controls.Add(Me.Label10)
@@ -459,7 +461,6 @@ Partial Class Densitet_Form_T
     Friend WithEvents Label10 As Label
     Friend WithEvents Label15 As Label
     Friend WithEvents Label16 As Label
-    Friend WithEvents Densitet_Gaskonstanten_TextBox As TextBox
     Friend WithEvents Densitet_Temperatur_K_TextBox As TextBox
     Friend WithEvents Densitet_Tryk_TextBox As TextBox
     Friend WithEvents Label4 As Label
@@ -483,4 +484,5 @@ Partial Class Densitet_Form_T
     Friend WithEvents Gnidningskraft_But As Button
     Friend WithEvents Tyngde_But As Button
     Friend WithEvents Hovedside_But As Button
+    Friend WithEvents Label17 As Label
 End Class
