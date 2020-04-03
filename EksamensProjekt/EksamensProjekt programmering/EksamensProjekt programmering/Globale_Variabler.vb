@@ -17,7 +17,7 @@
     ''Værdier for Gas Densitet (rho = (Molmasse / Gaskonstant) * (tryk / Kelvin))
     Public m_MolMasse As Double
     Public T_Kelvin As Double
-    Public R_Gaskonstant As Double = 8.3145
+    Public R_Gaskonstant As Double = 8.3145 'Gaskonstanten er den samme for alle gasser, derfor har vores en allerede givet værdi
 
 
     ''Værdier for Varmekapacitet og Tilføjet varme(C = Q / DT)
