@@ -65,7 +65,7 @@
 
     Public Sub BeregnElektriskLadning()
         'Sætter den globale variabel F_Kraft til at være lig med m_Masse ganget med g_TyngdeAcceleration som begge er globale variabler.
-        Q_ElektriskLadning = t_DeltaTid * I_Ampere
+        Q_ElektriskLadning = t_DeltaTid * I_Strømstyrke
     End Sub
 
     Private Sub Elektrisk_Ladning_Tid_TextBox_TextChanged(sender As Object, e As EventArgs) Handles Elektrisk_Ladning_Tid_TextBox.TextChanged
