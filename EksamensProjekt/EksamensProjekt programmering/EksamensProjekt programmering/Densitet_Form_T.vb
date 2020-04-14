@@ -6,6 +6,7 @@ Public Class Densitet_Form_T
         KanRegne = True
     End Sub
 
+    'Sætter alle variabler til "Nothing" når man lukker formen
     Private Sub Densitet_Form_T_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
         p_Rho = Nothing
         m_MolMasse = Nothing
@@ -167,7 +168,7 @@ Public Class Densitet_Form_T
 
         End If
     End Sub
-    'Sætter alle variabler til "Nothing" når man lukker formen
+
 
 
 End Class
