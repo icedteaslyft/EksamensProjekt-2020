@@ -69,12 +69,20 @@
     End Sub
 
     Public Sub BeregnTryk()
-        p_Tryk = F_Kraft / A_Areal
+        If KanRegne = True Then
+            p_Tryk = F_Kraft / A_Areal
+        End If
+
     End Sub
 
     Private Sub Tryk_Beregn_But_Click(sender As Object, e As EventArgs) Handles Tryk_Beregn_But.Click
+        CheckVariablerTryk()
         BeregnTryk()
-        Tryk_Total_lbl.Text = p_Tryk.ToString() & "kPa"
+        Tryk_Total_lbl.Text = p_Tryk.ToString("F4") & "kPa"
+
+        If KanRegne = False Then
+            KanRegne = True
+        End If
     End Sub
 
 #End Region
@@ -95,19 +103,46 @@
     End Sub
 
     Public Sub BeregnVæskeTryk()
-        p_VæskeTryk = p_Rho * h_Højde * g_TyngdeAcceleration
+        If KanRegne = True Then
+            p_VæskeTryk = p_Rho * h_Højde * g_TyngdeAcceleration
+        End If
+
     End Sub
 
     Private Sub Tryk_Væske_Beregn_But_Click(sender As Object, e As EventArgs) Handles Tryk_Væske_Beregn_But.Click
+        CheckVariablerVæskeTryk()
         BeregnVæskeTryk()
-        Væske_Tryk_Total_lbl.Text = p_VæskeTryk.ToString & "kPa"
+        Væske_Tryk_Total_lbl.Text = p_VæskeTryk.ToString("F4") & "kPa"
+
+        If KanRegne = False Then
+            KanRegne = True
+        End If
     End Sub
 
 
+#End Region
 
+#Region "Sub Rutiner"
 
+    Private Sub CheckVariablerVæskeTryk()
+        If p_Rho = Nothing Or h_Højde = Nothing Or g_TyngdeAcceleration = Nothing Then
+            MsgBox("Ikke alle værdier er angivet!")
+            KanRegne = False
+            p_VæskeTryk = Nothing
+        End If
 
+    End Sub
+
+    Private Sub CheckVariablerTryk()
+        If F_Kraft = Nothing Or A_Areal = Nothing Then
+            MsgBox("Ikke alle værdier er angivet!")
+            KanRegne = False
+            p_Tryk = Nothing
+        End If
+
+    End Sub
 
 #End Region
+
 
 End Class
