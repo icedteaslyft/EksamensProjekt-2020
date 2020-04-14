@@ -42,5 +42,10 @@
     Public p_VæskeTryk As Double
     Public g_TyngdeAcceleration As Double
 
+    ''Værdier for Gnidningskraft (F = My * Fn_Normalkraft)
+    Public F_Gnidningskraft As Double
+    Public My_Gnidningskoefficient As Double
+    Public Fn_Normalkraft As Double
+
 
 End Module

@@ -1,5 +1,8 @@
 ﻿Public Class Tryk_Form_T
 
+    Private Sub Tryk_Form_T_Load(sender As Object, e As EventArgs) Handles Me.Load
+        KanRegne = True
+    End Sub
 
 
 #Region "Knapper"
@@ -99,6 +102,7 @@
         BeregnVæskeTryk()
         Væske_Tryk_Total_lbl.Text = p_VæskeTryk.ToString & "kPa"
     End Sub
+
 
 
 
