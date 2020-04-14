@@ -23,12 +23,15 @@
 
     ''Værdier for Varmekapacitet og Tilføjet varme(C = Q / DT)
     Public Q_Tilførtvarme As Double 'Den tilførte varme
+    Public Q_Tilførtvarme2 As Double 'Den tilførte varme for Varmekapacitet
     Public DT_Temperaturstigning As Double 'Temperaturstigning
-
+    Public DT_Temperaturstigning2 As Double 'Temperaturstigning for Varmekapacitet
 
     ''Værdier for Specifik Varmekapacitet (c = C / m)
     Public c_Specifik_Varmekapacitet As Double 'Specifik varmekapacitet
     Public c_Varmekapacitet As Double 'Varmekapacitet
+    Public c_Varmekapacitet2 As Double 'Varmekapacitet for Tilført Varme
+    Public c_Varmekapacitet3 As Double 'Varmekapacitet for SpecifikVarme
 
 
     ''Værdier for Tryk (p = F / A)

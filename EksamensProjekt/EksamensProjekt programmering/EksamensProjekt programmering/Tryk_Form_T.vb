@@ -4,6 +4,23 @@
         KanRegne = True
     End Sub
 
+    Private Sub Tryk_Form_T_Closed(sender As Object, e As EventArgs) Handles Me.Closed
+        p_Rho = Nothing
+        m_MolMasse = Nothing
+        p_Tryk = Nothing
+        T_Kelvin = Nothing
+        m_Masse = Nothing
+        V_Rumfang = Nothing
+        Q_Tilførtvarme = Nothing
+        DT_Temperaturstigning = Nothing
+        c_Specifik_Varmekapacitet = Nothing
+        c_Varmekapacitet = Nothing
+        F_Kraft = Nothing
+        A_Areal = Nothing
+        h_Højde = Nothing
+        p_VæskeTryk = Nothing
+        g_TyngdeAcceleration = Nothing
+    End Sub
 
 #Region "Knapper"
 
@@ -141,6 +158,8 @@
         End If
 
     End Sub
+
+
 
 #End Region
 

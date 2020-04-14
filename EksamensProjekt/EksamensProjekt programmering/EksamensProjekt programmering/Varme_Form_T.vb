@@ -1,4 +1,24 @@
 ﻿Public Class Varme_Form_T
+    Private Sub Varme_Form_T_Load(sender As Object, e As EventArgs) Handles Me.Load
+        KanRegne = True
+    End Sub
+    Private Sub Varme_Form_T_Closed(sender As Object, e As EventArgs) Handles Me.Closed
+        p_Rho = Nothing
+        m_MolMasse = Nothing
+        p_Tryk = Nothing
+        T_Kelvin = Nothing
+        m_Masse = Nothing
+        V_Rumfang = Nothing
+        Q_Tilførtvarme = Nothing
+        DT_Temperaturstigning = Nothing
+        c_Specifik_Varmekapacitet = Nothing
+        c_Varmekapacitet = Nothing
+        F_Kraft = Nothing
+        A_Areal = Nothing
+        h_Højde = Nothing
+        p_VæskeTryk = Nothing
+        g_TyngdeAcceleration = Nothing
+    End Sub
 
 
 
@@ -62,38 +82,52 @@
     End Sub
 
     Private Sub TilførtVarme_Varmekapicitet_TextBox_TextChanged(sender As Object, e As EventArgs) Handles TilførtVarme_Varmekapicitet_TextBox.TextChanged
-        c_Varmekapacitet = Val(TilførtVarme_Varmekapicitet_TextBox.Text)
+        c_Varmekapacitet2 = Val(TilførtVarme_Varmekapicitet_TextBox.Text)
     End Sub
 
     Public Sub BeregnTilførtVarme()
-        Q_Tilførtvarme = DT_Temperaturstigning * c_Varmekapacitet
+        If KanRegne = True Then
+            Q_Tilførtvarme = DT_Temperaturstigning * c_Varmekapacitet2
+        End If
+
     End Sub
 
     Private Sub Beregn_TilførtVarme_But_Click(sender As Object, e As EventArgs) Handles Beregn_TilførtVarme_But.Click
+        CheckVariablerTilførtVarme()
         BeregnTilførtVarme()
         Tilført_Varme_Total_lbl.Text = Q_Tilførtvarme.ToString & "J"
+
+        If KanRegne = False Then
+            KanRegne = True
+        End If
     End Sub
-
-
 
 #End Region
 
 #Region "Varmekapacitet"
 
     Private Sub Varme_Temperaturstining_TextBox_TextChanged(sender As Object, e As EventArgs) Handles Varme_Temperaturstining_TextBox.TextChanged
-        DT_Temperaturstigning = Val(Varme_Temperaturstining_TextBox.Text)
+        DT_Temperaturstigning2 = Val(Varme_Temperaturstining_TextBox.Text)
     End Sub
 
     Private Sub Tilført_Varme_TextBox_TextChanged(sender As Object, e As EventArgs) Handles Tilført_Varme_TextBox.TextChanged
-        Q_Tilførtvarme = Val(Tilført_Varme_TextBox.Text)
+        Q_Tilførtvarme2 = Val(Tilført_Varme_TextBox.Text)
     End Sub
     Public Sub BeregnVarmeKapacitet()
-        c_Varmekapacitet = Q_Tilførtvarme / DT_Temperaturstigning
+        If KanRegne = True Then
+            c_Varmekapacitet = Q_Tilførtvarme2 / DT_Temperaturstigning2
+        End If
+
     End Sub
 
     Private Sub Beregn_Varmekapacitet_But_Click(sender As Object, e As EventArgs) Handles Beregn_Varmekapacitet_But.Click
+        CheckVariablerVarmekapacitet()
         BeregnVarmeKapacitet()
         Varmekapacitet_Total_lbl.Text = c_Varmekapacitet.ToString & "kJ/Celsius"
+
+        If KanRegne = False Then
+            KanRegne = True
+        End If
     End Sub
 
 #End Region
@@ -106,19 +140,55 @@
     End Sub
 
     Private Sub SpecifikVarme_Varmekapacitet_TextBox_TextChanged(sender As Object, e As EventArgs) Handles SpecifikVarme_Varmekapacitet_TextBox.TextChanged
-        c_Varmekapacitet = Val(SpecifikVarme_Varmekapacitet_TextBox.Text)
+        c_Varmekapacitet3 = Val(SpecifikVarme_Varmekapacitet_TextBox.Text)
     End Sub
 
     Public Sub BeregnSpecifikVarmeKapacitet()
-        c_Specifik_Varmekapacitet = c_Varmekapacitet / m_Masse
+        If KanRegne = True Then
+            c_Specifik_Varmekapacitet = c_Varmekapacitet3 / m_Masse
+        End If
+
     End Sub
     Private Sub Beregn_SpecifikVarme_But_Click(sender As Object, e As EventArgs) Handles Beregn_SpecifikVarme_But.Click
+        CheckVariablerSpecifikVarme()
         BeregnSpecifikVarmeKapacitet()
         Specifik_Varmekapacitet_Total_lbl.Text = c_Specifik_Varmekapacitet.ToString & "kJ/(kg*Celsius)"
+
+        If KanRegne = False Then
+            KanRegne = True
+        End If
     End Sub
 
 
 #End Region
 
+#Region "Subrutiner"
+    Private Sub CheckVariablerTilførtVarme()
+        If DT_Temperaturstigning = Nothing Or c_Varmekapacitet2 = Nothing Then
+            MsgBox("Ikke alle værdier er angivet!")
+            KanRegne = False
+            Q_Tilførtvarme = Nothing
+        End If
+
+    End Sub
+
+    Private Sub CheckVariablerVarmekapacitet()
+        If Q_Tilførtvarme2 = Nothing Or DT_Temperaturstigning2 = Nothing Then
+            MsgBox("Ikke alle værdier er angivet!")
+            KanRegne = False
+            c_Varmekapacitet = Nothing
+        End If
+
+    End Sub
+    Private Sub CheckVariablerSpecifikVarme()
+        If c_Varmekapacitet3 = Nothing Or m_Masse = Nothing Then
+            MsgBox("Ikke alle værdier er angivet!")
+            KanRegne = False
+            c_Specifik_Varmekapacitet = Nothing
+        End If
+
+    End Sub
+
+#End Region
 
 End Class

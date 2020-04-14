@@ -150,6 +150,7 @@ Public Class Densitet_Form_T
 
 #End Region
 
+#Region "Subrutiner"
     Private Sub CheckVariablerVæsker()
         If m_Masse = Nothing Or V_Rumfang = Nothing Then
             MsgBox("Ikke alle værdier er angivet!")
@@ -169,6 +170,7 @@ Public Class Densitet_Form_T
         End If
     End Sub
 
+#End Region
 
 
 End Class
