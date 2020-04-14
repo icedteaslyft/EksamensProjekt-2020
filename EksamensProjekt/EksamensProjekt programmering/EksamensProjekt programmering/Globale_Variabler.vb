@@ -1,6 +1,7 @@
 ﻿Module Globale_Variabler
     ''Her skal alle vores værdier stå
-
+    '' Offentlige Booleans
+    Public KanRegne As Boolean
 
     'Værdier for Elektrisk Ladning (Q = I * t)
     Public Q_ElektriskLadning As Double 'Elektrisk Ladning
@@ -40,6 +41,11 @@
     Public h_Højde As Double
     Public p_VæskeTryk As Double
     Public g_TyngdeAcceleration As Double
+
+    ''Værdier for Gnidningskraft (F = My * Fn_Normalkraft)
+    Public F_Gnidningskraft As Double
+    Public My_Gnidningskoefficient As Double
+    Public Fn_Normalkraft As Double
 
 
 End Module

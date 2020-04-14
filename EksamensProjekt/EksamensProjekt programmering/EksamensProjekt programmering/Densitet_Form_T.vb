@@ -2,15 +2,29 @@
 
 Public Class Densitet_Form_T
 
-    Dim KanRegne As Boolean
-
-
-
     Private Sub Densitet_Form_T_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         KanRegne = True
     End Sub
 
+    'Sætter alle variabler til "Nothing" når man lukker formen
+    Private Sub Densitet_Form_T_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+        p_Rho = Nothing
+        m_MolMasse = Nothing
+        p_Tryk = Nothing
+        T_Kelvin = Nothing
+        m_Masse = Nothing
+        V_Rumfang = Nothing
+        Q_Tilførtvarme = Nothing
+        DT_Temperaturstigning = Nothing
+        c_Specifik_Varmekapacitet = Nothing
+        c_Varmekapacitet = Nothing
+        F_Kraft = Nothing
+        A_Areal = Nothing
+        h_Højde = Nothing
+        p_VæskeTryk = Nothing
+        g_TyngdeAcceleration = Nothing
 
+    End Sub
 #Region "Knapper"
 
     Private Sub Hovedside_But_Click_1(sender As Object, e As EventArgs) Handles Hovedside_But.Click
@@ -154,24 +168,7 @@ Public Class Densitet_Form_T
 
         End If
     End Sub
-    'Sætter alle variabler til "Nothing" når man lukker formen
-    Private Sub Densitet_Form_T_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
-        p_Rho = Nothing
-        m_MolMasse = Nothing
-        p_Tryk = Nothing
-        T_Kelvin = Nothing
-        m_Masse = Nothing
-        V_Rumfang = Nothing
-        Q_Tilførtvarme = Nothing
-        DT_Temperaturstigning = Nothing
-        c_Specifik_Varmekapacitet = Nothing
-        c_Varmekapacitet = Nothing
-        F_Kraft = Nothing
-        A_Areal = Nothing
-        h_Højde = Nothing
-        p_VæskeTryk = Nothing
-        g_TyngdeAcceleration = Nothing
 
-    End Sub
+
 
 End Class
