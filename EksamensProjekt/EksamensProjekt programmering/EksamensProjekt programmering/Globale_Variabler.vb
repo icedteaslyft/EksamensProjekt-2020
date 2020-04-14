@@ -1,6 +1,7 @@
 ﻿Module Globale_Variabler
     ''Her skal alle vores værdier stå
-
+    '' Offentlige Booleans
+    Public KanRegne As Boolean
 
     'Værdier for Elektrisk Ladning (Q = I * t)
     Public Q_ElektriskLadning As Double 'Elektrisk Ladning
