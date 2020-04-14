@@ -1,4 +1,5 @@
 ﻿Public Class Gnidningskraft_Form_R
+
 #Region "Knapper"
 
     Private Sub Hovedside_But_Click_1(sender As Object, e As EventArgs) Handles Hovedside_But.Click
@@ -52,7 +53,30 @@
     End Sub
 
 
+
+
 #End Region
 
+    Private Sub Beregn_Gnidningskraft_But_Click(sender As Object, e As EventArgs) Handles Beregn_Gnidningskraft_But.Click
+        BeregnGnidningskraft()
+
+        Gnidningskraft_Total_lbl.Text = F_Kraft.ToString("F4") & " N"
+
+    End Sub
+
+    Public Sub BeregnGnidningskraft()
+
+        F_Kraft = t_DeltaTid * I_Strømstyrke
+    End Sub
+
+    Private Sub Gnidningskraft_My_TextBox_TextChanged(sender As Object, e As EventArgs) Handles Gnidningskraft_My_TextBox.TextChanged
+
+
+    End Sub
+
+    Private Sub Gnidningskraft_Normalkraften_TextBox_TextChanged(sender As Object, e As EventArgs) Handles Gnidningskraft_Normalkraften_TextBox.TextChanged
+
+
+    End Sub
 
 End Class
