@@ -58,25 +58,28 @@
 #End Region
 
     Private Sub Beregn_Gnidningskraft_But_Click(sender As Object, e As EventArgs) Handles Beregn_Gnidningskraft_But.Click
+        'Kalder sub routinen "BeregnGnidningskraft" 
         BeregnGnidningskraft()
-
-        Gnidningskraft_Total_lbl.Text = F_Kraft.ToString("F4") & " N"
-
+        'Sætter total labellet til at være lig med den globale variabel F_Gnidningskraft som 
+        'bliver konverteret til en string og sat til kun at have 4 decimaler. Og derefter sætter N bagved som står for Newton.
+        Gnidningskraft_Total_lbl.Text = F_Gnidningskraft.ToString("F4") & " N"
     End Sub
 
     Public Sub BeregnGnidningskraft()
-
-        F_Kraft = t_DeltaTid * I_Strømstyrke
+        'Sætter den globale variabel F_Gnidningskraft til at være lig med My_Gnidningskoefficient ganget med Fn_Normalkraft som begge er globale variabler.
+        F_Gnidningskraft = My_Gnidningskoefficient * Fn_Normalkraft
     End Sub
 
     Private Sub Gnidningskraft_My_TextBox_TextChanged(sender As Object, e As EventArgs) Handles Gnidningskraft_My_TextBox.TextChanged
-
-
+        'Sætter den globale variabel My_Gnidningskoefficient til at være lig med de tal som er tekstboksen til gnidningskoefficienten, som er brugerens input. 
+        'Og den bliver opdateret hver gang værdien bliver ændret.
+        My_Gnidningskoefficient = Val(Gnidningskraft_My_TextBox.Text.ToString())
     End Sub
 
     Private Sub Gnidningskraft_Normalkraften_TextBox_TextChanged(sender As Object, e As EventArgs) Handles Gnidningskraft_Normalkraften_TextBox.TextChanged
-
-
+        'Sætter den globale variabel Fn_Normalkraft til at være lig med de tal som er tekstboksen til Normalkraften, som er brugerens input. 
+        'Og den bliver opdateret hver gang værdien bliver ændret.
+        Fn_Normalkraft = Val(Gnidningskraft_Normalkraften_TextBox.Text.ToString())
     End Sub
 
 End Class
