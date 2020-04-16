@@ -1,6 +1,30 @@
 ﻿Public Class Tyngdekraft_Form_R
 
 
+    Private Sub Tyngdekraft_Form_R_Closed(sender As Object, e As EventArgs) Handles Me.Closed
+        KanRegne = True
+    End Sub
+
+    Private Sub Tyngdekraft_Form_R_Load(sender As Object, e As EventArgs) Handles Me.Load
+        p_Rho = Nothing
+        m_MolMasse = Nothing
+        p_Tryk = Nothing
+        T_Kelvin = Nothing
+        m_Masse = Nothing
+        V_Rumfang = Nothing
+        Q_Tilførtvarme = Nothing
+        DT_Temperaturstigning = Nothing
+        c_Specifik_Varmekapacitet = Nothing
+        c_Varmekapacitet = Nothing
+        F_Kraft = Nothing
+        A_Areal = Nothing
+        h_Højde = Nothing
+        p_VæskeTryk = Nothing
+        g_TyngdeAcceleration = Nothing
+    End Sub
+
+
+
 #Region "Knapper"
 
     Private Sub Hovedside_But_Click_1(sender As Object, e As EventArgs) Handles Hovedside_But.Click
@@ -59,16 +83,25 @@
 
 
     Private Sub Beregn_Tyngdekraft_But_Click(sender As Object, e As EventArgs) Handles Beregn_Tyngdekraft_But.Click
+        'Kalder sub rutinen "Checkvariabler"
+        CheckVariabler()
         'Kalder sub routinen "BeregnTyngdekraft" 
         BeregnTyngdekraft()
         'Sætter total labellet til at være lig med den globale variabel F_Kraft som 
         'bliver konverteret til en string og sat til kun at have 4 decimaler. Og derefter sætter N bagved som står for newton.
         Tyngdekraft_Total_lbl.Text = F_Kraft.ToString("F4") & " N"
+
+        If KanRegne = False Then
+            KanRegne = True
+        End If
     End Sub
 
     Public Sub BeregnTyngdekraft()
         'Sætter den globale variabel F_Kraft til at være lig med m_Masse ganget med g_TyngdeAcceleration som begge er globale variabler.
-        F_Kraft = m_Masse * g_TyngdeAcceleration
+
+        If KanRegne = True Then
+            F_Kraft = m_Masse * g_TyngdeAcceleration
+        End If
     End Sub
 
     Private Sub Tyngdekraft_Masse_TextBox_TextChanged(sender As Object, e As EventArgs) Handles Tyngdekraft_Masse_TextBox.TextChanged
@@ -86,4 +119,19 @@
     Private Sub Tyngdekraft_Total_lbl_Click(sender As Object, e As EventArgs) Handles Tyngdekraft_Total_lbl.Click
 
     End Sub
+
+#Region "Subrutine"
+
+    Private Sub CheckVariabler()
+        If m_Masse = Nothing Or g_TyngdeAcceleration = Nothing Then
+            MsgBox("Ikke alle værdier er angivet!")
+            KanRegne = False
+            F_Kraft = Nothing
+        End If
+
+    End Sub
+
+#End Region
+
+
 End Class

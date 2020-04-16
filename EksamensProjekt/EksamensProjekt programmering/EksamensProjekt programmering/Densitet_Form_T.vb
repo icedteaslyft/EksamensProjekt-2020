@@ -2,11 +2,14 @@
 
 Public Class Densitet_Form_T
 
+
+
+    'Starter ud med at sætte KanRegne bool til sandt
     Private Sub Densitet_Form_T_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         KanRegne = True
     End Sub
 
-    'Sætter alle variabler til "Nothing" når man lukker formen
+    'Sætter alle variabler i programmet til deres standard værdier (i dette tilfælde til ingenting)
     Private Sub Densitet_Form_T_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
         p_Rho = Nothing
         m_MolMasse = Nothing
@@ -25,8 +28,11 @@ Public Class Densitet_Form_T
         g_TyngdeAcceleration = Nothing
 
     End Sub
-#Region "Knapper"
 
+
+    'Styre alle knapperne imellem formene
+#Region "Knapper"
+    'Alle knapper følge samme kode, som loader den der bliver trykket på, og lukker sig selv.
     Private Sub Hovedside_But_Click_1(sender As Object, e As EventArgs) Handles Hovedside_But.Click
         Me.Close()
         Hoved_Form.Show()
@@ -79,14 +85,18 @@ Public Class Densitet_Form_T
 #End Region
 
 #Region "Densitet Væsker"
+    'Sætter værdien til det tekstboksens input modtager
     Private Sub Densitet_Masse_TextBox_TextChanged(sender As Object, e As EventArgs) Handles Densitet_Masse_TextBox.TextChanged
         m_Masse = Val(Densitet_Masse_TextBox.Text)
     End Sub
 
+    'Sætter værdien til det tekstboksens input modtager
     Private Sub Densitet_Rumfang_TextBox_TextChanged(sender As Object, e As EventArgs) Handles Densitet_Rumfang_TextBox.TextChanged
         V_Rumfang = Val(Densitet_Rumfang_TextBox.Text)
     End Sub
 
+    'En Subrutine der laver udregningen for Væske Densitet
+    'Den tjekker om KanRegne er sandt. I det tilfælde laver den udregningen.
     Public Sub BeregnDensitetVæsker()
 
         If KanRegne = True Then
@@ -95,6 +105,9 @@ Public Class Densitet_Form_T
 
     End Sub
 
+    'Denne knap aktivere Subrutinerne "Checkvariabler" og "Beregn" 
+    'Den sætter også teksten i "Total" labelen til hvad end værdien p_Rho er
+    'Den tjekker tilsidst om Kanregne er Falsk, og hvis den er det, så sætter den KanRegne til sandt igen
     Private Sub Beregn_Densitet_Væsker_But_Click(sender As Object, e As EventArgs) Handles Beregn_Densitet_Væsker_But.Click
         CheckVariablerVæsker()
         BeregnDensitetVæsker()
@@ -112,19 +125,24 @@ Public Class Densitet_Form_T
 
 
 #Region "Densitet Gasser"
+    'Sætter værdien til det tekstboksens input modtager
     Private Sub Densitet_Molmasse_TextBox_TextChanged(sender As Object, e As EventArgs) Handles Densitet_Molmasse_TextBox.TextChanged
         m_MolMasse = Val(Densitet_Molmasse_TextBox.Text)
     End Sub
 
+    'Sætter værdien til det tekstboksens input modtager
     Private Sub Densitet_Tryk_TextBox_TextChanged(sender As Object, e As EventArgs) Handles Densitet_Tryk_TextBox.TextChanged
         p_Tryk = Val(Densitet_Tryk_TextBox.Text)
     End Sub
 
+    'Sætter værdien til det tekstboksens input modtager
     Private Sub Densitet_Temperatur_K_TextBox_TextChanged(sender As Object, e As EventArgs) Handles Densitet_Temperatur_K_TextBox.TextChanged
         T_Kelvin = Val(Densitet_Temperatur_K_TextBox.Text)
 
     End Sub
 
+    'En Subrutine der laver udregningen for Gas Densitet
+    'Den tjekker om KanRegne er sandt. I det tilfælde laver den udregningen.
     Public Sub BeregnDensitetGasser()
 
         If KanRegne = True Then
@@ -134,6 +152,9 @@ Public Class Densitet_Form_T
 
     End Sub
 
+    'Denne knap aktivere Subrutinerne "Checkvariabler" og "Beregn" 
+    'Den sætter også teksten i "Total" labelen til hvad end værdien p_Rho er
+    'Den tjekker tilsidst om Kanregne er Falsk, og hvis den er det, så sætter den KanRegne til sandt igen
     Private Sub Beregn_Densitet_Gasser_But_Click(sender As Object, e As EventArgs) Handles Beregn_Densitet_Gasser_But.Click
         CheckVariablerGasser()
         BeregnDensitetGasser()
@@ -150,6 +171,13 @@ Public Class Densitet_Form_T
 
 #End Region
 
+    ''Disse subrutiner kræves pr. funktion formen har.
+    ''Subrutinen tjekker om dens korresponderende værdier ikke står til ingenting.
+    ''Hvis bare en af værdierne står til ingenting, så vil der poppe en beskedboks op 
+    'der siger brugeren mangler værdier
+    ''Sætter KanRegne til falsk, for at stoppe programmet at lave en udregning den ikke kan.
+    'Hvis den gør, bliver totalen til uendeligt)
+    ''Og tilsidst sætter totalværdien i den brugte udregning til ingenting.
 #Region "Subrutiner"
     Private Sub CheckVariablerVæsker()
         If m_Masse = Nothing Or V_Rumfang = Nothing Then

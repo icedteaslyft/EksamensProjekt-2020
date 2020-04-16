@@ -1,7 +1,10 @@
 ﻿Public Class Varme_Form_T
+    'Starter ud med at sætte KanRegne bool til sandt
     Private Sub Varme_Form_T_Load(sender As Object, e As EventArgs) Handles Me.Load
         KanRegne = True
     End Sub
+
+    'Sætter alle variabler i programmet til deres standard værdier (i dette tilfælde til ingenting)
     Private Sub Varme_Form_T_Closed(sender As Object, e As EventArgs) Handles Me.Closed
         p_Rho = Nothing
         m_MolMasse = Nothing
@@ -21,9 +24,9 @@
     End Sub
 
 
-
+    'Styre alle knapperne imellem formene
 #Region "Knapper"
-
+    'Alle knapper følge samme kode, som loader den der bliver trykket på, og lukker sig selv.
     Private Sub Hovedside_But_Click_1(sender As Object, e As EventArgs) Handles Hovedside_But.Click
         Me.Hide()
         Hoved_Form.Show()
@@ -76,15 +79,18 @@
 #End Region
 
 #Region "Tilført Varme"
-
+    'Sætter værdien til det tekstboksens input modtager
     Private Sub TilførtVarme_Temperaturstining_TextBox_TextChanged(sender As Object, e As EventArgs) Handles TilførtVarme_Temperaturstining_TextBox.TextChanged
         DT_Temperaturstigning = Val(TilførtVarme_Temperaturstining_TextBox.Text)
     End Sub
 
+    'Sætter værdien til det tekstboksens input modtager
     Private Sub TilførtVarme_Varmekapicitet_TextBox_TextChanged(sender As Object, e As EventArgs) Handles TilførtVarme_Varmekapicitet_TextBox.TextChanged
         c_Varmekapacitet2 = Val(TilførtVarme_Varmekapicitet_TextBox.Text)
     End Sub
 
+    'En Subrutine der laver udregningen for Tilført Varme
+    'Den tjekker om KanRegne er sandt. I det tilfælde laver den udregningen.
     Public Sub BeregnTilførtVarme()
         If KanRegne = True Then
             Q_Tilførtvarme = DT_Temperaturstigning * c_Varmekapacitet2
@@ -92,6 +98,9 @@
 
     End Sub
 
+    'Denne knap aktivere Subrutinerne "Checkvariabler" og "Beregn" 
+    'Den sætter også teksten i "Total" labelen til hvad end værdien Q_Tilførtvarme er
+    'Den tjekker tilsidst om Kanregne er Falsk, og hvis den er det, så sætter den KanRegne til sandt igen
     Private Sub Beregn_TilførtVarme_But_Click(sender As Object, e As EventArgs) Handles Beregn_TilførtVarme_But.Click
         CheckVariablerTilførtVarme()
         BeregnTilførtVarme()
@@ -105,14 +114,18 @@
 #End Region
 
 #Region "Varmekapacitet"
-
+    'Sætter værdien til det tekstboksens input modtager
     Private Sub Varme_Temperaturstining_TextBox_TextChanged(sender As Object, e As EventArgs) Handles Varme_Temperaturstining_TextBox.TextChanged
         DT_Temperaturstigning2 = Val(Varme_Temperaturstining_TextBox.Text)
     End Sub
 
+    'Sætter værdien til det tekstboksens input modtager
     Private Sub Tilført_Varme_TextBox_TextChanged(sender As Object, e As EventArgs) Handles Tilført_Varme_TextBox.TextChanged
         Q_Tilførtvarme2 = Val(Tilført_Varme_TextBox.Text)
     End Sub
+
+    'En Subrutine der laver udregningen for Varme Kapacitet
+    'Den tjekker om KanRegne er sandt. I det tilfælde laver den udregningen.
     Public Sub BeregnVarmeKapacitet()
         If KanRegne = True Then
             c_Varmekapacitet = Q_Tilførtvarme2 / DT_Temperaturstigning2
@@ -120,6 +133,9 @@
 
     End Sub
 
+    'Denne knap aktivere Subrutinerne "Checkvariabler" og "Beregn" 
+    'Den sætter også teksten i "Total" labelen til hvad end værdien c_Varmekapacitet er
+    'Den tjekker tilsidst om Kanregne er Falsk, og hvis den er det, så sætter den KanRegne til sandt igen
     Private Sub Beregn_Varmekapacitet_But_Click(sender As Object, e As EventArgs) Handles Beregn_Varmekapacitet_But.Click
         CheckVariablerVarmekapacitet()
         BeregnVarmeKapacitet()
@@ -134,21 +150,28 @@
 
 #Region "Specifik Varmekapacitet"
 
-
+    'Sætter værdien til det tekstboksens input modtager
     Private Sub Masse_TextBox_TextChanged(sender As Object, e As EventArgs) Handles Masse_TextBox.TextChanged
         m_Masse = Val(Masse_TextBox.Text)
     End Sub
 
+    'Sætter værdien til det tekstboksens input modtager
     Private Sub SpecifikVarme_Varmekapacitet_TextBox_TextChanged(sender As Object, e As EventArgs) Handles SpecifikVarme_Varmekapacitet_TextBox.TextChanged
         c_Varmekapacitet3 = Val(SpecifikVarme_Varmekapacitet_TextBox.Text)
     End Sub
 
+    'En Subrutine der laver udregningen for Specifik Varmekapacitet
+    'Den tjekker om KanRegne er sandt. I det tilfælde laver den udregningen.
     Public Sub BeregnSpecifikVarmeKapacitet()
         If KanRegne = True Then
             c_Specifik_Varmekapacitet = c_Varmekapacitet3 / m_Masse
         End If
 
     End Sub
+
+    'Denne knap aktivere Subrutinerne "Checkvariabler" og "Beregn" 
+    'Den sætter også teksten i "Total" labelen til hvad end værdien c_Specifik_Varmekapacitet er
+    'Den tjekker tilsidst om Kanregne er Falsk, og hvis den er det, så sætter den KanRegne til sandt igen
     Private Sub Beregn_SpecifikVarme_But_Click(sender As Object, e As EventArgs) Handles Beregn_SpecifikVarme_But.Click
         CheckVariablerSpecifikVarme()
         BeregnSpecifikVarmeKapacitet()
@@ -162,6 +185,16 @@
 
 #End Region
 
+
+
+
+    ''Disse subrutiner kræves pr. funktion formen har.
+    ''Subrutinen tjekker om dens korresponderende værdier ikke står til ingenting.
+    ''Hvis bare en af værdierne står til ingenting, så vil der poppe en beskedboks op 
+    'der siger brugeren mangler værdier
+    ''Sætter KanRegne til falsk, for at stoppe programmet at lave en udregning den ikke kan.
+    'Hvis den gør, bliver totalen til uendeligt)
+    ''Og tilsidst sætter totalværdien i den brugte udregning til ingenting.
 #Region "Subrutiner"
     Private Sub CheckVariablerTilførtVarme()
         If DT_Temperaturstigning = Nothing Or c_Varmekapacitet2 = Nothing Then

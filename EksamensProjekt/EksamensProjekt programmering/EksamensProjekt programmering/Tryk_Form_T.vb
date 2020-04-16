@@ -1,9 +1,11 @@
 ﻿Public Class Tryk_Form_T
 
+    'Starter ud med at sætte KanRegne bool til sandt
     Private Sub Tryk_Form_T_Load(sender As Object, e As EventArgs) Handles Me.Load
         KanRegne = True
     End Sub
 
+    'Sætter alle variabler i programmet til deres standard værdier (i dette tilfælde til ingenting)
     Private Sub Tryk_Form_T_Closed(sender As Object, e As EventArgs) Handles Me.Closed
         p_Rho = Nothing
         m_MolMasse = Nothing
@@ -22,8 +24,9 @@
         g_TyngdeAcceleration = Nothing
     End Sub
 
+    'Styre alle knapperne imellem formene
 #Region "Knapper"
-
+    'Alle knapper følge samme kode, som loader den der bliver trykket på, og lukker sig selv.
     Private Sub Hovedside_But_Click_1(sender As Object, e As EventArgs) Handles Hovedside_But.Click
         Me.Hide()
         Hoved_Form.Show()
@@ -76,15 +79,18 @@
 #End Region
 
 #Region "Tryk"
-
+    'Sætter værdien til det tekstboksens input modtager
     Private Sub Tryk_Areal_TextBox_TextChanged(sender As Object, e As EventArgs) Handles Tryk_Areal_TextBox.TextChanged
         A_Areal = Val(Tryk_Areal_TextBox.Text)
     End Sub
 
+    'Sætter værdien til det tekstboksens input modtager
     Private Sub Tryk_Kraft_TextBox_TextChanged(sender As Object, e As EventArgs) Handles Tryk_Kraft_TextBox.TextChanged
         F_Kraft = Val(Tryk_Kraft_TextBox.Text)
     End Sub
 
+    'En Subrutine der laver udregningen for Tryk
+    'Den tjekker om KanRegne er sandt. I det tilfælde laver den udregningen.
     Public Sub BeregnTryk()
         If KanRegne = True Then
             p_Tryk = F_Kraft / A_Areal
@@ -92,6 +98,9 @@
 
     End Sub
 
+    'Denne knap aktivere Subrutinerne "Checkvariabler" og "Beregn" 
+    'Den sætter også teksten i "Total" labelen til hvad end værdien p_Tryk er
+    'Den tjekker tilsidst om Kanregne er Falsk, og hvis den er det, så sætter den KanRegne til sandt igen
     Private Sub Tryk_Beregn_But_Click(sender As Object, e As EventArgs) Handles Tryk_Beregn_But.Click
         CheckVariablerTryk()
         BeregnTryk()
@@ -106,19 +115,23 @@
 
 
 #Region "Væske Tryk"
-
+    'Sætter værdien til det tekstboksens input modtager
     Private Sub Tryk_Densitet_TextBox_TextChanged(sender As Object, e As EventArgs) Handles Tryk_Densitet_TextBox.TextChanged
         p_Rho = Val(Tryk_Densitet_TextBox.Text)
     End Sub
 
+    'Sætter værdien til det tekstboksens input modtager
     Private Sub Tryk_Højde_TextBox_TextChanged(sender As Object, e As EventArgs) Handles Tryk_Højde_TextBox.TextChanged
         h_Højde = Val(Tryk_Højde_TextBox.Text)
     End Sub
 
+    'Sætter værdien til det tekstboksens input modtager
     Private Sub Tryk_Tyngde_Accelerationen_TextBox_TextChanged(sender As Object, e As EventArgs) Handles Tryk_Tyngde_Accelerationen_TextBox.TextChanged
         g_TyngdeAcceleration = Val(Tryk_Tyngde_Accelerationen_TextBox.Text)
     End Sub
 
+    'En Subrutine der laver udregningen for Væske Tryk
+    'Den tjekker om KanRegne er sandt. I det tilfælde laver den udregningen.
     Public Sub BeregnVæskeTryk()
         If KanRegne = True Then
             p_VæskeTryk = p_Rho * h_Højde * g_TyngdeAcceleration
@@ -126,6 +139,9 @@
 
     End Sub
 
+    'Denne knap aktivere Subrutinerne "Checkvariabler" og "Beregn" 
+    'Den sætter også teksten i "Total" labelen til hvad end værdien p_VæskeTryk er
+    'Den tjekker tilsidst om Kanregne er Falsk, og hvis den er det, så sætter den KanRegne til sandt igen
     Private Sub Tryk_Væske_Beregn_But_Click(sender As Object, e As EventArgs) Handles Tryk_Væske_Beregn_But.Click
         CheckVariablerVæskeTryk()
         BeregnVæskeTryk()
@@ -139,6 +155,14 @@
 
 #End Region
 
+
+    ''Disse subrutiner kræves pr. funktion formen har.
+    ''Subrutinen tjekker om dens korresponderende værdier ikke står til ingenting.
+    ''Hvis bare en af værdierne står til ingenting, så vil der poppe en beskedboks op 
+    'der siger brugeren mangler værdier
+    ''Sætter KanRegne til falsk, for at stoppe programmet at lave en udregning den ikke kan.
+    'Hvis den gør, bliver totalen til uendeligt)
+    ''Og tilsidst sætter totalværdien i den brugte udregning til ingenting.
 #Region "Sub Rutiner"
 
     Private Sub CheckVariablerVæskeTryk()

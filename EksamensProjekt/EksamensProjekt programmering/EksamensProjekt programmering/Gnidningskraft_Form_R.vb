@@ -1,5 +1,30 @@
 ﻿Public Class Gnidningskraft_Form_R
 
+    Private Sub Gnidningskraft_Form_R_Closed(sender As Object, e As EventArgs) Handles Me.Closed
+        p_Rho = Nothing
+        m_MolMasse = Nothing
+        p_Tryk = Nothing
+        T_Kelvin = Nothing
+        m_Masse = Nothing
+        V_Rumfang = Nothing
+        Q_Tilførtvarme = Nothing
+        DT_Temperaturstigning = Nothing
+        c_Specifik_Varmekapacitet = Nothing
+        c_Varmekapacitet = Nothing
+        F_Kraft = Nothing
+        A_Areal = Nothing
+        h_Højde = Nothing
+        p_VæskeTryk = Nothing
+        g_TyngdeAcceleration = Nothing
+    End Sub
+
+    Private Sub Gnidningskraft_Form_R_Load(sender As Object, e As EventArgs) Handles Me.Load
+        KanRegne = True
+    End Sub
+
+
+
+
 #Region "Knapper"
 
     Private Sub Hovedside_But_Click_1(sender As Object, e As EventArgs) Handles Hovedside_But.Click
@@ -58,16 +83,27 @@
 #End Region
 
     Private Sub Beregn_Gnidningskraft_But_Click(sender As Object, e As EventArgs) Handles Beregn_Gnidningskraft_But.Click
+        'Kalder sub rutinen "Checkvariabler"
+        CheckVariabler()
         'Kalder sub routinen "BeregnGnidningskraft" 
         BeregnGnidningskraft()
         'Sætter total labellet til at være lig med den globale variabel F_Gnidningskraft som 
         'bliver konverteret til en string og sat til kun at have 4 decimaler. Og derefter sætter N bagved som står for Newton.
         Gnidningskraft_Total_lbl.Text = F_Gnidningskraft.ToString("F4") & " N"
+
+
+        If KanRegne = False Then
+            KanRegne = True
+        End If
+
     End Sub
 
     Public Sub BeregnGnidningskraft()
         'Sætter den globale variabel F_Gnidningskraft til at være lig med My_Gnidningskoefficient ganget med Fn_Normalkraft som begge er globale variabler.
-        F_Gnidningskraft = My_Gnidningskoefficient * Fn_Normalkraft
+
+        If KanRegne = True Then
+            F_Gnidningskraft = My_Gnidningskoefficient * Fn_Normalkraft
+        End If
     End Sub
 
     Private Sub Gnidningskraft_My_TextBox_TextChanged(sender As Object, e As EventArgs) Handles Gnidningskraft_My_TextBox.TextChanged
@@ -81,5 +117,18 @@
         'Og den bliver opdateret hver gang værdien bliver ændret.
         Fn_Normalkraft = Val(Gnidningskraft_Normalkraften_TextBox.Text.ToString())
     End Sub
+
+
+#Region "Sub rutiner"
+    Private Sub CheckVariabler()
+        If Fn_Normalkraft = Nothing Or My_Gnidningskoefficient = Nothing Then
+            MsgBox("Ikke alle værdier er angivet!")
+            KanRegne = False
+            F_Gnidningskraft = Nothing
+        End If
+
+    End Sub
+
+#End Region
 
 End Class
