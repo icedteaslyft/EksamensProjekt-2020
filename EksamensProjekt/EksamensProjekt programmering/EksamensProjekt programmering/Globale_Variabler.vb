@@ -40,7 +40,7 @@
     Public p_Tryk As Double  'Tryk
 
 
-    ''Værdier for VæskeTryk (p = rho * h * g(9,82))
+    ''Værdier for VæskeTryk (p = rho * h * g(-9,82))
     Public h_Højde As Double
     Public p_VæskeTryk As Double
     Public g_TyngdeAcceleration As Double
