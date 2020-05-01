@@ -155,6 +155,15 @@
     <EmbeddedResource Include="Densitet_Form_T.resx">
       <DependentUpon>Densitet_Form_T.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Elektrisk_Ladning_Form_R.resx">
+      <DependentUpon>Elektrisk_Ladning_Form_R.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gnidningskraft_Form_R.resx">
+      <DependentUpon>Gnidningskraft_Form_R.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gravitation_Form_D.resx">
+      <DependentUpon>Gravitation_Form_D.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Hovedsiden.resx">
       <DependentUpon>Hovedsiden.vb</DependentUpon>
     </EmbeddedResource>

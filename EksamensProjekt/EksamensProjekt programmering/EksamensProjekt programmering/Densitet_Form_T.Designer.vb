@@ -36,7 +36,6 @@ Partial Class Densitet_Form_T
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
-        Me.Densitet_Gaskonstanten_TextBox = New System.Windows.Forms.TextBox()
         Me.Densitet_Temperatur_K_TextBox = New System.Windows.Forms.TextBox()
         Me.Densitet_Tryk_TextBox = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -50,6 +49,17 @@ Partial Class Densitet_Form_T
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Beregn_Densitet_Væsker_But = New System.Windows.Forms.Button()
         Me.Beregn_Densitet_Gasser_But = New System.Windows.Forms.Button()
+        Me.Interferens_But = New System.Windows.Forms.Button()
+        Me.Idealgasser_But = New System.Windows.Forms.Button()
+        Me.Gravitation_But = New System.Windows.Forms.Button()
+        Me.Tryk_But = New System.Windows.Forms.Button()
+        Me.Varme_But = New System.Windows.Forms.Button()
+        Me.Densitet_But = New System.Windows.Forms.Button()
+        Me.Elektrisk_Ladning_But = New System.Windows.Forms.Button()
+        Me.Gnidningskraft_But = New System.Windows.Forms.Button()
+        Me.Tyngde_But = New System.Windows.Forms.Button()
+        Me.Hovedside_But = New System.Windows.Forms.Button()
+        Me.Label17 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Densitet_Masse_TextBox
@@ -174,13 +184,6 @@ Partial Class Densitet_Form_T
         Me.Label16.TabIndex = 26
         Me.Label16.Text = "("
         '
-        'Densitet_Gaskonstanten_TextBox
-        '
-        Me.Densitet_Gaskonstanten_TextBox.Location = New System.Drawing.Point(568, 335)
-        Me.Densitet_Gaskonstanten_TextBox.Name = "Densitet_Gaskonstanten_TextBox"
-        Me.Densitet_Gaskonstanten_TextBox.Size = New System.Drawing.Size(137, 26)
-        Me.Densitet_Gaskonstanten_TextBox.TabIndex = 28
-        '
         'Densitet_Temperatur_K_TextBox
         '
         Me.Densitet_Temperatur_K_TextBox.Location = New System.Drawing.Point(897, 335)
@@ -294,11 +297,121 @@ Partial Class Densitet_Form_T
         Me.Beregn_Densitet_Gasser_But.Text = "Beregn"
         Me.Beregn_Densitet_Gasser_But.UseVisualStyleBackColor = True
         '
+        'Interferens_But
+        '
+        Me.Interferens_But.Location = New System.Drawing.Point(12, 381)
+        Me.Interferens_But.Name = "Interferens_But"
+        Me.Interferens_But.Size = New System.Drawing.Size(326, 35)
+        Me.Interferens_But.TabIndex = 69
+        Me.Interferens_But.Text = "Beregn Interferens"
+        Me.Interferens_But.UseVisualStyleBackColor = True
+        '
+        'Idealgasser_But
+        '
+        Me.Idealgasser_But.Location = New System.Drawing.Point(12, 340)
+        Me.Idealgasser_But.Name = "Idealgasser_But"
+        Me.Idealgasser_But.Size = New System.Drawing.Size(326, 35)
+        Me.Idealgasser_But.TabIndex = 68
+        Me.Idealgasser_But.Text = "Beregn Idealgasser"
+        Me.Idealgasser_But.UseVisualStyleBackColor = True
+        '
+        'Gravitation_But
+        '
+        Me.Gravitation_But.Location = New System.Drawing.Point(12, 299)
+        Me.Gravitation_But.Name = "Gravitation_But"
+        Me.Gravitation_But.Size = New System.Drawing.Size(326, 35)
+        Me.Gravitation_But.TabIndex = 67
+        Me.Gravitation_But.Text = "Beregn Gravitation"
+        Me.Gravitation_But.UseVisualStyleBackColor = True
+        '
+        'Tryk_But
+        '
+        Me.Tryk_But.Location = New System.Drawing.Point(12, 258)
+        Me.Tryk_But.Name = "Tryk_But"
+        Me.Tryk_But.Size = New System.Drawing.Size(326, 35)
+        Me.Tryk_But.TabIndex = 66
+        Me.Tryk_But.Text = "Beregn Tryk"
+        Me.Tryk_But.UseVisualStyleBackColor = True
+        '
+        'Varme_But
+        '
+        Me.Varme_But.Location = New System.Drawing.Point(12, 217)
+        Me.Varme_But.Name = "Varme_But"
+        Me.Varme_But.Size = New System.Drawing.Size(326, 35)
+        Me.Varme_But.TabIndex = 65
+        Me.Varme_But.Text = "Beregn Varme"
+        Me.Varme_But.UseVisualStyleBackColor = True
+        '
+        'Densitet_But
+        '
+        Me.Densitet_But.Location = New System.Drawing.Point(12, 176)
+        Me.Densitet_But.Name = "Densitet_But"
+        Me.Densitet_But.Size = New System.Drawing.Size(326, 35)
+        Me.Densitet_But.TabIndex = 64
+        Me.Densitet_But.Text = "Beregn Densitet"
+        Me.Densitet_But.UseVisualStyleBackColor = True
+        '
+        'Elektrisk_Ladning_But
+        '
+        Me.Elektrisk_Ladning_But.Location = New System.Drawing.Point(12, 135)
+        Me.Elektrisk_Ladning_But.Name = "Elektrisk_Ladning_But"
+        Me.Elektrisk_Ladning_But.Size = New System.Drawing.Size(326, 35)
+        Me.Elektrisk_Ladning_But.TabIndex = 63
+        Me.Elektrisk_Ladning_But.Text = "Bereng Elektrisk ladning"
+        Me.Elektrisk_Ladning_But.UseVisualStyleBackColor = True
+        '
+        'Gnidningskraft_But
+        '
+        Me.Gnidningskraft_But.Location = New System.Drawing.Point(12, 94)
+        Me.Gnidningskraft_But.Name = "Gnidningskraft_But"
+        Me.Gnidningskraft_But.Size = New System.Drawing.Size(326, 35)
+        Me.Gnidningskraft_But.TabIndex = 62
+        Me.Gnidningskraft_But.Text = "Beregn Gnidningskraft"
+        Me.Gnidningskraft_But.UseVisualStyleBackColor = True
+        '
+        'Tyngde_But
+        '
+        Me.Tyngde_But.Location = New System.Drawing.Point(12, 53)
+        Me.Tyngde_But.Name = "Tyngde_But"
+        Me.Tyngde_But.Size = New System.Drawing.Size(326, 35)
+        Me.Tyngde_But.TabIndex = 61
+        Me.Tyngde_But.Text = "Beregn Tyngdekraft"
+        Me.Tyngde_But.UseVisualStyleBackColor = True
+        '
+        'Hovedside_But
+        '
+        Me.Hovedside_But.Location = New System.Drawing.Point(12, 12)
+        Me.Hovedside_But.Name = "Hovedside_But"
+        Me.Hovedside_But.Size = New System.Drawing.Size(326, 35)
+        Me.Hovedside_But.TabIndex = 60
+        Me.Hovedside_But.Text = "Hovedside"
+        Me.Hovedside_But.UseVisualStyleBackColor = True
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Location = New System.Drawing.Point(590, 338)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(58, 20)
+        Me.Label17.TabIndex = 70
+        Me.Label17.Text = "8.3145"
+        '
         'Densitet_Form_T
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1153, 482)
+        Me.Controls.Add(Me.Label17)
+        Me.Controls.Add(Me.Interferens_But)
+        Me.Controls.Add(Me.Idealgasser_But)
+        Me.Controls.Add(Me.Gravitation_But)
+        Me.Controls.Add(Me.Tryk_But)
+        Me.Controls.Add(Me.Varme_But)
+        Me.Controls.Add(Me.Densitet_But)
+        Me.Controls.Add(Me.Elektrisk_Ladning_But)
+        Me.Controls.Add(Me.Gnidningskraft_But)
+        Me.Controls.Add(Me.Tyngde_But)
+        Me.Controls.Add(Me.Hovedside_But)
         Me.Controls.Add(Me.Beregn_Densitet_Gasser_But)
         Me.Controls.Add(Me.Beregn_Densitet_Væsker_But)
         Me.Controls.Add(Me.Label14)
@@ -312,7 +425,6 @@ Partial Class Densitet_Form_T
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Densitet_Temperatur_K_TextBox)
         Me.Controls.Add(Me.Densitet_Tryk_TextBox)
-        Me.Controls.Add(Me.Densitet_Gaskonstanten_TextBox)
         Me.Controls.Add(Me.Label15)
         Me.Controls.Add(Me.Label16)
         Me.Controls.Add(Me.Label10)
@@ -349,7 +461,6 @@ Partial Class Densitet_Form_T
     Friend WithEvents Label10 As Label
     Friend WithEvents Label15 As Label
     Friend WithEvents Label16 As Label
-    Friend WithEvents Densitet_Gaskonstanten_TextBox As TextBox
     Friend WithEvents Densitet_Temperatur_K_TextBox As TextBox
     Friend WithEvents Densitet_Tryk_TextBox As TextBox
     Friend WithEvents Label4 As Label
@@ -363,4 +474,15 @@ Partial Class Densitet_Form_T
     Friend WithEvents Label14 As Label
     Friend WithEvents Beregn_Densitet_Væsker_But As Button
     Friend WithEvents Beregn_Densitet_Gasser_But As Button
+    Friend WithEvents Interferens_But As Button
+    Friend WithEvents Idealgasser_But As Button
+    Friend WithEvents Gravitation_But As Button
+    Friend WithEvents Tryk_But As Button
+    Friend WithEvents Varme_But As Button
+    Friend WithEvents Densitet_But As Button
+    Friend WithEvents Elektrisk_Ladning_But As Button
+    Friend WithEvents Gnidningskraft_But As Button
+    Friend WithEvents Tyngde_But As Button
+    Friend WithEvents Hovedside_But As Button
+    Friend WithEvents Label17 As Label
 End Class
