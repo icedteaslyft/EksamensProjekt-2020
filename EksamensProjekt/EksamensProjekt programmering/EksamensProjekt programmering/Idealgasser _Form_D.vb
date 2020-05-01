@@ -1,4 +1,7 @@
 ﻿Public Class Idealgasser__Form_D
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+
+    End Sub
 
 
 #Region "Knapper"
