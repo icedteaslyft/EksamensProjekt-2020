@@ -1,11 +1,10 @@
 ﻿Public Class Tyngdekraft_Form_R
 
-
-    Private Sub Tyngdekraft_Form_R_Closed(sender As Object, e As EventArgs) Handles Me.Closed
+    Private Sub Tyngdekraft_Form_R_Load(sender As Object, e As EventArgs) Handles Me.Load
         KanRegne = True
     End Sub
 
-    Private Sub Tyngdekraft_Form_R_Load(sender As Object, e As EventArgs) Handles Me.Load
+    Private Sub Tyngdekraft_Form_R_Closed(sender As Object, e As EventArgs) Handles Me.Closed
         p_Rho = Nothing
         m_MolMasse = Nothing
         p_Tryk = Nothing
@@ -22,6 +21,8 @@
         p_VæskeTryk = Nothing
         g_TyngdeAcceleration = Nothing
     End Sub
+
+
 
 
 
