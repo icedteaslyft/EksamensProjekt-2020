@@ -29,6 +29,18 @@
 
 #End Region
 
+#Region "Subroutiner"
+
+    Private Sub CheckVariablerIdealgasser()
+        If R_mol = Nothing Or T_Temperatur = Nothing Or n_Stofmængde = Nothing Then
+            MsgBox("Ikke alle værdier er angivet!")
+            KanRegne = False
+
+        End If
+
+#End Region
+
+
 #Region "Knapper"
 
     Private Sub Hovedside_But_Click_1(sender As Object, e As EventArgs) Handles Hovedside_But.Click

@@ -42,10 +42,10 @@ Partial Class Gravitation_Form_D
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.G_Gravitation = New System.Windows.Forms.TextBox()
+        Me.M_Masse1 = New System.Windows.Forms.TextBox()
+        Me.M_Masse2 = New System.Windows.Forms.TextBox()
+        Me.R_Afstand = New System.Windows.Forms.TextBox()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
@@ -155,9 +155,9 @@ Partial Class Gravitation_Form_D
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(497, 73)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(105, 13)
+        Me.Label1.Size = New System.Drawing.Size(101, 13)
         Me.Label1.TabIndex = 70
-        Me.Label1.Text = "F = G * (m *M) / (r^2)"
+        Me.Label1.Text = "  F = G * m1 * m2/r2"
         '
         'Label2
         '
@@ -192,9 +192,9 @@ Partial Class Gravitation_Form_D
         Me.Label5.AutoSize = True
         Me.Label5.Location = New System.Drawing.Point(427, 124)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(15, 13)
+        Me.Label5.Size = New System.Drawing.Size(21, 13)
         Me.Label5.TabIndex = 74
-        Me.Label5.Text = "m"
+        Me.Label5.Text = "m1"
         '
         'Label6
         '
@@ -210,9 +210,9 @@ Partial Class Gravitation_Form_D
         Me.Label7.AutoSize = True
         Me.Label7.Location = New System.Drawing.Point(500, 124)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(16, 13)
+        Me.Label7.Size = New System.Drawing.Size(21, 13)
         Me.Label7.TabIndex = 76
-        Me.Label7.Text = "M"
+        Me.Label7.Text = "m2"
         '
         'Label8
         '
@@ -228,46 +228,46 @@ Partial Class Gravitation_Form_D
         Me.Label9.AutoSize = True
         Me.Label9.Location = New System.Drawing.Point(587, 128)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(15, 13)
+        Me.Label9.Size = New System.Drawing.Size(10, 13)
         Me.Label9.TabIndex = 78
-        Me.Label9.Text = "R"
+        Me.Label9.Text = "r"
         '
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(596, 117)
+        Me.Label10.Location = New System.Drawing.Point(592, 123)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(13, 13)
         Me.Label10.TabIndex = 79
         Me.Label10.Text = "2"
         '
-        'TextBox1
+        'G_Gravitation
         '
-        Me.TextBox1.Location = New System.Drawing.Point(308, 143)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(62, 20)
-        Me.TextBox1.TabIndex = 80
+        Me.G_Gravitation.Location = New System.Drawing.Point(308, 143)
+        Me.G_Gravitation.Name = "G_Gravitation"
+        Me.G_Gravitation.Size = New System.Drawing.Size(62, 20)
+        Me.G_Gravitation.TabIndex = 80
         '
-        'TextBox2
+        'M_Masse1
         '
-        Me.TextBox2.Location = New System.Drawing.Point(398, 143)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(62, 20)
-        Me.TextBox2.TabIndex = 81
+        Me.M_Masse1.Location = New System.Drawing.Point(398, 143)
+        Me.M_Masse1.Name = "M_Masse1"
+        Me.M_Masse1.Size = New System.Drawing.Size(62, 20)
+        Me.M_Masse1.TabIndex = 81
         '
-        'TextBox3
+        'M_Masse2
         '
-        Me.TextBox3.Location = New System.Drawing.Point(477, 144)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(62, 20)
-        Me.TextBox3.TabIndex = 82
+        Me.M_Masse2.Location = New System.Drawing.Point(477, 144)
+        Me.M_Masse2.Name = "M_Masse2"
+        Me.M_Masse2.Size = New System.Drawing.Size(62, 20)
+        Me.M_Masse2.TabIndex = 82
         '
-        'TextBox4
+        'R_Afstand
         '
-        Me.TextBox4.Location = New System.Drawing.Point(562, 144)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(62, 20)
-        Me.TextBox4.TabIndex = 83
+        Me.R_Afstand.Location = New System.Drawing.Point(562, 144)
+        Me.R_Afstand.Name = "R_Afstand"
+        Me.R_Afstand.Size = New System.Drawing.Size(62, 20)
+        Me.R_Afstand.TabIndex = 83
         '
         'Label11
         '
@@ -296,10 +296,10 @@ Partial Class Gravitation_Form_D
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.TextBox4)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.R_Afstand)
+        Me.Controls.Add(Me.M_Masse2)
+        Me.Controls.Add(Me.M_Masse1)
+        Me.Controls.Add(Me.G_Gravitation)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
@@ -346,10 +346,10 @@ Partial Class Gravitation_Form_D
     Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents Label10 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents G_Gravitation As TextBox
+    Friend WithEvents M_Masse1 As TextBox
+    Friend WithEvents M_Masse2 As TextBox
+    Friend WithEvents R_Afstand As TextBox
     Friend WithEvents Label11 As Label
     Friend WithEvents Label12 As Label
 End Class

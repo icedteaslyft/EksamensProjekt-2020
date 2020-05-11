@@ -64,8 +64,17 @@
 
     End Sub
 
-    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles G_Gravitation.TextChanged
 
+    End Sub
+
+
+
+#End Region
+
+#Region "Gravitation"
+    Private Sub G_Gravitation_Textbox_Textchanged(sender As Object, e As EventArgs) Handles G_Gravitation_Textbox.Textchanged
+        G_Gravitation = Val()
     End Sub
 
 
