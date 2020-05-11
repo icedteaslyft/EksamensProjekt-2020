@@ -50,5 +50,11 @@
     Public My_Gnidningskoefficient As Double
     Public Fn_Normalkraft As Double
 
+    ''Værdier for Idealgas (p * V = n * R * T)
+    Public p_Trykket As Double
+    Public V_Volumen As Double
+    Public n_Stofmængde As Double
+    Public T_Temperatur As Double
+    Public R_mol As Double
 
 End Module

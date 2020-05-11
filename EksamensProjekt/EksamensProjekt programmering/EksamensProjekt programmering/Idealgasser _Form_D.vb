@@ -3,7 +3,31 @@
 
     End Sub
 
+#Region "Idealgas"
+    'Værdi til det tekstboksen modtager
 
+    Private Sub p_Trykket_textbox_Textchanged(sender As Object, e As EventArgs)
+        p_Trykket = Val(p_Trykket.Text)
+    End Sub
+    Private Sub V_Volumen_textbox_Textchanged(sender As Object, e As EventArgs)
+        V_Volumen = Val(V_Volumen.Text)
+    End Sub
+    Private Sub n_Stofmængde_Textbox_Textchanged(sender As Object, e As EventArgs) Handles n_Stofmængde.TextChanged
+        n_Stofmængde = Val(n_Stofmængde.Text)
+    End Sub
+    Private Sub T_Tempeartur_Textbox_Textchanged(sender As Object, e As EventArgs) Handles T_Temperatur.TextChanged
+        T_Temperatur = Val(T_Temperatur)
+    End Sub
+    Public Sub But_Udregn()
+        If KanRegne = True Then
+            n_Stofmængde * R_mol * T_Temperatur
+        End If
+    End Sub
+
+    Private Sub 
+
+
+#End Region
 
 #Region "Knapper"
 
@@ -58,6 +82,14 @@
     End Sub
 
     Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+
+    End Sub
+
+    Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles p_Trykket.TextChanged
+
+    End Sub
+
+    Private Sub TextBox3_TextChanged(sender As Object, e As EventArgs) Handles n_Stofmængde.TextChanged
 
     End Sub
 
