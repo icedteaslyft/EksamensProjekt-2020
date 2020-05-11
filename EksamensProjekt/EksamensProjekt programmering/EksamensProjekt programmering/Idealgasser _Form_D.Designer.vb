@@ -24,9 +24,9 @@ Partial Class Idealgasser__Form_D
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.n_Stofmængde = New System.Windows.Forms.TextBox()
-        Me.T_Temperatur = New System.Windows.Forms.TextBox()
+        Me.IdealGasTotal_lbl = New System.Windows.Forms.Label()
+        Me.n_Stofmængde_TextBox = New System.Windows.Forms.TextBox()
+        Me.T_Temperatur_TextBox = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.But_Udregn = New System.Windows.Forms.Button()
         Me.Interferens_But = New System.Windows.Forms.Button()
@@ -41,7 +41,7 @@ Partial Class Idealgasser__Form_D
         Me.Hovedside_But = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Lbl_UdregnD = New System.Windows.Forms.Label()
-        Me.R_mol = New System.Windows.Forms.TextBox()
+        Me.R_mol_TextBox = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
@@ -49,9 +49,10 @@ Partial Class Idealgasser__Form_D
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(417, 60)
+        Me.Label1.Location = New System.Drawing.Point(626, 92)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(164, 25)
+        Me.Label1.Size = New System.Drawing.Size(249, 36)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Idealgasligningen"
         '
@@ -59,150 +60,146 @@ Partial Class Idealgasser__Form_D
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(439, 85)
+        Me.Label2.Location = New System.Drawing.Point(658, 131)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(99, 17)
+        Me.Label2.Size = New System.Drawing.Size(140, 25)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "p*V = n * R * T"
         '
-        'Label3
+        'IdealGasTotal_lbl
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(673, 131)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(31, 13)
-        Me.Label3.TabIndex = 2
-        Me.Label3.Text = "Total"
+        Me.IdealGasTotal_lbl.AutoSize = True
+        Me.IdealGasTotal_lbl.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.IdealGasTotal_lbl.Location = New System.Drawing.Point(1010, 202)
+        Me.IdealGasTotal_lbl.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.IdealGasTotal_lbl.Name = "IdealGasTotal_lbl"
+        Me.IdealGasTotal_lbl.Size = New System.Drawing.Size(46, 20)
+        Me.IdealGasTotal_lbl.TabIndex = 2
+        Me.IdealGasTotal_lbl.Text = "Total"
         '
-        'n_Stofmængde
+        'n_Stofmængde_TextBox
         '
-        Me.n_Stofmængde.Location = New System.Drawing.Point(345, 128)
-        Me.n_Stofmængde.Name = "n_Stofmængde"
-        Me.n_Stofmængde.Size = New System.Drawing.Size(70, 20)
-        Me.n_Stofmængde.TabIndex = 5
+        Me.n_Stofmængde_TextBox.Location = New System.Drawing.Point(518, 197)
+        Me.n_Stofmængde_TextBox.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.n_Stofmængde_TextBox.Name = "n_Stofmængde_TextBox"
+        Me.n_Stofmængde_TextBox.Size = New System.Drawing.Size(103, 26)
+        Me.n_Stofmængde_TextBox.TabIndex = 5
         '
-        'T_Temperatur
+        'T_Temperatur_TextBox
         '
-        Me.T_Temperatur.Location = New System.Drawing.Point(511, 128)
-        Me.T_Temperatur.Name = "T_Temperatur"
-        Me.T_Temperatur.Size = New System.Drawing.Size(70, 20)
-        Me.T_Temperatur.TabIndex = 6
+        Me.T_Temperatur_TextBox.Location = New System.Drawing.Point(766, 197)
+        Me.T_Temperatur_TextBox.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.T_Temperatur_TextBox.Name = "T_Temperatur_TextBox"
+        Me.T_Temperatur_TextBox.Size = New System.Drawing.Size(103, 26)
+        Me.T_Temperatur_TextBox.TabIndex = 6
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(540, 112)
+        Me.Label7.Location = New System.Drawing.Point(810, 172)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(14, 13)
+        Me.Label7.Size = New System.Drawing.Size(18, 20)
         Me.Label7.TabIndex = 10
         Me.Label7.Text = "T"
         '
         'But_Udregn
         '
-        Me.But_Udregn.Location = New System.Drawing.Point(452, 203)
+        Me.But_Udregn.Location = New System.Drawing.Point(678, 312)
+        Me.But_Udregn.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.But_Udregn.Name = "But_Udregn"
-        Me.But_Udregn.Size = New System.Drawing.Size(75, 23)
+        Me.But_Udregn.Size = New System.Drawing.Size(112, 35)
         Me.But_Udregn.TabIndex = 13
         Me.But_Udregn.Text = "Beregn"
         Me.But_Udregn.UseVisualStyleBackColor = True
         '
         'Interferens_But
         '
-        Me.Interferens_But.Location = New System.Drawing.Point(11, 262)
-        Me.Interferens_But.Margin = New System.Windows.Forms.Padding(2)
+        Me.Interferens_But.Location = New System.Drawing.Point(16, 403)
         Me.Interferens_But.Name = "Interferens_But"
-        Me.Interferens_But.Size = New System.Drawing.Size(217, 23)
+        Me.Interferens_But.Size = New System.Drawing.Size(326, 35)
         Me.Interferens_But.TabIndex = 79
         Me.Interferens_But.Text = "Beregn Interferens"
         Me.Interferens_But.UseVisualStyleBackColor = True
         '
         'Idealgasser_But
         '
-        Me.Idealgasser_But.Location = New System.Drawing.Point(11, 235)
-        Me.Idealgasser_But.Margin = New System.Windows.Forms.Padding(2)
+        Me.Idealgasser_But.Location = New System.Drawing.Point(16, 362)
         Me.Idealgasser_But.Name = "Idealgasser_But"
-        Me.Idealgasser_But.Size = New System.Drawing.Size(217, 23)
+        Me.Idealgasser_But.Size = New System.Drawing.Size(326, 35)
         Me.Idealgasser_But.TabIndex = 78
         Me.Idealgasser_But.Text = "Beregn Idealgasser"
         Me.Idealgasser_But.UseVisualStyleBackColor = True
         '
         'Gravitation_But
         '
-        Me.Gravitation_But.Location = New System.Drawing.Point(11, 208)
-        Me.Gravitation_But.Margin = New System.Windows.Forms.Padding(2)
+        Me.Gravitation_But.Location = New System.Drawing.Point(16, 320)
         Me.Gravitation_But.Name = "Gravitation_But"
-        Me.Gravitation_But.Size = New System.Drawing.Size(217, 23)
+        Me.Gravitation_But.Size = New System.Drawing.Size(326, 35)
         Me.Gravitation_But.TabIndex = 77
         Me.Gravitation_But.Text = "Beregn Gravitation"
         Me.Gravitation_But.UseVisualStyleBackColor = True
         '
         'Tryk_But
         '
-        Me.Tryk_But.Location = New System.Drawing.Point(11, 182)
-        Me.Tryk_But.Margin = New System.Windows.Forms.Padding(2)
+        Me.Tryk_But.Location = New System.Drawing.Point(16, 280)
         Me.Tryk_But.Name = "Tryk_But"
-        Me.Tryk_But.Size = New System.Drawing.Size(217, 23)
+        Me.Tryk_But.Size = New System.Drawing.Size(326, 35)
         Me.Tryk_But.TabIndex = 76
         Me.Tryk_But.Text = "Beregn Tryk"
         Me.Tryk_But.UseVisualStyleBackColor = True
         '
         'Varme_But
         '
-        Me.Varme_But.Location = New System.Drawing.Point(11, 155)
-        Me.Varme_But.Margin = New System.Windows.Forms.Padding(2)
+        Me.Varme_But.Location = New System.Drawing.Point(16, 238)
         Me.Varme_But.Name = "Varme_But"
-        Me.Varme_But.Size = New System.Drawing.Size(217, 23)
+        Me.Varme_But.Size = New System.Drawing.Size(326, 35)
         Me.Varme_But.TabIndex = 75
         Me.Varme_But.Text = "Beregn Varme"
         Me.Varme_But.UseVisualStyleBackColor = True
         '
         'Densitet_But
         '
-        Me.Densitet_But.Location = New System.Drawing.Point(11, 128)
-        Me.Densitet_But.Margin = New System.Windows.Forms.Padding(2)
+        Me.Densitet_But.Location = New System.Drawing.Point(16, 197)
         Me.Densitet_But.Name = "Densitet_But"
-        Me.Densitet_But.Size = New System.Drawing.Size(217, 23)
+        Me.Densitet_But.Size = New System.Drawing.Size(326, 35)
         Me.Densitet_But.TabIndex = 74
         Me.Densitet_But.Text = "Beregn Densitet"
         Me.Densitet_But.UseVisualStyleBackColor = True
         '
         'Elektrisk_Ladning_But
         '
-        Me.Elektrisk_Ladning_But.Location = New System.Drawing.Point(11, 102)
-        Me.Elektrisk_Ladning_But.Margin = New System.Windows.Forms.Padding(2)
+        Me.Elektrisk_Ladning_But.Location = New System.Drawing.Point(16, 157)
         Me.Elektrisk_Ladning_But.Name = "Elektrisk_Ladning_But"
-        Me.Elektrisk_Ladning_But.Size = New System.Drawing.Size(217, 23)
+        Me.Elektrisk_Ladning_But.Size = New System.Drawing.Size(326, 35)
         Me.Elektrisk_Ladning_But.TabIndex = 73
         Me.Elektrisk_Ladning_But.Text = "Bereng Elektrisk ladning"
         Me.Elektrisk_Ladning_But.UseVisualStyleBackColor = True
         '
         'Gnidningskraft_But
         '
-        Me.Gnidningskraft_But.Location = New System.Drawing.Point(11, 75)
-        Me.Gnidningskraft_But.Margin = New System.Windows.Forms.Padding(2)
+        Me.Gnidningskraft_But.Location = New System.Drawing.Point(16, 115)
         Me.Gnidningskraft_But.Name = "Gnidningskraft_But"
-        Me.Gnidningskraft_But.Size = New System.Drawing.Size(217, 23)
+        Me.Gnidningskraft_But.Size = New System.Drawing.Size(326, 35)
         Me.Gnidningskraft_But.TabIndex = 72
         Me.Gnidningskraft_But.Text = "Beregn Gnidningskraft"
         Me.Gnidningskraft_But.UseVisualStyleBackColor = True
         '
         'Tyngde_But
         '
-        Me.Tyngde_But.Location = New System.Drawing.Point(11, 48)
-        Me.Tyngde_But.Margin = New System.Windows.Forms.Padding(2)
+        Me.Tyngde_But.Location = New System.Drawing.Point(16, 74)
         Me.Tyngde_But.Name = "Tyngde_But"
-        Me.Tyngde_But.Size = New System.Drawing.Size(217, 23)
+        Me.Tyngde_But.Size = New System.Drawing.Size(326, 35)
         Me.Tyngde_But.TabIndex = 71
         Me.Tyngde_But.Text = "Beregn Tyngdekraft"
         Me.Tyngde_But.UseVisualStyleBackColor = True
         '
         'Hovedside_But
         '
-        Me.Hovedside_But.Location = New System.Drawing.Point(11, 22)
-        Me.Hovedside_But.Margin = New System.Windows.Forms.Padding(2)
+        Me.Hovedside_But.Location = New System.Drawing.Point(16, 34)
         Me.Hovedside_But.Name = "Hovedside_But"
-        Me.Hovedside_But.Size = New System.Drawing.Size(217, 23)
+        Me.Hovedside_But.Size = New System.Drawing.Size(326, 35)
         Me.Hovedside_But.TabIndex = 70
         Me.Hovedside_But.Text = "Hovedside"
         Me.Hovedside_But.UseVisualStyleBackColor = True
@@ -210,44 +207,48 @@ Partial Class Idealgasser__Form_D
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(371, 112)
+        Me.Label4.Location = New System.Drawing.Point(556, 172)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(13, 13)
+        Me.Label4.Size = New System.Drawing.Size(18, 20)
         Me.Label4.TabIndex = 80
         Me.Label4.Text = "n"
         '
         'Lbl_UdregnD
         '
         Me.Lbl_UdregnD.AutoSize = True
-        Me.Lbl_UdregnD.Location = New System.Drawing.Point(587, 131)
+        Me.Lbl_UdregnD.Location = New System.Drawing.Point(880, 202)
+        Me.Lbl_UdregnD.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Lbl_UdregnD.Name = "Lbl_UdregnD"
-        Me.Lbl_UdregnD.Size = New System.Drawing.Size(13, 13)
+        Me.Lbl_UdregnD.Size = New System.Drawing.Size(18, 20)
         Me.Lbl_UdregnD.TabIndex = 81
         Me.Lbl_UdregnD.Text = "="
         '
-        'R_mol
+        'R_mol_TextBox
         '
-        Me.R_mol.Location = New System.Drawing.Point(428, 128)
-        Me.R_mol.Name = "R_mol"
-        Me.R_mol.Size = New System.Drawing.Size(70, 20)
-        Me.R_mol.TabIndex = 82
+        Me.R_mol_TextBox.Location = New System.Drawing.Point(642, 197)
+        Me.R_mol_TextBox.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.R_mol_TextBox.Name = "R_mol_TextBox"
+        Me.R_mol_TextBox.Size = New System.Drawing.Size(103, 26)
+        Me.R_mol_TextBox.TabIndex = 82
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(458, 112)
+        Me.Label5.Location = New System.Drawing.Point(687, 172)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(15, 13)
+        Me.Label5.Size = New System.Drawing.Size(21, 20)
         Me.Label5.TabIndex = 83
         Me.Label5.Text = "R"
         '
         'Idealgasser__Form_D
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(1200, 692)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.R_mol)
+        Me.Controls.Add(Me.R_mol_TextBox)
         Me.Controls.Add(Me.Lbl_UdregnD)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Interferens_But)
@@ -262,11 +263,12 @@ Partial Class Idealgasser__Form_D
         Me.Controls.Add(Me.Hovedside_But)
         Me.Controls.Add(Me.But_Udregn)
         Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.T_Temperatur)
-        Me.Controls.Add(Me.n_Stofmængde)
-        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.T_Temperatur_TextBox)
+        Me.Controls.Add(Me.n_Stofmængde_TextBox)
+        Me.Controls.Add(Me.IdealGasTotal_lbl)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "Idealgasser__Form_D"
         Me.Text = " "
         Me.ResumeLayout(False)
@@ -276,9 +278,9 @@ Partial Class Idealgasser__Form_D
 
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents n_Stofmængde As TextBox
-    Friend WithEvents T_Temperatur As TextBox
+    Friend WithEvents IdealGasTotal_lbl As Label
+    Friend WithEvents n_Stofmængde_TextBox As TextBox
+    Friend WithEvents T_Temperatur_TextBox As TextBox
     Friend WithEvents Label7 As Label
     Friend WithEvents But_Udregn As Button
     Friend WithEvents Interferens_But As Button
@@ -293,6 +295,6 @@ Partial Class Idealgasser__Form_D
     Friend WithEvents Hovedside_But As Button
     Friend WithEvents Label4 As Label
     Friend WithEvents Lbl_UdregnD As Label
-    Friend WithEvents R_mol As TextBox
+    Friend WithEvents R_mol_TextBox As TextBox
     Friend WithEvents Label5 As Label
 End Class

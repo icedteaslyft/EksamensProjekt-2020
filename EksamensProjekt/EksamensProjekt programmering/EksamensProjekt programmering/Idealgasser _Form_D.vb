@@ -6,25 +6,30 @@
 #Region "Idealgas"
     'Værdi til det tekstboksen modtager
 
-    Private Sub p_Trykket_textbox_Textchanged(sender As Object, e As EventArgs)
-        p_Trykket = Val(p_Trykket.Text)
+    Private Sub R_mol_TextBox_TextChanged(sender As Object, e As EventArgs) Handles R_mol_TextBox.TextChanged
+        R_mol = Val(R_mol_TextBox.Text)
     End Sub
-    Private Sub V_Volumen_textbox_Textchanged(sender As Object, e As EventArgs)
-        V_Volumen = Val(V_Volumen.Text)
+    Private Sub n_Stofmængde_Textbox_Textchanged(sender As Object, e As EventArgs) Handles n_Stofmængde_TextBox.TextChanged
+        n_Stofmængde = Val(n_Stofmængde_TextBox.Text)
     End Sub
-    Private Sub n_Stofmængde_Textbox_Textchanged(sender As Object, e As EventArgs) Handles n_Stofmængde.TextChanged
-        n_Stofmængde = Val(n_Stofmængde.Text)
+    Private Sub T_Tempeartur_Textbox_Textchanged(sender As Object, e As EventArgs) Handles T_Temperatur_TextBox.TextChanged
+        T_Temperatur = Val(T_Temperatur_TextBox.Text)
     End Sub
-    Private Sub T_Tempeartur_Textbox_Textchanged(sender As Object, e As EventArgs) Handles T_Temperatur.TextChanged
-        T_Temperatur = Val(T_Temperatur)
-    End Sub
-    Public Sub But_Udregn()
+    Public Sub But_Udregn_Idealgas()
         If KanRegne = True Then
-            n_Stofmængde * R_mol * T_Temperatur
+            P_V = n_Stofmængde * R_mol * T_Temperatur
         End If
     End Sub
 
-    Private Sub 
+    Private Sub But_Udregn_Click(sender As Object, e As EventArgs) Handles But_Udregn.Click
+        But_Udregn_Idealgas()
+        IdealGasTotal_lbl.Text = P_V.ToString("F4")
+
+        If KanRegne = False Then
+            KanRegne = True
+        End If
+    End Sub
+
 
 
 #End Region
@@ -93,17 +98,13 @@
         Interferens_Form_D.Show()
     End Sub
 
-    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
 
-    End Sub
 
-    Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles p_Trykket.TextChanged
 
-    End Sub
 
-    Private Sub TextBox3_TextChanged(sender As Object, e As EventArgs) Handles n_Stofmængde.TextChanged
 
-    End Sub
+
+
 
 
 
