@@ -64,7 +64,7 @@
 
     End Sub
 
-    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles G_Gravitation.TextChanged
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles G_Gravitation_Textbox.TextChanged
 
     End Sub
 
@@ -73,12 +73,51 @@
 #End Region
 
 #Region "Gravitation"
-    Private Sub G_Gravitation_Textbox_Textchanged(sender As Object, e As EventArgs) Handles G_Gravitation_Textbox.Textchanged
-        G_Gravitation = Val()
+    Private Sub G_Gravitation_Textbox_Textchanged(sender As Object, e As EventArgs) Handles G_Gravitation_Textbox.TextChanged
+        G_Gravitation = Val(G_Gravitation_Textbox.Text)
+    End Sub
+
+    Private Sub M_Masse1_Textbox_Textchanged(Sender As Object, e As EventArgs) Handles M_Masse1_Textbox.TextChanged
+        M_Masse1 = Val(M_Masse1_Textbox.Text)
+    End Sub
+
+    Private Sub M_Masse2_Textbox_Textchanged(Sender As Object, e As EventArgs) Handles M_Masse2_Textbox.TextChanged
+        M_Masse2 = Val(M_Masse2_Textbox.Text)
+    End Sub
+
+    Private Sub R_Afstand_Textbox_Textchanged(Sender As Object, e As EventArgs) Handles R_Afstand_Textbox.TextChanged
+        R_Afstand = Val(R_Afstand_Textbox.Text)
+    End Sub
+
+    Private Sub But_Udregn_Gravitation()
+        If KanRegne = True Then
+            F_Resultat = G_Gravitation * M_Masse1 * M_Masse2 / R_Afstand
+        End If
     End Sub
 
 
+    Private Sub But_Udregn_Gravitation_Click(Sender As Object, e As EventArgs) Handles But_Udregn_Gravitation_But.Click, But_Udregn_Gravitation_But.Click
+        But_Udregn_Gravitation()
+        GravitationTotal_lbl.Text = F_Resultat.ToString("F4")
 
+        If KanRegne = False Then
+            KanRegne = True
+        End If
+    End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+
+    End Sub
+
+#End Region
+
+#Region "Subroutiner"
+    Private Sub CheckVariablerGravitation()
+        If G_Gravitation = Nothing Or M_Masse1 = Nothing Or M_Masse2 = Nothing Or R_Afstand = Nothing Then
+            MsgBox("Ikke alle værdier er angivet!")
+            KanRegne = False
+        End If
+    End Sub
 #End Region
 
 #Region "F er størrelsen af gravitationskraften.."

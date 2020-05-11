@@ -46,6 +46,7 @@ Partial Class Interferens_Form_D
         Me.Hovedside_But = New System.Windows.Forms.Button()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.Lbl_Done = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'lbl_konstruktiv_int
@@ -155,7 +156,7 @@ Partial Class Interferens_Form_D
         'Interferens_But
         '
         Me.Interferens_But.Location = New System.Drawing.Point(8, 248)
-        Me.Interferens_But.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Interferens_But.Margin = New System.Windows.Forms.Padding(2)
         Me.Interferens_But.Name = "Interferens_But"
         Me.Interferens_But.Size = New System.Drawing.Size(217, 23)
         Me.Interferens_But.TabIndex = 69
@@ -165,7 +166,7 @@ Partial Class Interferens_Form_D
         'Idealgasser_But
         '
         Me.Idealgasser_But.Location = New System.Drawing.Point(8, 221)
-        Me.Idealgasser_But.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Idealgasser_But.Margin = New System.Windows.Forms.Padding(2)
         Me.Idealgasser_But.Name = "Idealgasser_But"
         Me.Idealgasser_But.Size = New System.Drawing.Size(217, 23)
         Me.Idealgasser_But.TabIndex = 68
@@ -175,7 +176,7 @@ Partial Class Interferens_Form_D
         'Gravitation_But
         '
         Me.Gravitation_But.Location = New System.Drawing.Point(8, 194)
-        Me.Gravitation_But.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Gravitation_But.Margin = New System.Windows.Forms.Padding(2)
         Me.Gravitation_But.Name = "Gravitation_But"
         Me.Gravitation_But.Size = New System.Drawing.Size(217, 23)
         Me.Gravitation_But.TabIndex = 67
@@ -185,7 +186,7 @@ Partial Class Interferens_Form_D
         'Tryk_But
         '
         Me.Tryk_But.Location = New System.Drawing.Point(8, 168)
-        Me.Tryk_But.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Tryk_But.Margin = New System.Windows.Forms.Padding(2)
         Me.Tryk_But.Name = "Tryk_But"
         Me.Tryk_But.Size = New System.Drawing.Size(217, 23)
         Me.Tryk_But.TabIndex = 66
@@ -195,7 +196,7 @@ Partial Class Interferens_Form_D
         'Varme_But
         '
         Me.Varme_But.Location = New System.Drawing.Point(8, 141)
-        Me.Varme_But.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Varme_But.Margin = New System.Windows.Forms.Padding(2)
         Me.Varme_But.Name = "Varme_But"
         Me.Varme_But.Size = New System.Drawing.Size(217, 23)
         Me.Varme_But.TabIndex = 65
@@ -205,7 +206,7 @@ Partial Class Interferens_Form_D
         'Densitet_But
         '
         Me.Densitet_But.Location = New System.Drawing.Point(8, 114)
-        Me.Densitet_But.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Densitet_But.Margin = New System.Windows.Forms.Padding(2)
         Me.Densitet_But.Name = "Densitet_But"
         Me.Densitet_But.Size = New System.Drawing.Size(217, 23)
         Me.Densitet_But.TabIndex = 64
@@ -215,7 +216,7 @@ Partial Class Interferens_Form_D
         'Elektrisk_Ladning_But
         '
         Me.Elektrisk_Ladning_But.Location = New System.Drawing.Point(8, 88)
-        Me.Elektrisk_Ladning_But.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Elektrisk_Ladning_But.Margin = New System.Windows.Forms.Padding(2)
         Me.Elektrisk_Ladning_But.Name = "Elektrisk_Ladning_But"
         Me.Elektrisk_Ladning_But.Size = New System.Drawing.Size(217, 23)
         Me.Elektrisk_Ladning_But.TabIndex = 63
@@ -225,7 +226,7 @@ Partial Class Interferens_Form_D
         'Gnidningskraft_But
         '
         Me.Gnidningskraft_But.Location = New System.Drawing.Point(8, 61)
-        Me.Gnidningskraft_But.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Gnidningskraft_But.Margin = New System.Windows.Forms.Padding(2)
         Me.Gnidningskraft_But.Name = "Gnidningskraft_But"
         Me.Gnidningskraft_But.Size = New System.Drawing.Size(217, 23)
         Me.Gnidningskraft_But.TabIndex = 62
@@ -235,7 +236,7 @@ Partial Class Interferens_Form_D
         'Tyngde_But
         '
         Me.Tyngde_But.Location = New System.Drawing.Point(8, 34)
-        Me.Tyngde_But.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Tyngde_But.Margin = New System.Windows.Forms.Padding(2)
         Me.Tyngde_But.Name = "Tyngde_But"
         Me.Tyngde_But.Size = New System.Drawing.Size(217, 23)
         Me.Tyngde_But.TabIndex = 61
@@ -245,7 +246,7 @@ Partial Class Interferens_Form_D
         'Hovedside_But
         '
         Me.Hovedside_But.Location = New System.Drawing.Point(8, 8)
-        Me.Hovedside_But.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Hovedside_But.Margin = New System.Windows.Forms.Padding(2)
         Me.Hovedside_But.Name = "Hovedside_But"
         Me.Hovedside_But.Size = New System.Drawing.Size(217, 23)
         Me.Hovedside_But.TabIndex = 60
@@ -271,11 +272,23 @@ Partial Class Interferens_Form_D
         Me.Label7.TabIndex = 71
         Me.Label7.Text = "="
         '
+        'Lbl_Done
+        '
+        Me.Lbl_Done.AutoSize = True
+        Me.Lbl_Done.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lbl_Done.ForeColor = System.Drawing.Color.Red
+        Me.Lbl_Done.Location = New System.Drawing.Point(281, 34)
+        Me.Lbl_Done.Name = "Lbl_Done"
+        Me.Lbl_Done.Size = New System.Drawing.Size(379, 31)
+        Me.Lbl_Done.TabIndex = 72
+        Me.Lbl_Done.Text = "Denne form er ikke færdiggjort"
+        '
         'Interferens_Form_D
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Lbl_Done)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Interferens_But)
@@ -331,4 +344,5 @@ Partial Class Interferens_Form_D
     Friend WithEvents Hovedside_But As Button
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
+    Friend WithEvents Lbl_Done As Label
 End Class

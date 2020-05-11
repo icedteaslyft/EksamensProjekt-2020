@@ -42,12 +42,13 @@ Partial Class Gravitation_Form_D
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.G_Gravitation = New System.Windows.Forms.TextBox()
-        Me.M_Masse1 = New System.Windows.Forms.TextBox()
-        Me.M_Masse2 = New System.Windows.Forms.TextBox()
-        Me.R_Afstand = New System.Windows.Forms.TextBox()
+        Me.G_Gravitation_Textbox = New System.Windows.Forms.TextBox()
+        Me.M_Masse1_Textbox = New System.Windows.Forms.TextBox()
+        Me.M_Masse2_Textbox = New System.Windows.Forms.TextBox()
+        Me.R_Afstand_Textbox = New System.Windows.Forms.TextBox()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
+        Me.GravitationTotal_lbl = New System.Windows.Forms.Label()
+        Me.But_Udregn_Gravitation_But = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Interferens_But
@@ -241,33 +242,33 @@ Partial Class Gravitation_Form_D
         Me.Label10.TabIndex = 79
         Me.Label10.Text = "2"
         '
-        'G_Gravitation
+        'G_Gravitation_Textbox
         '
-        Me.G_Gravitation.Location = New System.Drawing.Point(308, 143)
-        Me.G_Gravitation.Name = "G_Gravitation"
-        Me.G_Gravitation.Size = New System.Drawing.Size(62, 20)
-        Me.G_Gravitation.TabIndex = 80
+        Me.G_Gravitation_Textbox.Location = New System.Drawing.Point(308, 143)
+        Me.G_Gravitation_Textbox.Name = "G_Gravitation_Textbox"
+        Me.G_Gravitation_Textbox.Size = New System.Drawing.Size(62, 20)
+        Me.G_Gravitation_Textbox.TabIndex = 80
         '
-        'M_Masse1
+        'M_Masse1_Textbox
         '
-        Me.M_Masse1.Location = New System.Drawing.Point(398, 143)
-        Me.M_Masse1.Name = "M_Masse1"
-        Me.M_Masse1.Size = New System.Drawing.Size(62, 20)
-        Me.M_Masse1.TabIndex = 81
+        Me.M_Masse1_Textbox.Location = New System.Drawing.Point(398, 143)
+        Me.M_Masse1_Textbox.Name = "M_Masse1_Textbox"
+        Me.M_Masse1_Textbox.Size = New System.Drawing.Size(62, 20)
+        Me.M_Masse1_Textbox.TabIndex = 81
         '
-        'M_Masse2
+        'M_Masse2_Textbox
         '
-        Me.M_Masse2.Location = New System.Drawing.Point(477, 144)
-        Me.M_Masse2.Name = "M_Masse2"
-        Me.M_Masse2.Size = New System.Drawing.Size(62, 20)
-        Me.M_Masse2.TabIndex = 82
+        Me.M_Masse2_Textbox.Location = New System.Drawing.Point(477, 144)
+        Me.M_Masse2_Textbox.Name = "M_Masse2_Textbox"
+        Me.M_Masse2_Textbox.Size = New System.Drawing.Size(62, 20)
+        Me.M_Masse2_Textbox.TabIndex = 82
         '
-        'R_Afstand
+        'R_Afstand_Textbox
         '
-        Me.R_Afstand.Location = New System.Drawing.Point(562, 144)
-        Me.R_Afstand.Name = "R_Afstand"
-        Me.R_Afstand.Size = New System.Drawing.Size(62, 20)
-        Me.R_Afstand.TabIndex = 83
+        Me.R_Afstand_Textbox.Location = New System.Drawing.Point(562, 144)
+        Me.R_Afstand_Textbox.Name = "R_Afstand_Textbox"
+        Me.R_Afstand_Textbox.Size = New System.Drawing.Size(62, 20)
+        Me.R_Afstand_Textbox.TabIndex = 83
         '
         'Label11
         '
@@ -278,28 +279,38 @@ Partial Class Gravitation_Form_D
         Me.Label11.TabIndex = 84
         Me.Label11.Text = "="
         '
-        'Label12
+        'GravitationTotal_lbl
         '
-        Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(761, 146)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(31, 13)
-        Me.Label12.TabIndex = 85
-        Me.Label12.Text = "Total"
+        Me.GravitationTotal_lbl.AutoSize = True
+        Me.GravitationTotal_lbl.Location = New System.Drawing.Point(761, 146)
+        Me.GravitationTotal_lbl.Name = "GravitationTotal_lbl"
+        Me.GravitationTotal_lbl.Size = New System.Drawing.Size(31, 13)
+        Me.GravitationTotal_lbl.TabIndex = 85
+        Me.GravitationTotal_lbl.Text = "Total"
+        '
+        'But_Udregn_Gravitation_But
+        '
+        Me.But_Udregn_Gravitation_But.Location = New System.Drawing.Point(513, 221)
+        Me.But_Udregn_Gravitation_But.Name = "But_Udregn_Gravitation_But"
+        Me.But_Udregn_Gravitation_But.Size = New System.Drawing.Size(75, 23)
+        Me.But_Udregn_Gravitation_But.TabIndex = 86
+        Me.But_Udregn_Gravitation_But.Text = "Beregn"
+        Me.But_Udregn_Gravitation_But.UseVisualStyleBackColor = True
         '
         'Gravitation_Form_D
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(866, 436)
-        Me.Controls.Add(Me.Label12)
+        Me.Controls.Add(Me.But_Udregn_Gravitation_But)
+        Me.Controls.Add(Me.GravitationTotal_lbl)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.R_Afstand)
-        Me.Controls.Add(Me.M_Masse2)
-        Me.Controls.Add(Me.M_Masse1)
-        Me.Controls.Add(Me.G_Gravitation)
+        Me.Controls.Add(Me.R_Afstand_Textbox)
+        Me.Controls.Add(Me.M_Masse2_Textbox)
+        Me.Controls.Add(Me.M_Masse1_Textbox)
+        Me.Controls.Add(Me.G_Gravitation_Textbox)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
@@ -346,10 +357,11 @@ Partial Class Gravitation_Form_D
     Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents Label10 As Label
-    Friend WithEvents G_Gravitation As TextBox
-    Friend WithEvents M_Masse1 As TextBox
-    Friend WithEvents M_Masse2 As TextBox
-    Friend WithEvents R_Afstand As TextBox
+    Friend WithEvents G_Gravitation_Textbox As TextBox
+    Friend WithEvents M_Masse1_Textbox As TextBox
+    Friend WithEvents M_Masse2_Textbox As TextBox
+    Friend WithEvents R_Afstand_Textbox As TextBox
     Friend WithEvents Label11 As Label
-    Friend WithEvents Label12 As Label
+    Friend WithEvents GravitationTotal_lbl As Label
+    Friend WithEvents But_Udregn_Gravitation_But As Button
 End Class

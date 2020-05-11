@@ -63,5 +63,14 @@
     Public M_Masse1 As Double
     Public M_Masse2 As Double
     Public R_Afstand As Double
+    Public F_Resultat As Double
+
+    ''Værdier for Konstruktiv Interferens''
+    Public Delta_S As Double
+    Public My_M As Double
+    Public Delta
+
+    ''Værdier for destruktiv Interferens''
+
 
 End Module
