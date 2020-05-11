@@ -56,5 +56,5 @@
     Public n_Stofmængde As Double
     Public T_Temperatur As Double
     Public R_mol As Double
-
+    Public P_V As Double
 End Module
