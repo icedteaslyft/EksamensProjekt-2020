@@ -56,11 +56,12 @@
     Public n_Stofmængde As Double
     Public T_Temperatur As Double
     Public R_mol As Double
+    Public P_V As Double
 
     ''Værdier for Gravitaion (F = G * m1 * m2/r2)
     Public G_Gravitation As Double
-    Public M_Masse 1 As Double 
-    Public M_Masse 2 As Double 
+    Public M_Masse1 As Double
+    Public M_Masse2 As Double
     Public R_Afstand As Double
 
 End Module

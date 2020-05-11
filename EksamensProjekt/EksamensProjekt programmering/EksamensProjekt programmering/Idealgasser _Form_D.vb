@@ -42,7 +42,7 @@
             KanRegne = False
 
         End If
-
+    End Sub
 #End Region
 
 
