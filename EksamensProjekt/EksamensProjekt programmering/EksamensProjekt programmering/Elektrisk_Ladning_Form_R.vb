@@ -1,5 +1,6 @@
 ﻿Public Class Elektrisk_Ladning_Form_R
 
+    'Alle de globale variabler som er i programmet bliver sat til at være ingenting.
     Private Sub Elektrisk_Ladning_Form_R_Closed(sender As Object, e As EventArgs) Handles Me.Closed
         p_Rho = Nothing
         m_MolMasse = Nothing
@@ -18,13 +19,13 @@
         g_TyngdeAcceleration = Nothing
     End Sub
 
+    'Den globale bool "KanRegne" bliver sat til at være true når formen startes.
     Private Sub Elektrisk_Ladning_Form_R_Load(sender As Object, e As EventArgs) Handles Me.Load
         KanRegne = True
     End Sub
 
-
+    'Denne region gør at man kan skifte mellem formene. Dette gør den ved at skjule sig selv og derefter vise den ønskede form.
 #Region "Knapper"
-
     Private Sub Hovedside_But_Click_1(sender As Object, e As EventArgs) Handles Hovedside_But.Click
         Me.Hide()
         Hoved_Form.Show()
@@ -74,9 +75,7 @@
         Me.Hide()
         Interferens_Form_D.Show()
     End Sub
-
 #End Region
-
 
     Private Sub Beregn_Elektrisk_Ladning_But_Click(sender As Object, e As EventArgs) Handles Beregn_Elektrisk_Ladning_But.Click
         'Kalder sub routinen "CheckVariabler"
@@ -95,7 +94,6 @@
 
     Public Sub BeregnElektriskLadning()
         'Sætter den globale variabel Q_ElektriskLadning til at være lig med t_DeltaTid ganget med I_Strømstyrke som begge er globale variabler.
-
         If KanRegne = True Then
             Q_ElektriskLadning = t_DeltaTid * I_Strømstyrke
         End If
@@ -114,8 +112,10 @@
     End Sub
 
 #Region "Sub Rutine"
-
     Private Sub CheckVariabler()
+        'Først tjekker sub rutinen om de globale variabler "I_Strømstyrke" og "t_DeltaTid" er lig med ingenting.
+        'Hvis de er lig med ingenting, så kommer der en besked boks som fortæller brugeren at der mangler værdier.
+        'Derefter bliver vores globale bool "KanRegne" sat til at være false, og vores globale variabel "Q_ElektriskLadning" bliver sat til at være ingenting.
         If I_Strømstyrke = Nothing Or t_DeltaTid = Nothing Then
             MsgBox("Ikke alle værdier er angivet!")
             KanRegne = False
@@ -123,5 +123,4 @@
         End If
     End Sub
 #End Region
-
 End Class

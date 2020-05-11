@@ -1,5 +1,6 @@
 ﻿Public Class Gnidningskraft_Form_R
 
+    'Alle de globale variabler som er i programmet bliver sat til at være ingenting.
     Private Sub Gnidningskraft_Form_R_Closed(sender As Object, e As EventArgs) Handles Me.Closed
         p_Rho = Nothing
         m_MolMasse = Nothing
@@ -18,15 +19,13 @@
         g_TyngdeAcceleration = Nothing
     End Sub
 
+    'Den globale bool "KanRegne" bliver sat til at være true når formen startes.
     Private Sub Gnidningskraft_Form_R_Load(sender As Object, e As EventArgs) Handles Me.Load
         KanRegne = True
     End Sub
 
-
-
-
+    'Denne region gør at man kan skifte mellem formene. Dette gør den ved at skjule sig selv og derefter vise den ønskede form.
 #Region "Knapper"
-
     Private Sub Hovedside_But_Click_1(sender As Object, e As EventArgs) Handles Hovedside_But.Click
         Me.Hide()
         Hoved_Form.Show()
@@ -76,10 +75,6 @@
         Me.Hide()
         Interferens_Form_D.Show()
     End Sub
-
-
-
-
 #End Region
 
     Private Sub Beregn_Gnidningskraft_But_Click(sender As Object, e As EventArgs) Handles Beregn_Gnidningskraft_But.Click
@@ -91,7 +86,6 @@
         'bliver konverteret til en string og sat til kun at have 4 decimaler. Og derefter sætter N bagved som står for Newton.
         Gnidningskraft_Total_lbl.Text = F_Gnidningskraft.ToString("F4") & " N"
 
-
         If KanRegne = False Then
             KanRegne = True
         End If
@@ -100,7 +94,6 @@
 
     Public Sub BeregnGnidningskraft()
         'Sætter den globale variabel F_Gnidningskraft til at være lig med My_Gnidningskoefficient ganget med Fn_Normalkraft som begge er globale variabler.
-
         If KanRegne = True Then
             F_Gnidningskraft = My_Gnidningskoefficient * Fn_Normalkraft
         End If
@@ -118,17 +111,16 @@
         Fn_Normalkraft = Val(Gnidningskraft_Normalkraften_TextBox.Text.ToString())
     End Sub
 
-
 #Region "Sub rutiner"
     Private Sub CheckVariabler()
+        'Først tjekker sub rutinen om de globale variabler "Fn_Normalkraft" og "My_Gnidningskoefficient" er lig med ingenting.
+        'Hvis de er lig med ingenting, så kommer der en besked boks som fortæller brugeren at der mangler værdier.
+        'Derefter bliver vores globale bool "KanRegne" sat til at være false, og vores globale variabel "F_Gnidningskraft" bliver sat til at være ingenting.
         If Fn_Normalkraft = Nothing Or My_Gnidningskoefficient = Nothing Then
             MsgBox("Ikke alle værdier er angivet!")
             KanRegne = False
             F_Gnidningskraft = Nothing
         End If
-
     End Sub
-
 #End Region
-
 End Class
