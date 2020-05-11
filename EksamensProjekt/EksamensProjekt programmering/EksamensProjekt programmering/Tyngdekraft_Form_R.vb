@@ -1,9 +1,11 @@
 ﻿Public Class Tyngdekraft_Form_R
 
+    'Den globale bool "KanRegne" bliver sat til at være true når formen startes.
     Private Sub Tyngdekraft_Form_R_Load(sender As Object, e As EventArgs) Handles Me.Load
         KanRegne = True
     End Sub
 
+    'Alle de globale variabler som er i programmet bliver sat til at være ingenting.
     Private Sub Tyngdekraft_Form_R_Closed(sender As Object, e As EventArgs) Handles Me.Closed
         p_Rho = Nothing
         m_MolMasse = Nothing
@@ -22,12 +24,8 @@
         g_TyngdeAcceleration = Nothing
     End Sub
 
-
-
-
-
+    'Denne region gør at man kan skifte mellem formene. Dette gør den ved at skjule sig selv og derefter vise den ønskede form.
 #Region "Knapper"
-
     Private Sub Hovedside_But_Click_1(sender As Object, e As EventArgs) Handles Hovedside_But.Click
         Me.Hide()
         Hoved_Form.Show()
@@ -77,11 +75,7 @@
         Me.Hide()
         Interferens_Form_D.Show()
     End Sub
-
-
 #End Region
-
-
 
     Private Sub Beregn_Tyngdekraft_But_Click(sender As Object, e As EventArgs) Handles Beregn_Tyngdekraft_But.Click
         'Kalder sub rutinen "Checkvariabler"
@@ -99,7 +93,6 @@
 
     Public Sub BeregnTyngdekraft()
         'Sætter den globale variabel F_Kraft til at være lig med m_Masse ganget med g_TyngdeAcceleration som begge er globale variabler.
-
         If KanRegne = True Then
             F_Kraft = m_Masse * g_TyngdeAcceleration
         End If
@@ -117,22 +110,16 @@
         g_TyngdeAcceleration = Val(Tyngdekraft_Tyngdeacceleration_TextBox.Text.ToString())
     End Sub
 
-    Private Sub Tyngdekraft_Total_lbl_Click(sender As Object, e As EventArgs) Handles Tyngdekraft_Total_lbl.Click
-
-    End Sub
-
 #Region "Subrutine"
-
     Private Sub CheckVariabler()
+        'Først tjekker sub rutinen om de globale variabler "m_Masse" og "g_TyngdeAcceleration" er lig med ingenting.
+        'Hvis de er lig med ingenting, så kommer der en besked boks som fortæller brugeren at der mangler værdier.
+        'Derefter bliver vores globale bool "KanRegne" sat til at være false, og vores globale variabel "F_Kraft" bliver sat til at være ingenting.
         If m_Masse = Nothing Or g_TyngdeAcceleration = Nothing Then
             MsgBox("Ikke alle værdier er angivet!")
             KanRegne = False
             F_Kraft = Nothing
         End If
-
     End Sub
-
 #End Region
-
-
 End Class
