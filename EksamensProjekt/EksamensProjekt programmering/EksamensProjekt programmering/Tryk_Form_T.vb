@@ -84,8 +84,6 @@
         A_Areal = Val(Tryk_Areal_TextBox.Text)
     End Sub
 
-
-
     'Sætter værdien til det tekstboksens input modtager
     Private Sub Tryk_Kraft_TextBox_TextChanged(sender As Object, e As EventArgs) Handles Tryk_Kraft_TextBox.TextChanged
         F_Kraft = Val(Tryk_Kraft_TextBox.Text)
@@ -114,7 +112,6 @@
     End Sub
 
 #End Region
-
 
 #Region "Væske Tryk"
     'Sætter værdien til det tekstboksens input modtager
@@ -153,10 +150,7 @@
             KanRegne = True
         End If
     End Sub
-
-
 #End Region
-
 
     ''Disse subrutiner kræves pr. funktion formen har.
     ''Subrutinen tjekker om dens korresponderende værdier ikke står til ingenting.
@@ -184,12 +178,5 @@
         End If
 
     End Sub
-
-
-
-
-
 #End Region
-
-
 End Class

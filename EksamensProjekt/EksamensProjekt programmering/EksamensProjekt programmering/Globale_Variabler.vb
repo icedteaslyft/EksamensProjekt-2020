@@ -8,18 +8,15 @@
     Public t_DeltaTid As Double 'Delta tid
     Public I_Strømstyrke As Double 'Strømstyrke
 
-
     ''Værdier for Densitet (p = m / V)
     Public p_Rho As Double 'rho
     Public m_Masse As Double 'Masse
     Public V_Rumfang As Double 'Rumfang
 
-
     ''Værdier for Gas Densitet (rho = (Molmasse / Gaskonstant) * (tryk / Kelvin))
     Public m_MolMasse As Double
     Public T_Kelvin As Double
     Public R_Gaskonstant As Double = 8.3145 'Gaskonstanten er den samme for alle gasser, derfor har vores en allerede givet værdi
-
 
     ''Værdier for Varmekapacitet og Tilføjet varme(C = Q / DT)
     Public Q_Tilførtvarme As Double 'Den tilførte varme
@@ -33,12 +30,10 @@
     Public c_Varmekapacitet2 As Double 'Varmekapacitet for Tilført Varme
     Public c_Varmekapacitet3 As Double 'Varmekapacitet for SpecifikVarme
 
-
     ''Værdier for Tryk (p = F / A)
     Public F_Kraft As Double 'Kraft
     Public A_Areal As Double 'Areal
     Public p_Tryk As Double  'Tryk
-
 
     ''Værdier for VæskeTryk (p = rho * h * g(-9,82))
     Public h_Højde As Double
@@ -63,5 +58,4 @@
     Public M_Masse1 As Double
     Public M_Masse2 As Double
     Public R_Afstand As Double
-
 End Module
