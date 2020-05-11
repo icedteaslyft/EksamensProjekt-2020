@@ -79,7 +79,7 @@
 
 
     Private Sub Beregn_Elektrisk_Ladning_But_Click(sender As Object, e As EventArgs) Handles Beregn_Elektrisk_Ladning_But.Click
-        'Kalder sub rutinen "CheckVariabler"
+        'Kalder sub routinen "CheckVariabler"
         CheckVariabler()
         'Kalder sub routinen "BeregnElektriskLadning" 
         BeregnElektriskLadning()
@@ -121,7 +121,6 @@
             KanRegne = False
             Q_ElektriskLadning = Nothing
         End If
-
     End Sub
 #End Region
 
